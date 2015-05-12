@@ -23,8 +23,10 @@ $config['cache_driver'] = 'file';
 $config['cookie_prefix'] = '';
 $config['cookie_httponly'] = 'y';
 
+$config['index_page'] = 'index.php';
 
 // END EE config items
+
 
 /*
 |--------------------------------------------------------------------------
@@ -155,4 +157,3 @@ $config['rewrite_short_tags'] = TRUE;
 
 /* End of file config.php */
 /* Location: ./system/expressionengine/config/config.php */
-
