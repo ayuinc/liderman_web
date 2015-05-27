@@ -1,0 +1,66 @@
+# EBM
+# http://soygus.com
+# @author MadeByGus
+
+## EBM
+style.min.css
+style.unprefixed.css
+style.prefixed.css
+
+## Node.js
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+pids
+logs
+results
+npm-debug.log
+node_modules
+
+## Bower
+src/components
+lib
+
+## Images
+app/assets/img/*.jpg
+app/assets/img/*.png
+app/assets/img/*.JPEG
+app/assets/img/*.gif
+app/assets/img/*.tiff
+# src/img/*.jpg
+# src/img/*.png
+# src/img/*.gif
+# src/img/*.JPEG
+# src/img/*.tiff
+
+## Icons
+app/assets/button-icons/*.svg
+app/assets/button-icons/*.eot
+app/assets/button-icons/*.ttf
+app/assets/button-icons/*.woff
+
+## Sass
+.sass-cache
+
+## OS X
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+
+## Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+## WORDPRESS
+wp-content/uploads/**
