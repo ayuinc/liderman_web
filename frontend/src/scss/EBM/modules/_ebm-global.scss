@@ -46,6 +46,10 @@ $liderman-black: #4A4A4A;
 	color: $liderman-black;
 }
 
+.text-orange{
+	color: $liderman-orange;
+}
+
 .btn-liderman{ //custom liderman button
 	text-transform: uppercase;
 	font-size: 21px;
@@ -173,7 +177,7 @@ $liderman-black: #4A4A4A;
 	position: relative;
 	margin: 0 auto;
 	width: 67px;
-	bottom: 40px;
+	bottom: 45px;
 }
 
 /*
@@ -312,6 +316,7 @@ $liderman-black: #4A4A4A;
 			font-size: 19px;
 			margin-top: 10px;
 			margin-bottom: 10px;
+			padding: 12px 0;
 		}
 
 		&:hover{ //hover effect
@@ -323,10 +328,9 @@ $liderman-black: #4A4A4A;
 		}
 
 		.quienes-somos-inner{
-			border: 3px solid #8C8B8B;
 			padding: 10px;
 			text-align: center;
-			height: 170px;
+			height: 200px;
 		}
 	}	
 }
