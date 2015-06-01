@@ -1,0 +1,38 @@
+{
+  "name": "EBM",
+  "title": "Easy Box Model boilerplate",
+  "url": "http://soygus.com",
+  "author": "@MadeByGus",
+  "copyright": "2015",
+  "version": "1.1.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/netpoe/ebm_boilerplate.git"
+  },
+  "devDependencies": {
+    "bower": "latest",
+    "connect-livereload": "latest",
+    "grunt": "latest",
+    "grunt-autoprefixer": "latest",
+    "grunt-bower-task": "latest",
+    "grunt-contrib-clean": "latest",
+    "grunt-contrib-coffee": "latest",
+    "grunt-contrib-concat": "latest",
+    "grunt-contrib-connect": "latest",
+    "grunt-contrib-cssmin": "latest",
+    "grunt-contrib-jshint": "latest",
+    "grunt-contrib-sass": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-responsive-images": "latest",
+    "grunt-responsive-images-extender": "latest",
+    "grunt-open": "latest",
+    "matchdep": "latest",    
+    "pgwbrowser": "latest",
+    "logdown": "latest"
+  },
+  "scripts": {
+    "postinstall": "node_modules/.bin/bower install"
+  }
+}
