@@ -38,3 +38,14 @@
 	triggerBttn.addEventListener( 'click', toggleOverlay );
 	closeBttn.addEventListener( 'click', toggleOverlay );
 })();
+
+
+$(window).scroll(function(){
+	var position = $(this).scrollTop();
+	if (position > 400) {
+		$(".header-scroll").fadeIn();
+	}
+	else if (position < 400 ) {
+		$(".header-scroll").fadeOut();
+	} 
+});

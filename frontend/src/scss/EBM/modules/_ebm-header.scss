@@ -1,11 +1,11 @@
-.header {
+header {
 	@include position(absolute, 0 0 null 0);
 	// @include position(fixed, 0 0 null 0);
 	// z-index: 1000;
 	// -webkit-backface-visibility: hidden; 
 	// -webkit-transform: translateZ(0);
 	@include normalize-text;
-	min-height: $header-height-control;
+	min-height: 60px;
 	width: 100%;
 	.container,
 	.container-sm,
@@ -22,10 +22,10 @@
 	.header-center,
 	.header-right {
 		@include flex-column-center;
-		min-height: $header-height-control;
+		min-height: 60px;
 	}
 	.header-left {
-
+		text-align: left;
 	}
 	.header-center {
 		text-align: center;
