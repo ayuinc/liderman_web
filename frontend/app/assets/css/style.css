@@ -4879,17 +4879,38 @@ p {
   background: #B92A30;
 }
 
-/* 
-	main hero image
+/*
+	Header
 */
-header {
+.header,
+.header-scroll {
   z-index: 1000;
 }
-header .header-right {
+.header .header-right,
+.header-scroll .header-right {
   position: relative;
   left: 270px;
 }
 
+.header-scroll {
+  display: none;
+  position: fixed;
+  width: 100%;
+  background-color: #4A4A4A;
+}
+.header-scroll .header-left img {
+  width: 100px;
+  position: relative;
+  right: 270px;
+}
+.header-scroll .header-right {
+  position: relative;
+  left: 270px;
+}
+
+/* 
+	main hero image
+*/
 .main-hero-unit {
   position: absolute;
 }
@@ -12553,20 +12574,20 @@ html.no-js .flex-space-between .right {
   float: right;
 }
 
-.header {
+header {
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
-  min-height: 70px;
+  min-height: 60px;
   width: 100%;
 }
-.header h1, .header h2, .header h3, .header h4, .header h5, .header h6,
-.header .h1, .header .h2, .header .h3, .header .h4, .header .h5, .header .h6,
-.header p, .header .p, .header span, .header em, .header strong, .header label, .header a, .header i, .header ul, .header ol, .header li {
+header h1, header h2, header h3, header h4, header h5, header h6,
+header .h1, header .h2, header .h3, header .h4, header .h5, header .h6,
+header p, header .p, header span, header em, header strong, header label, header a, header i, header ul, header ol, header li {
   margin: 0;
 }
-.header .row {
+header .row {
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -12594,9 +12615,9 @@ html.no-js .flex-space-between .right {
   justify-content: space-between;
   -ms-flex-pack: justify;
 }
-.header .header-left,
-.header .header-center,
-.header .header-right {
+header .header-left,
+header .header-center,
+header .header-right {
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -12623,12 +12644,15 @@ html.no-js .flex-space-between .right {
   -o-justify-content: center;
   justify-content: center;
   -ms-flex-pack: center;
-  min-height: 70px;
+  min-height: 60px;
 }
-.header .header-center {
+header .header-left {
+  text-align: left;
+}
+header .header-center {
   text-align: center;
 }
-.header .header-right {
+header .header-right {
   text-align: right;
 }
 

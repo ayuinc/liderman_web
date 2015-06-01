@@ -118,18 +118,42 @@ $liderman-black: #4A4A4A;
 }
 
 
-/* 
-	main hero image
+
+
+/*
+	Header
 */
 
-
-header{
+.header, 
+.header-scroll{
 	z-index: 1000;
 	.header-right{
 		position: relative;
 		left: 270px;
 	}
 }
+
+.header-scroll{
+	display: none;
+	position: fixed;
+	width: 100%;
+	background-color: $liderman-black;
+	.header-left{
+		img{
+			width: 100px;
+			position: relative;
+			right: 270px;
+		}
+	}
+	.header-right{
+		position: relative;
+		left: 270px;
+	}
+}
+
+/* 
+	main hero image
+*/
 
 .main-hero-unit{ 
 	position: absolute;
