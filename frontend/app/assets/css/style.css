@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
   Easy Box Model Import
   Last update: 14.05.15
@@ -3797,6 +3798,12 @@ Third party code
 	App custom
 */
 /* PROJECT ESPECIFIC FONTS */
+.thin {
+  font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-weight: 100;
+  font-style: normal;
+}
+
 .light {
   font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   font-weight: 300;
@@ -4826,6 +4833,10 @@ p {
 .btn-liderman.btn-liderman-gray:hover {
   color: gray;
 }
+.btn-liderman.btn-liderman-orange {
+  border: 2px solid #F7941D;
+  color: #F7941D;
+}
 
 /*
 	Section Styles
@@ -4871,17 +4882,16 @@ p {
 /* 
 	main hero image
 */
-.main-hero-unit {
-  position: absolute;
-}
-.main-hero-unit header {
+header {
   z-index: 1000;
 }
-.main-hero-unit .arrow {
+header .header-right {
   position: relative;
-  margin: 0 auto;
-  width: 67px;
-  top: 450px;
+  left: 270px;
+}
+
+.main-hero-unit {
+  position: absolute;
 }
 .main-hero-unit .flickity-page-dots {
   bottom: 42px;
@@ -4893,35 +4903,194 @@ p {
 }
 
 /*
-	Quienes Somos
+	Arrow	
 */
-.grid-quienes-somos .grid-list-item {
+.arrow {
+  position: relative;
+  margin: 0 auto;
+  width: 67px;
+  bottom: 40px;
+}
+
+/*
+	Menu
+*/
+/* Overlay style */
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url(assets/img/reconocimientos-textura.png);
+  z-index: 30000;
+}
+
+/* Overlay closing cross */
+.overlay .overlay-close {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  overflow: hidden;
+  border: none;
+  background: url(assets/img/cross.png) no-repeat center center;
+  text-indent: 200%;
+  color: transparent;
+  outline: none;
+  z-index: 100;
+}
+
+/* Menu style */
+.overlay nav {
   text-align: center;
+  position: relative;
+  top: 50%;
+  height: 60%;
+  font-size: 25px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
-.grid-quienes-somos .grid-list-item h3 {
-  font-size: 23px;
-  text-transform: uppercase;
-  padding-top: 7px;
-  color: #606060;
+
+.overlay ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+  height: 100%;
+  position: relative;
 }
-.grid-quienes-somos .grid-list-item p {
-  padding: 14px 0;
-  color: #8C8B8B;
+
+.overlay ul li {
+  display: block;
+  height: 20%;
+  height: calc(100% / 7);
+  min-height: 54px;
 }
-.grid-quienes-somos .grid-list-item a {
-  text-transform: uppercase;
-  color: #606060;
-  border-bottom: 1px solid #8C8B8B;
-  padding-bottom: 4px;
+
+.overlay ul li a {
+  font-weight: 300;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
 }
-.grid-quienes-somos .grid-list-item a:hover {
-  border-bottom: 1px solid #F7941D;
+
+.overlay ul li a:hover,
+.overlay ul li a:focus {
   color: #F7941D;
 }
 
+/* Effects */
+.overlay-hugeinc {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+  transition: opacity 0.5s, visibility 0s 0.5s;
+}
+
+.overlay-hugeinc.open {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.overlay-hugeinc nav {
+  -webkit-perspective: 1200px;
+  perspective: 1200px;
+}
+
+.overlay-hugeinc nav ul {
+  opacity: 0.4;
+  -webkit-transform: translateY(-25%) rotateX(35deg);
+  transform: translateY(-25%) rotateX(35deg);
+  -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.overlay-hugeinc.open nav ul {
+  opacity: 1;
+  -webkit-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+
+.overlay-hugeinc.close nav ul {
+  -webkit-transform: translateY(25%) rotateX(-35deg);
+  transform: translateY(25%) rotateX(-35deg);
+}
+
+@media screen and (max-height: 30.5em) {
+  .overlay nav {
+    height: 70%;
+    font-size: 34px;
+  }
+
+  .overlay ul li {
+    min-height: 34px;
+  }
+}
+/*
+	Quienes Somos
+*/
+.quienes-somos .quienes-somos-item {
+  padding: 10px;
+  color: #8C8B8B;
+}
+.quienes-somos .quienes-somos-item h3 {
+  text-transform: uppercase;
+  font-size: 19px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.quienes-somos .quienes-somos-item:hover {
+  background-color: #F7941D;
+  color: white;
+}
+.quienes-somos .quienes-somos-item:hover .quienes-somos-inner {
+  border: 3px solid white;
+}
+.quienes-somos .quienes-somos-item .quienes-somos-inner {
+  border: 3px solid #8C8B8B;
+  padding: 10px;
+  text-align: center;
+  height: 170px;
+}
+
+/* .grid-quienes-somos{
+	.grid-list-item{
+	text-align: center;
+		h3{
+			font-size: $font-size-h3 - 1;
+			text-transform: uppercase;
+			padding-top: 7px;
+			color: #606060;
+		}
+		p{
+			padding: 14px 0; //vertical padding
+			color: #8C8B8B;
+		}
+		a{
+			text-transform: uppercase;
+			color: #606060;
+			border-bottom: 1px solid #8C8B8B; //simulates underline
+			padding-bottom: 4px;
+			&:hover{
+			border-bottom: 1px solid $liderman-orange; //changes color of simulated underline
+			color: $liderman-orange;	
+			}
+		}
+	}
+} */
 /* 
 	Reconocimientos
 */
+.reconocimientos {
+  position: relative;
+  height: 600px;
+}
 .reconocimientos .flickity-page-dots {
   bottom: 42px;
 }
@@ -4960,17 +5129,74 @@ p {
 /*
 	Noticias
 */
-.grid-noticias {
+.grid-noticias .grid-list-item {
   padding: 7px;
 }
-.grid-noticias .grid-list-item {
-  border: 3px solid #979797;
+.grid-noticias .grid-list-item .list-item-noticias {
+  border: 1px solid #979797;
+  padding: 14px;
 }
-.grid-noticias .grid-list-item h3 {
+.grid-noticias .grid-list-item .list-item-noticias:hover {
+  background-color: #ededed;
+}
+.grid-noticias .grid-list-item .list-item-noticias h3 {
   text-transform: uppercase;
 }
-.grid-noticias .grid-list-item h4 {
+.grid-noticias .grid-list-item .list-item-noticias small {
   color: #B92A30;
+}
+
+/*
+	Cont├íctanos
+*/
+.contactanos {
+  text-align: center;
+}
+.contactanos .grid-contactanos .grid-list-item {
+  padding: 0;
+}
+.contactanos .grid-contactanos .grid-list-item .list-item-contactanos img {
+  width: 55px;
+  margin: 0 auto;
+  border: 1px solid white;
+}
+.contactanos .grid-redes img {
+  width: 40px;
+  height: 40px;
+  border: 1px solid white;
+  padding: 7px;
+  float: left;
+}
+.contactanos select {
+  color: #7D7E7F;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+/*
+	Footer
+*/
+.footer {
+  background-color: #4A4A4A;
+}
+.footer input {
+  background-color: #4A4A4A;
+  border: 1px solid white;
+  border-radius: 0;
+  float: left;
+}
+.footer .direction p {
+  color: white;
+  font-size: 11px;
+}
+.footer .btn-liderman-footer {
+  border: 1px solid white;
+  padding: 6px 20px;
+  background-color: #8c8a8b;
 }
 
 a.btn.form-control,
@@ -12671,7 +12897,7 @@ http://flickity.metafizzy.co
   width: 40px;
   border-radius: 2.85714px;
   transition: 0.3s;
-  background: black;
+  background: white;
   position: relative;
 }
 .tcon-menu__lines::before, .tcon-menu__lines::after {
@@ -12680,7 +12906,7 @@ http://flickity.metafizzy.co
   width: 40px;
   border-radius: 2.85714px;
   transition: 0.3s;
-  background: black;
+  background: white;
   content: '';
   position: absolute;
   left: 0;
