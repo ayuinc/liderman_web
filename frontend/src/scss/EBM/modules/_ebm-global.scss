@@ -131,11 +131,8 @@ $liderman-black: #4A4A4A;
 .header, 
 .header-scroll{
 	z-index: 1000;
-	.header-right{
-		position: relative;
-		left: 270px;
-	}
 }
+
 
 .header-scroll{
 	display: none;
@@ -146,12 +143,21 @@ $liderman-black: #4A4A4A;
 		img{
 			width: 100px;
 			position: relative;
-			right: 270px;
 		}
 	}
+
+	.header-center{
+		.btn-liderman{
+			font-size: 18px;
+			padding: 4px 18px;
+		}
+	}
+
 	.header-right{
-		position: relative;
-		left: 270px;
+		.btn-liderman{
+			font-size: 18px;
+			padding: 4px 18px;
+		}
 	}
 }
 
@@ -320,32 +326,6 @@ $liderman-black: #4A4A4A;
 		}
 	}	
 }
-
-/* .grid-quienes-somos{
-	.grid-list-item{
-	text-align: center;
-		h3{
-			font-size: $font-size-h3 - 1;
-			text-transform: uppercase;
-			padding-top: 7px;
-			color: #606060;
-		}
-		p{
-			padding: 14px 0; //vertical padding
-			color: #8C8B8B;
-		}
-		a{
-			text-transform: uppercase;
-			color: #606060;
-			border-bottom: 1px solid #8C8B8B; //simulates underline
-			padding-bottom: 4px;
-			&:hover{
-			border-bottom: 1px solid $liderman-orange; //changes color of simulated underline
-			color: $liderman-orange;	
-			}
-		}
-	}
-} */
 
 /* 
 	Reconocimientos
