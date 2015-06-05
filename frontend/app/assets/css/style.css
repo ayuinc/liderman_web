@@ -5104,36 +5104,59 @@ p {
   width: 12px;
   height: 12px;
   opacity: 1;
-  background: white;
+  background: gray;
 }
 
 .flickity-page-dots .dot.is-selected {
-  background: #B92A30;
+  background: #F7941D;
 }
 
 /*
 	Header
 */
+@media only screen and (max-width: 480px) {
+  .header {
+    position: fixed;
+    background-color: #4A4A4A;
+  }
+}
+
 .header,
-.header-scroll {
+.header-scroll,
+.header-scroll-fixed {
   z-index: 1000;
+}
+.header .header-left img,
+.header-scroll .header-left img,
+.header-scroll-fixed .header-left img {
+  width: 100px;
+  position: relative;
+}
+@media only screen and (max-width: 480px) {
+  .header .header-left img,
+  .header-scroll .header-left img,
+  .header-scroll-fixed .header-left img {
+    width: 70px;
+  }
 }
 
 .header-scroll {
   display: none;
+}
+
+.header-scroll,
+.header-scroll-fixed {
   position: fixed;
   width: 100%;
   background-color: #4A4A4A;
 }
-.header-scroll .header-left img {
-  width: 100px;
-  position: relative;
-}
-.header-scroll .header-center .btn-liderman {
+.header-scroll .header-center .btn-liderman,
+.header-scroll-fixed .header-center .btn-liderman {
   font-size: 18px;
   padding: 4px 18px;
 }
-.header-scroll .header-right .btn-liderman {
+.header-scroll .header-right .btn-liderman,
+.header-scroll-fixed .header-right .btn-liderman {
   font-size: 18px;
   padding: 4px 18px;
 }
@@ -5410,6 +5433,17 @@ p {
   background-color: #8c8a8b;
 }
 
+/*
+	QUIENES SOMOS
+*/
+.img-quienes-somos {
+  width: 700px;
+  margin: 0 auto;
+}
+
+/* 
+	CLIENTES 
+*/
 a.btn.form-control,
 button.btn.form-control,
 input[type="submit"].btn.form-control,

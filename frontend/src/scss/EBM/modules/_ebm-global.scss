@@ -114,37 +114,49 @@ $liderman-black: #4A4A4A;
   width: 12px;
   height: 12px;
   opacity: 1;
-  background: white;
+  background: gray;
 }
 
-.flickity-page-dots .dot.is-selected { //fill-in selected dot
-  background: #B92A30;
+.flickity-page-dots .dot.is-selected {
+	background: $liderman-orange;
 }
-
-
 
 
 /*
 	Header
 */
 
-.header, 
-.header-scroll{
-	z-index: 1000;
+.header {
+	@media only screen and (max-width: 480px) {
+  	position: fixed;
+  	background-color: $liderman-black;
+  }
 }
 
-
-.header-scroll{
-	display: none;
-	position: fixed;
-	width: 100%;
-	background-color: $liderman-black;
+.header, 
+.header-scroll,
+.header-scroll-fixed{
+	z-index: 1000;
 	.header-left{
 		img{
 			width: 100px;
 			position: relative;
+			@media only screen and (max-width: 480px) {
+		  	width: 70px;
+		  }
 		}
 	}
+}
+
+.header-scroll{
+	display: none;
+}
+
+.header-scroll, 
+.header-scroll-fixed{
+	position: fixed;
+	width: 100%;
+	background-color: $liderman-black;
 
 	.header-center{
 		.btn-liderman{
@@ -458,5 +470,20 @@ $liderman-black: #4A4A4A;
 		background-color: rgb(140, 138, 139);
 	}
 }
+
+
+/*
+	QUIENES SOMOS
+*/
+
+.img-quienes-somos{
+	width: 700px;
+	margin: 0 auto;
+}
+
+/* 
+	CLIENTES 
+*/
+
 
 
