@@ -114,44 +114,62 @@ $liderman-black: #4A4A4A;
   width: 12px;
   height: 12px;
   opacity: 1;
-  background: white;
+  background: gray;
 }
 
-.flickity-page-dots .dot.is-selected { //fill-in selected dot
-  background: #B92A30;
+.flickity-page-dots .dot.is-selected {
+	background: $liderman-orange;
 }
-
-
 
 
 /*
 	Header
 */
 
+.header {
+	@media only screen and (max-width: 480px) {
+  	position: fixed;
+  	background-color: $liderman-black;
+  }
+}
+
 .header, 
-.header-scroll{
+.header-scroll,
+.header-scroll-fixed{
 	z-index: 1000;
-	.header-right{
-		position: relative;
-		left: 270px;
+	.header-left{
+		img{
+			width: 100px;
+			position: relative;
+			@media only screen and (max-width: 480px) {
+		  	width: 70px;
+		  }
+		}
 	}
 }
 
 .header-scroll{
 	display: none;
+}
+
+.header-scroll, 
+.header-scroll-fixed{
 	position: fixed;
 	width: 100%;
 	background-color: $liderman-black;
-	.header-left{
-		img{
-			width: 100px;
-			position: relative;
-			right: 270px;
+
+	.header-center{
+		.btn-liderman{
+			font-size: 18px;
+			padding: 4px 18px;
 		}
 	}
+
 	.header-right{
-		position: relative;
-		left: 270px;
+		.btn-liderman{
+			font-size: 18px;
+			padding: 4px 18px;
+		}
 	}
 }
 
@@ -192,24 +210,10 @@ $liderman-black: #4A4A4A;
 	top: 0;
 	left: 0;
 	background-image: url(assets/img/reconocimientos-textura.png);
-	z-index:30000;
+	z-index:100;
 }
 
 /* Overlay closing cross */
-.overlay .overlay-close {
-	width: 80px;
-	height: 80px;
-	position: absolute;
-	right: 20px;
-	top: 20px;
-	overflow: hidden;
-	border: none;
-	background: url(assets/img/cross.png) no-repeat center center;
-	text-indent: 200%;
-	color: transparent;
-	outline: none;
-	z-index: 100;
-}
 
 /* Menu style */
 .overlay nav {
@@ -334,32 +338,6 @@ $liderman-black: #4A4A4A;
 		}
 	}	
 }
-
-/* .grid-quienes-somos{
-	.grid-list-item{
-	text-align: center;
-		h3{
-			font-size: $font-size-h3 - 1;
-			text-transform: uppercase;
-			padding-top: 7px;
-			color: #606060;
-		}
-		p{
-			padding: 14px 0; //vertical padding
-			color: #8C8B8B;
-		}
-		a{
-			text-transform: uppercase;
-			color: #606060;
-			border-bottom: 1px solid #8C8B8B; //simulates underline
-			padding-bottom: 4px;
-			&:hover{
-			border-bottom: 1px solid $liderman-orange; //changes color of simulated underline
-			color: $liderman-orange;	
-			}
-		}
-	}
-} */
 
 /* 
 	Reconocimientos
@@ -492,3 +470,20 @@ $liderman-black: #4A4A4A;
 		background-color: rgb(140, 138, 139);
 	}
 }
+
+
+/*
+	QUIENES SOMOS
+*/
+
+.img-quienes-somos{
+	width: 700px;
+	margin: 0 auto;
+}
+
+/* 
+	CLIENTES 
+*/
+
+
+
