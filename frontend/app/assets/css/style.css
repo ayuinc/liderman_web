@@ -5038,6 +5038,14 @@ p {
 /*
 	utility classes
 */
+.bg-black-liderman {
+  background-color: #4A4A4A;
+}
+
+.bg-orange-liderman {
+  background-color: #F7941D;
+}
+
 .text-black {
   color: #4A4A4A;
 }
