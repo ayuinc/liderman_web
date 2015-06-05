@@ -437,13 +437,20 @@ $liderman-black: #4A4A4A;
 		}
 	}
 	select{
+		width: 100%;
+  		text-indent: 40%;
 		color: #7D7E7F;
-  	background-color: #fff;
-  	background-image: none;
-  	border: 1px solid #ccc;
-  	border-radius: 4px;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+		cursor: pointer;
+	  	background-color: #fff;
+	  	border: 1px solid #ccc;
+	  	border-radius: 4px;
+	    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	  	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	  	background-image: url(../img/dropdown-formulario.png);
+	  	background-repeat: no-repeat;
+	  	background-position: right;
+	  	appearance: none;
+	  	-webkit-appearance: none;
 	}
 }
 
@@ -504,4 +511,17 @@ $liderman-black: #4A4A4A;
 	}
 }
 
+.text-description{
+	font-size: $font-size-h4;
+	padding-top: 14px;
+	padding-bottom: 14px;
+}
+
+select{
+	background-image: url(assets/img/dropdown-formulario.png);
+  	background-repeat: no-repeat;
+  	background-position: right;
+  	appearance: none;
+  	-webkit-appearance: none;
+}
 
