@@ -5444,6 +5444,23 @@ p {
 /* 
 	CLIENTES 
 */
+/*
+	QUIERO SER LIDERMAN
+*/
+.list-quiero-ser {
+  font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 21px;
+  padding-left: 24px;
+}
+.list-quiero-ser li {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+.list-quiero-ser li p {
+  font-family: "Merriweather", Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+}
+
 a.btn.form-control,
 button.btn.form-control,
 input[type="submit"].btn.form-control,

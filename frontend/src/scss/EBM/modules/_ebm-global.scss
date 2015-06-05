@@ -486,4 +486,22 @@ $liderman-black: #4A4A4A;
 */
 
 
+/*
+	QUIERO SER LIDERMAN
+*/
+
+.list-quiero-ser{
+	font-family: $font-family-sans-serif;
+	font-size: 21px;
+	padding-left: 24px;
+	li{
+		padding-top: 7px;
+		padding-bottom: 7px;
+		p{
+			font-family: $font-family-serif;
+			font-size: 18px;
+		}
+	}
+}
+
 
