@@ -27,11 +27,6 @@ src/components
 lib
 
 ## Images
-# src/img/*.jpg
-# src/img/*.png
-# src/img/*.gif
-# src/img/*.JPEG
-# src/img/*.tiff
 
 ## Icons
 app/assets/button-icons/*.svg
