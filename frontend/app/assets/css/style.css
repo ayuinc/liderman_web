@@ -5451,7 +5451,7 @@ p {
 /*
 	QUIENES SOMOS
 */
-.img-quienes-somos {
+.img-liderman {
   width: 700px;
   margin: 0 auto;
 }
@@ -5462,16 +5462,16 @@ p {
 /*
 	QUIERO SER LIDERMAN
 */
-.list-quiero-ser {
+.list-liderman {
   font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 21px;
   padding-left: 24px;
 }
-.list-quiero-ser li {
+.list-liderman li {
   padding-top: 7px;
   padding-bottom: 7px;
 }
-.list-quiero-ser li p {
+.list-liderman li p {
   font-family: "Merriweather", Georgia, "Times New Roman", Times, serif;
   font-size: 18px;
 }
