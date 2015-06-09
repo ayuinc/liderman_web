@@ -5353,14 +5353,14 @@ p {
 */
 .reconocimientos {
   position: relative;
-  height: 600px;
+  height: 900px;
 }
 .reconocimientos .flickity-page-dots {
-  bottom: 42px;
+  bottom: -165px;
 }
 .reconocimientos img {
   margin: 0 auto;
-  width: 182px;
+  width: 450px;
 }
 
 /*
