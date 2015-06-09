@@ -5204,6 +5204,10 @@ p {
   padding: 4px 18px;
 }
 
+.icon-redes {
+  height: 30px;
+}
+
 /* 
 	main hero image
 */
@@ -5374,6 +5378,7 @@ p {
 .reconocimientos img {
   margin: 0 auto;
   width: 450px;
+  height: 340px;
 }
 
 /*
