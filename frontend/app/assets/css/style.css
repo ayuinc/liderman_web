@@ -5124,6 +5124,11 @@ p {
   color: 505050;
 }
 
+.text-frase {
+  font-size: 24px;
+  color: #707274;
+}
+
 /*
 	general gallery styles
 */
