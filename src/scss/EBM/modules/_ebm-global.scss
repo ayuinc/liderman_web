@@ -1,0 +1,494 @@
+// SIZE CONTROL VARS
+$size-control-placeholder: 530px;
+$banner-height: 350px; // Banners
+$site-menu-width-control: 101px; // Site menu
+$menu-list-icons-width: 35px;
+$header-height-control: 70px; // Header
+$mobile-navbar-height: 56px; // Mobile header
+$video-bg-height: 490px; // Hero Unit and Videocover
+$user-card-height: 42px; // User cards
+$user-card-width: 70px;
+
+html,
+body {
+	background-color: $body-bg;	
+	&::-webkit-scrollbar { 
+    display: none; 
+	}
+}
+
+.site-wrapper,
+.site-content {
+	position: relative;
+}
+
+/*
+	main styles
+*/
+
+p{
+	font-family: $font-family-serif;
+}
+
+
+/*
+	colors
+*/
+
+$liderman-orange: #F7941D;
+$liderman-black: #4A4A4A;
+
+/*
+	utility classes
+*/
+
+.text-black{
+	color: $liderman-black;
+}
+
+.text-orange{
+	color: $liderman-orange;
+}
+
+.btn-liderman{ //custom liderman button
+	text-transform: uppercase;
+	font-size: 21px;
+	padding: 8px 21px;
+
+
+	&.btn-liderman-white{ //white button
+		border: 3px solid white;		
+		color: white;
+		&:hover{
+			color: white;
+		}
+	}
+
+	&.btn-liderman-gray{ //white button
+		border: 3px solid gray;		
+		color: gray;
+		&:hover{
+			color: gray;
+		}
+	}
+
+	&.btn-liderman-orange{
+		border: 2px solid $liderman-orange;
+		color: $liderman-orange;
+	}
+
+}
+
+/*
+	Section Styles
+*/
+
+.section-padding-horizontal{
+	padding: 104px 0; //padding vertical
+}
+
+.section-title{
+		font-family: $font-family-sans-serif;
+		text-transform: uppercase;
+		font-size: $font-size-h1;
+		font-weight: 700;
+}
+
+.text-intro{
+	padding: 0 15%; //padding horizontal
+	font-size: $font-size-h4;
+	color: 505050;
+}
+
+/*
+	general gallery styles
+*/
+.gallery{
+		height: $video-bg-height;
+	.gallery-cell{
+		width: 100%;
+	}
+}
+
+.flickity-page-dots .dot { // white circles
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background: white;
+}
+
+.flickity-page-dots .dot.is-selected { //fill-in selected dot
+  background: #B92A30;
+}
+
+
+
+
+/*
+	Header
+*/
+
+.header, 
+.header-scroll{
+	z-index: 1000;
+	.header-right{
+		position: relative;
+		left: 270px;
+	}
+}
+
+.header-scroll{
+	display: none;
+	position: fixed;
+	width: 100%;
+	background-color: $liderman-black;
+	.header-left{
+		img{
+			width: 100px;
+			position: relative;
+			right: 270px;
+		}
+	}
+	.header-right{
+		position: relative;
+		left: 270px;
+	}
+}
+
+/* 
+	main hero image
+*/
+
+.main-hero-unit{ 
+	position: absolute;
+	.flickity-page-dots {
+	  bottom: 42px; //positioning page-dots accordingly
+	  right: 220px; //positioning page-dots accordingly
+	}	
+	.logo{
+	  margin: 0 auto;
+	 	width: 283px;
+	}	
+}
+/*
+	Arrow	
+*/
+.arrow{
+	position: relative;
+	margin: 0 auto;
+	width: 67px;
+	bottom: 45px;
+}
+
+/*
+	Menu
+*/
+
+/* Overlay style */
+.overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-image: url(assets/img/reconocimientos-textura.png);
+	z-index:30000;
+}
+
+/* Overlay closing cross */
+.overlay .overlay-close {
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	overflow: hidden;
+	border: none;
+	background: url(assets/img/cross.png) no-repeat center center;
+	text-indent: 200%;
+	color: transparent;
+	outline: none;
+	z-index: 100;
+}
+
+/* Menu style */
+.overlay nav {
+	text-align: center;
+	position: relative;
+	top: 50%;
+	height: 60%;
+	font-size: 25px;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.overlay ul {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	display: inline-block;
+	height: 100%;
+	position: relative;
+}
+
+.overlay ul li {
+	display: block;
+	height: 20%;
+	height: calc(100% / 7);
+	min-height: 54px;
+}
+
+.overlay ul li a {
+	font-weight: 300;
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;
+}
+
+.overlay ul li a:hover,
+.overlay ul li a:focus {
+	color: $liderman-orange;
+}
+
+/* Effects */
+.overlay-hugeinc {
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+	transition: opacity 0.5s, visibility 0s 0.5s;
+}
+
+.overlay-hugeinc.open {
+	opacity: 1;
+	visibility: visible;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+}
+
+.overlay-hugeinc nav {
+	-webkit-perspective: 1200px;
+	perspective: 1200px;
+}
+
+.overlay-hugeinc nav ul {
+	opacity: 0.4;
+	-webkit-transform: translateY(-25%) rotateX(35deg);
+	transform: translateY(-25%) rotateX(35deg);
+	-webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+	transition: transform 0.5s, opacity 0.5s;
+}
+
+.overlay-hugeinc.open nav ul {
+	opacity: 1;
+	-webkit-transform: rotateX(0deg);
+	transform: rotateX(0deg);
+}
+
+.overlay-hugeinc.close nav ul {
+	-webkit-transform: translateY(25%) rotateX(-35deg);
+	transform: translateY(25%) rotateX(-35deg);
+}
+
+@media screen and (max-height: 30.5em) {
+	.overlay nav {
+		height: 70%;
+		font-size: 34px;
+	}
+	.overlay ul li {
+		min-height: 34px;
+	}
+}
+
+
+
+/*
+	Quienes Somos
+*/
+
+.quienes-somos{
+	.quienes-somos-item{
+		padding: 10px;
+		color: #8C8B8B;
+		h3{
+			text-transform: uppercase;
+			font-size: 19px;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			padding: 12px 0;
+		}
+
+		&:hover{ //hover effect
+			background-color: $liderman-orange;
+			color: white;
+			.quienes-somos-inner{
+				border: 3px solid white;
+			}
+		}
+
+		.quienes-somos-inner{
+			padding: 10px;
+			text-align: center;
+			height: 200px;
+		}
+	}	
+}
+
+/* .grid-quienes-somos{
+	.grid-list-item{
+	text-align: center;
+		h3{
+			font-size: $font-size-h3 - 1;
+			text-transform: uppercase;
+			padding-top: 7px;
+			color: #606060;
+		}
+		p{
+			padding: 14px 0; //vertical padding
+			color: #8C8B8B;
+		}
+		a{
+			text-transform: uppercase;
+			color: #606060;
+			border-bottom: 1px solid #8C8B8B; //simulates underline
+			padding-bottom: 4px;
+			&:hover{
+			border-bottom: 1px solid $liderman-orange; //changes color of simulated underline
+			color: $liderman-orange;	
+			}
+		}
+	}
+} */
+
+/* 
+	Reconocimientos
+*/
+
+.reconocimientos{ 
+	position: relative;
+	height: 600px;
+	.flickity-page-dots {
+	  bottom: 42px; //positioning page-dots accordingly
+	}
+	img{
+		margin: 0 auto;
+		width: 182px;
+	}
+}
+
+/*
+	Conectividad
+*/
+.conectividad{
+	background-color: #EDEDED;
+	text-align: center;
+
+	.conectividad-item{
+		padding: 20px;
+		color: #8C8B8B;
+		h3{
+			text-transform: uppercase;
+			font-size: 19px;
+		}
+
+		&:hover{ //hover effect
+			background-color: $liderman-orange;
+			color: white;
+			.conectividad-inner{
+				border: 3px solid white;
+			}
+		}
+
+		.conectividad-inner{
+			border: 3px solid #8C8B8B;
+			padding: 20px;
+		}
+	}	
+}
+
+/*
+	Noticias
+*/
+
+.grid-noticias{
+	.grid-list-item{
+		padding: 7px;
+		.list-item-noticias{
+			border: 1px solid #979797;
+			padding: 14px; 
+			&:hover {
+				background-color: rgb(237, 237, 237);
+			}
+			h3{ //news title
+				text-transform: uppercase;
+			}
+			small{ //date
+				color: #B92A30;
+			}
+		}
+	}
+}
+
+
+/*
+	Contáctanos
+*/
+
+.contactanos{
+	text-align: center;
+	.grid-contactanos{
+		.grid-list-item{
+			padding: 0;
+			.list-item-contactanos{
+				img{
+					width: 55px;
+					margin: 0 auto;
+					border: 1px solid white;
+				}
+			}
+		}
+	}
+	.grid-redes{
+		img{
+			width: 40px;
+			height: 40px;
+			border: 1px solid white;
+			padding: 7px;
+			float: left;
+		}
+	}
+	select{
+		color: #7D7E7F;
+  	background-color: #fff;
+  	background-image: none;
+  	border: 1px solid #ccc;
+  	border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	}
+}
+
+/*
+	Footer
+*/
+
+.footer{
+	background-color: $liderman-black;
+	input{
+		background-color: $liderman-black;
+		border: 1px solid white;
+		border-radius: 0;
+		float: left;
+	}
+	.direction p{
+		color: white;
+		font-size: 11px;
+	}
+
+	.btn-liderman-footer{
+		border: 1px solid white;
+		padding: 6px 20px;
+		background-color: rgb(140, 138, 139);
+	}
+}
