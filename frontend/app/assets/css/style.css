@@ -5185,6 +5185,10 @@ p {
   font-size: 18px;
   padding: 4px 18px;
 }
+.header-scroll .header-right img,
+.header-scroll-fixed .header-right img {
+  height: 24px;
+}
 .header-scroll .header-right .btn-liderman,
 .header-scroll-fixed .header-right .btn-liderman {
   font-size: 18px;
@@ -5356,7 +5360,7 @@ p {
   height: 900px;
 }
 .reconocimientos .flickity-page-dots {
-  bottom: -165px;
+  bottom: -170px;
 }
 .reconocimientos img {
   margin: 0 auto;

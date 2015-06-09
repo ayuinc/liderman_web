@@ -199,6 +199,9 @@ $liderman-black: #4A4A4A;
 	}
 
 	.header-right{
+		img{
+			height: 24px;
+		}
 		.btn-liderman{
 			font-size: 18px;
 			padding: 4px 18px;
@@ -380,7 +383,7 @@ $liderman-black: #4A4A4A;
 	position: relative;
 	height: 900px;
 	.flickity-page-dots {
-	  bottom: -165px; //positioning page-dots accordingly
+	  bottom: -170px; //positioning page-dots accordingly
 	}
 	img{
 		margin: 0 auto;
