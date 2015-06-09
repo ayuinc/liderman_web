@@ -5038,12 +5038,46 @@ p {
 /*
 	utility classes
 */
+/* BORDER */
+.border-gray-lighter {
+  border: 2px solid #F0F0F0;
+}
+
+.border-gray-light {
+  border: 2px solid #b5b6b7;
+}
+
+.border-gray {
+  border: 2px solid #7D7E7F;
+}
+
+.border-gray-dark {
+  border: 2px solid #707274;
+}
+
+.border-gray-darker {
+  border: 2px solid #3E3F40;
+}
+
+/* END: BORDER */
+.bg-black-liderman {
+  background-color: #4A4A4A;
+}
+
+.bg-orange-liderman {
+  background-color: #F7941D;
+}
+
 .text-black {
   color: #4A4A4A;
 }
 
 .text-orange {
   color: #F7941D;
+}
+
+.text-red {
+  color: #B92A30;
 }
 
 .btn-liderman {
@@ -5154,6 +5188,10 @@ p {
 .header-scroll-fixed .header-center .btn-liderman {
   font-size: 18px;
   padding: 4px 18px;
+}
+.header-scroll .header-right img,
+.header-scroll-fixed .header-right img {
+  height: 24px;
 }
 .header-scroll .header-right .btn-liderman,
 .header-scroll-fixed .header-right .btn-liderman {
@@ -5323,14 +5361,14 @@ p {
 */
 .reconocimientos {
   position: relative;
-  height: 600px;
+  height: 900px;
 }
 .reconocimientos .flickity-page-dots {
-  bottom: 42px;
+  bottom: -170px;
 }
 .reconocimientos img {
   margin: 0 auto;
-  width: 182px;
+  width: 450px;
 }
 
 /*
@@ -5379,6 +5417,9 @@ p {
 .grid-noticias .grid-list-item .list-item-noticias small {
   color: #B92A30;
 }
+.grid-noticias .grid-list-item .list-item-noticias p {
+  font-size: 18px;
+}
 
 /*
 	Cont├íctanos
@@ -5402,13 +5443,20 @@ p {
   float: left;
 }
 .contactanos select {
+  width: 100%;
+  text-indent: 40%;
   color: #7D7E7F;
+  cursor: pointer;
   background-color: #fff;
-  background-image: none;
   border: 1px solid #ccc;
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  background-image: url(../img/dropdown-formulario.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  appearance: none;
+  -webkit-appearance: none;
 }
 
 /*
@@ -5436,7 +5484,7 @@ p {
 /*
 	QUIENES SOMOS
 */
-.img-quienes-somos {
+.img-liderman {
   width: 700px;
   margin: 0 auto;
 }
@@ -5444,6 +5492,52 @@ p {
 /* 
 	CLIENTES 
 */
+/*
+	QUIERO SER LIDERMAN
+*/
+.list-liderman {
+  font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 21px;
+  padding-left: 24px;
+}
+.list-liderman li {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+.list-liderman li p {
+  font-family: "Merriweather", Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+}
+
+.text-description {
+  font-size: 18px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+select {
+  background-image: url(../img/dropdown-formulario.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+/*
+	CONECTIVIDAD
+*/
+.icon-title {
+  width: 50px;
+  height: 50px;
+}
+
+/* 
+	FAMILIA LIDERMAN 
+*/
+.grid-equipo li img {
+  width: 130px;
+}
+
 a.btn.form-control,
 button.btn.form-control,
 input[type="submit"].btn.form-control,
