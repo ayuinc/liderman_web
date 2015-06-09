@@ -5076,6 +5076,10 @@ p {
   color: #F7941D;
 }
 
+.text-red {
+  color: #B92A30;
+}
+
 .btn-liderman {
   text-transform: uppercase;
   font-size: 21px;

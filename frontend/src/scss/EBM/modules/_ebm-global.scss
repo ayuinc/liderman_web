@@ -37,6 +37,7 @@ p{
 
 $liderman-orange: #F7941D;
 $liderman-black: #4A4A4A;
+$liderman-red: #B92A30;
 
 /*
 	utility classes
@@ -81,6 +82,10 @@ $liderman-black: #4A4A4A;
 
 .text-orange{
 	color: $liderman-orange;
+}
+
+.text-red{
+	color: $liderman-red;
 }
 
 .btn-liderman{ //custom liderman button
