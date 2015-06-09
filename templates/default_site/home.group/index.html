@@ -1,9 +1,164 @@
 {embed="includes/head"}
-  {embed="includes/valores"}
+{embed="includes/header"}
+  
   {exp:channel:entries channel="home" limit="1" dynamic="off"}
-    <img src="{imagen_reconocimiento}" alt="">
-    <h1>{titulo_reconocimiento}</h1>
-    <p>{descripcion_reconocimientos}</p>
+      <section class="mt-49-xs hero-unit minh-630 main-hero-unit p-0"><!-- main hero -->
+      <div class="bg-gallery-wrapper">
+        <div class="section-padding-horizontal bg-img-block" style="background-image:url({site_url}app/assets/img/background-liderman.jpg); height: 100%;">
+          <div class="gallery-cell-wrapper">
+            <div class="gallery-cell-content flex-middle-center">
+              <div class="container pt-70 text-white lead-ch text-shadow text-center">
+                <div class="row pt-70">
+                  <div class="col-xs-6 col-xs-offeset-6">
+                    <img src="{site_url}app/assets/img/logo-liderman-white.png" alt="Liderman" class="img-responsive logo pb-42">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   {/exp:channel:entries}
+    <a href="#quienes-somos"><img class="img-responsive arrow" src="{site_url}app/assets/img/down-arrow.png"></a>
+		{embed="includes/valores"}
+		{embed="includes/reconocimientos"}
+
+    <section class="section-padding-horizontal clientes" id="clientes"> <!-- Clientes -->
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-title section-title text-black pb-21">Clientes</h2>
+        </div>
+        <div class="pb-28">
+          <div class="grid-list grid-list-4 grid-list-xs-1">
+          	{exp:channel:entries channel="clientes" limit="8" categories="1"}
+            <div class="grid-list-item"><img src="{imagen_clientes}" alt="" class="img-responsive"></div>
+            {/exp:channel:entries}
+          </div>
+         <!--  <div class="grid-list grid-list-4 grid-list-xs-1">
+           <div class="grid-list-item"><img src="assets/img/img.png" alt="" class="img-responsive"></div>
+           <div class="grid-list-item"><img src="assets/img/img.png" alt="" class="img-responsive"></div>
+           <div class="grid-list-item"><img src="assets/img/img.png" alt="" class="img-responsive"></div>
+           <div class="grid-list-item"><img src="assets/img/img.png" alt="" class="img-responsive"></div>
+         </div> -->
+        </div>
+        <div class="text-center pt-21">
+          <a href="#" class="btn-liderman btn-liderman-gray">
+            <span>Ver m&#xE1;s</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding-horizontal bg-img-block" style="background-image: url(assets/img/img.png);"> <!-- forma parte de liderman -->
+      <div class="container-fluid">
+        <div class="container">
+          <div class="text-center">
+            <h2 class="section-title text-white pb-28">Forma parte de Liderman</h2>
+            <p class="text-intro text-white pb-21">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia odit eum molestiae dolore sed illum, aliquam minus recusandae itaque obcaecati sit sunt nostrum repudiandae culpa voluptas at eos. Officia, aut.</p>
+            <a href="#" class="btn-liderman btn-liderman-white">
+              <span>Postula</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding-horizontal noticias" id="noticias"> <!-- noticias --> 
+      <div class="container text-center">
+        <h2 class="section-title text-center pb-28 text-black">Noticias</h2>   
+        <ul class="grid-list grid-list-3 text-left grid-list-1-xs grid-noticias pb-21">
+        {exp:ajw_feedparser 
+				  url="http://www.liderman.com.pe/feed/"
+				  cache_refresh="30"
+				  limit="3"
+				  parse="inward"
+				} 
+          <li class="grid-list-item">
+            <div class="list-item-noticias">
+              <img class="img-responsive" src="assets/img/img.png" alt="Cultura Liderman">
+              <h3 class="pt-14">
+              	{title}
+              </h3>
+              <small>{pubDate}</small>
+              <p class="pv-14">{description}</p>
+            </div>
+          </li>
+          {/exp:ajw_feedparser}
+<!--           <li class="grid-list-item">
+            <div class="list-item-noticias">
+              <img class="img-responsive" src="assets/img/img.png" alt="Cultura Liderman">
+              <h3 class="pt-14">Titulo de la noticia</h3>
+              <small>18 de abril del 2015</small>
+              <p class="pv-14">Te doming nostro quodsi his. In labitur fabellas repudia eos simul praesent ei.</p>
+            </div>
+          </li>
+          <li class="grid-list-item">
+            <div class="list-item-noticias">
+              <img class="img-responsive" src="assets/img/img.png" alt="Cultura Liderman">
+              <h3 class="pt-14">Titulo de la noticia</h3>
+              <small>18 de abril del 2015</small>
+              <p class="pv-14">Te doming nostro quodsi his. In labitur fabellas repudia eos simul praesent ei.</p>
+            </div>
+          </li> -->
+        </ul>
+        <a href="#" class="btn-liderman btn-liderman-gray">Leer m&#xE1;s</a>    
+      </div>
+    </section>
+
+    <section class="section-padding-horizontal bg-img-block contactanos" style="background-image: url(assets/img/img.png);" id="contactanos"> <!-- Contactanos -->
+      <div class="container-xs text-center">
+        <h2 class="section-title text-center pb-28 text-white">Contáctanos</h2>   
+        <p class="text-white text-intro">A través de las redes sociales:</p>
+        <ul class="grid-list grid-list-3 grid-list-1 grid-contactanos pv-35 ph-70">
+          <li class="grid-list-item">
+            <div class="list-item-contactanos">
+              <img class="img-responsive img-circle" src="assets/img/img-sq.png">
+  
+            </div>
+          </li>
+          <li class="grid-list-item">
+            <div class="list-item-contactanos">
+              <img class="img-responsive img-circle" src="assets/img/img-sq.png">
+            </div>
+          </li>
+          <li class="grid-list-item">
+            <div class="list-item-contactanos">
+              <img class="img-responsive img-circle" src="assets/img/img-sq.png">
+            </div>
+          </li>
+        </ul>
+        <p class="text-white text-intro">o llenando éste formulario:</p>
+        <form class="ph-21">
+          <input type="text" class="form-control text-center pv-21 uppercase light input-center mt-21" width="210" height="auto" placeholder="nombre" required="">
+          <input type="email" class="form-control text-center pv-21 uppercase light input-center mt-21" width="210" height="auto" placeholder="correo" required="">
+          <input type="email" class="form-control text-center pv-21 uppercase light input-center mt-21" width="210" height="auto" placeholder="correo electrónico" required="">
+          <select name="decision" style="width: 100%; text-indent: 40%;"class=" text-center pv-7 uppercase light input-center mt-21" value="0">
+            <option class="text-center" value="0" selected="0">Tipo de Usuario</option>               
+            <option value="1">Un cliente</option>
+            <option value="2">Un postulante</option>
+            <option value="3">Un liderman</option>
+            <option value="4">Un ciudadano</option>
+            <option value="5">Otros</option>
+          </select>
+          <select name="decision" style="width: 100%; text-indent: 45%;"class=" text-center pv-7 uppercase light input-center mt-21" value="1">
+            <option>Quiero</option>               
+            <option value="1">Un cliente</option>
+            <option value="2">Un postulante</option>
+            <option value="3">Un liderman</option>
+            <option value="4">Un ciudadano</option>
+            <option value="5">Otros</option>
+          </select>
+          <textarea type="area" class="form-control text-center pv-21 uppercase light input-center mt-21" width="210" height="auto" placeholder="escribe tu mensaje" required=""></textarea>
+          <div class="text-right pt-35">
+            <a href="#" class="btn-liderman btn-liderman-white">
+              <span>Enviar</span>
+            </a>
+          </div>
+        </form>
+      </div>
+    </section>
+    
 
 {embed="includes/footer"}
