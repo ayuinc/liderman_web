@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+              <meta charset="UTF-8">
+              <title>Hello, World!</title>
+      </head>
+
+      <body>
+        {exp:channel:entries channel="home" limit="1" dynamic="off"}
+              <img src="{imagen_reconocimiento}" alt="">
+              <h1>{titulo_reconocimiento}</h1>
+              <p>
+              {descripcion_reconocimientos}
+              </p>
+        {/exp:channel:entries}
+      </body>
+</html>
