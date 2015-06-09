@@ -50,6 +50,26 @@ $liderman-black: #4A4A4A;
 	background-color: $liderman-orange;
 }
 
+.border-gray-lighter{
+	border: 2px solid $gray-lighter;
+}
+
+.border-gray-light{
+	border: 2px solid $gray-light;
+}
+
+.border-gray{
+	border: 2px solid $gray;
+}
+
+.border-gray-dark{
+	border: 2px solid $gray-dark;
+}
+
+.border-gray-darker{
+	border: 2px solid $gray-darker;
+}
+
 .text-black{
 	color: $liderman-black;
 }
@@ -540,4 +560,16 @@ select{
 .icon-title{
 	width: 50px;
 	height: 50px;
+}
+
+/* 
+	FAMILIA LIDERMAN 
+*/
+
+.grid-equipo {
+	li{
+		img{
+			width: 130px;
+		}
+	}
 }

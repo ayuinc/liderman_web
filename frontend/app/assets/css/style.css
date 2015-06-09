@@ -5046,6 +5046,26 @@ p {
   background-color: #F7941D;
 }
 
+.border-gray-lighter {
+  border: 2px solid #F0F0F0;
+}
+
+.border-gray-light {
+  border: 2px solid #b5b6b7;
+}
+
+.border-gray {
+  border: 2px solid #7D7E7F;
+}
+
+.border-gray-dark {
+  border: 2px solid #707274;
+}
+
+.border-gray-darker {
+  border: 2px solid #3E3F40;
+}
+
 .text-black {
   color: #4A4A4A;
 }
@@ -5496,6 +5516,13 @@ select {
 .icon-title {
   width: 50px;
   height: 50px;
+}
+
+/* 
+	FAMILIA LIDERMAN 
+*/
+.grid-equipo li img {
+  width: 130px;
 }
 
 a.btn.form-control,
