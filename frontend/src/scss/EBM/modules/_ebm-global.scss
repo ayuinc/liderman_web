@@ -42,13 +42,7 @@ $liderman-black: #4A4A4A;
 	utility classes
 */
 
-.bg-black-liderman{
-	background-color: $liderman-black;
-}
-
-.bg-orange-liderman{
-	background-color: $liderman-orange;
-}
+/* BORDER */
 
 .border-gray-lighter{
 	border: 2px solid $gray-lighter;
@@ -68,6 +62,17 @@ $liderman-black: #4A4A4A;
 
 .border-gray-darker{
 	border: 2px solid $gray-darker;
+}
+
+
+/* END: BORDER */
+
+.bg-black-liderman{
+	background-color: $liderman-black;
+}
+
+.bg-orange-liderman{
+	background-color: $liderman-orange;
 }
 
 .text-black{
@@ -432,6 +437,9 @@ $liderman-black: #4A4A4A;
 			small{ //date
 				color: #B92A30;
 			}
+			p{
+				font-size: 18px;
+			}
 		}
 	}
 }
@@ -546,7 +554,7 @@ $liderman-black: #4A4A4A;
 }
 
 select{
-	background-image: url(assets/img/dropdown-formulario.png);
+	background-image: url(../img/dropdown-formulario.png);
   	background-repeat: no-repeat;
   	background-position: right;
   	appearance: none;

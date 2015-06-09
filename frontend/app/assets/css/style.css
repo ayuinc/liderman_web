@@ -5038,14 +5038,7 @@ p {
 /*
 	utility classes
 */
-.bg-black-liderman {
-  background-color: #4A4A4A;
-}
-
-.bg-orange-liderman {
-  background-color: #F7941D;
-}
-
+/* BORDER */
 .border-gray-lighter {
   border: 2px solid #F0F0F0;
 }
@@ -5064,6 +5057,15 @@ p {
 
 .border-gray-darker {
   border: 2px solid #3E3F40;
+}
+
+/* END: BORDER */
+.bg-black-liderman {
+  background-color: #4A4A4A;
+}
+
+.bg-orange-liderman {
+  background-color: #F7941D;
 }
 
 .text-black {
@@ -5407,6 +5409,9 @@ p {
 .grid-noticias .grid-list-item .list-item-noticias small {
   color: #B92A30;
 }
+.grid-noticias .grid-list-item .list-item-noticias p {
+  font-size: 18px;
+}
 
 /*
 	Cont├íctanos
@@ -5503,7 +5508,7 @@ p {
 }
 
 select {
-  background-image: url(assets/img/dropdown-formulario.png);
+  background-image: url(../img/dropdown-formulario.png);
   background-repeat: no-repeat;
   background-position: right;
   appearance: none;
