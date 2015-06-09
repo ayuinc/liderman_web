@@ -1,0 +1,17 @@
+<section class="pv-42 bg-img-block reconocimientos" id="reconocimientos" style="background-image:url({site_url}app/assets/img/reconocimientos-textura.png); height: 100%;"> <!-- Reconocimientos -->
+      <h2 class="section-title text-white text-center pt-28">Reconocimientos</h2>
+      <div class="gallery js-flickity" data-flickity-options='{ "prevNextButtons": false }'>
+      {exp:channel:entries channel="reconocimientos" limit="5"}
+        <div class="gallery-cell">
+          <div class="container-sm pt-35 pb-70 mb-21 text-white lead-ch text-shadow text-center">
+            <img src="{imagen_recono}" alt="" class="img-responsive pt-7">
+            <h3 class="text-white pt-7">{titulo_recono}</h3>
+            <p class="pt-7 pb-21">{descripcion_recono}</p>
+            <a href="{link_recono}" class="btn-liderman btn-liderman-white">
+              <span>Leer m&#xE1;s</span>
+            </a>
+          </div>
+        </div>
+      {/exp:channel:entries}
+      </div>
+    </section>
