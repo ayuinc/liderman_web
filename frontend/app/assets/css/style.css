@@ -5208,6 +5208,11 @@ p {
   height: 30px;
 }
 
+.icon-btn {
+  height: 26px;
+  padding-bottom: 3px;
+}
+
 /* 
 	main hero image
 */
@@ -5352,17 +5357,48 @@ p {
   margin-bottom: 10px;
   padding: 12px 0;
 }
+.quienes-somos .quienes-somos-item .quienes-somos-inner {
+  border: 3px solid white;
+}
 .quienes-somos .quienes-somos-item:hover {
   background-color: #F7941D;
   color: white;
 }
-.quienes-somos .quienes-somos-item:hover .quienes-somos-inner {
-  border: 3px solid white;
+.quienes-somos .quienes-somos-item:hover .icon-familia-liderman {
+  background-image: url(../icons/familia-liderman-blanco-home.png);
+}
+.quienes-somos .quienes-somos-item:hover .icon-cultura-liderman {
+  background-image: url(../icons/cultura-liderman-blanco-home.png);
+}
+.quienes-somos .quienes-somos-item:hover .icon-lidermania {
+  background-image: url(../icons/lidermania-blanco-home.png);
+}
+.quienes-somos .quienes-somos-item:hover .icon-conectividad {
+  background-image: url(../icons/conectividad-blanco-home.png);
 }
 .quienes-somos .quienes-somos-item .quienes-somos-inner {
-  padding: 10px;
+  padding: 25px 10px;
   text-align: center;
-  height: 200px;
+  height: 165px;
+}
+.quienes-somos .quienes-somos-item .icon-quienes-somos {
+  height: 50px;
+  margin: 0 auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.quienes-somos .quienes-somos-item .icon-familia-liderman {
+  background-image: url(../icons/familia-liderman-gris-home.png);
+}
+.quienes-somos .quienes-somos-item .icon-cultura-liderman {
+  background-image: url(../icons/cultura-liderman-gris-home.png);
+}
+.quienes-somos .quienes-somos-item .icon-lidermania {
+  background-image: url(../icons/lidermania-gris-home.png);
+}
+.quienes-somos .quienes-somos-item .icon-conectividad {
+  background-image: url(../icons/conectividad-gris-home.png);
 }
 
 /* 
