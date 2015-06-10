@@ -223,6 +223,11 @@ $liderman-red: #B92A30;
 	height: 30px;
 }
 
+.icon-btn{
+	height: 26px;
+	padding-bottom: 3px;
+}
+
 /* 
 	main hero image
 */
@@ -373,19 +378,63 @@ $liderman-red: #B92A30;
 			padding: 12px 0;
 		}
 
+		.quienes-somos-inner{
+			border: 3px solid white;
+		}
+
 		&:hover{ //hover effect
 			background-color: $liderman-orange;
 			color: white;
-			.quienes-somos-inner{
-				border: 3px solid white;
+
+			.icon-familia-liderman{
+				background-image: url(../icons/familia-liderman-blanco-home.png);
 			}
+
+			.icon-cultura-liderman{
+				background-image: url(../icons/cultura-liderman-blanco-home.png);
+			}
+
+			.icon-lidermania{
+				background-image: url(../icons/lidermania-blanco-home.png);
+			}
+
+			.icon-conectividad{
+				background-image: url(../icons/conectividad-blanco-home.png);
+			}
+
 		}
 
 		.quienes-somos-inner{
-			padding: 10px;
+			padding: 25px 10px;
 			text-align: center;
-			height: 200px;
+			height: 165px;
 		}
+
+		.icon-quienes-somos{
+			height: 50px;
+			margin: 0 auto;
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+
+		.icon-familia-liderman{
+			background-image: url(../icons/familia-liderman-gris-home.png);
+		}
+
+		.icon-cultura-liderman{
+			background-image: url(../icons/cultura-liderman-gris-home.png);
+		}
+
+		.icon-lidermania{
+			background-image: url(../icons/lidermania-gris-home.png);
+		}
+
+		.icon-conectividad{
+			background-image: url(../icons/conectividad-gris-home.png);
+		}
+
+
 	}	
 }
 
