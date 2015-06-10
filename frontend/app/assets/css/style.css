@@ -5479,14 +5479,6 @@ p {
 .contactanos .grid-contactanos .grid-list-item .list-item-contactanos img {
   width: 55px;
   margin: 0 auto;
-  border: 1px solid white;
-}
-.contactanos .grid-redes img {
-  width: 40px;
-  height: 40px;
-  border: 1px solid white;
-  padding: 7px;
-  float: left;
 }
 .contactanos select {
   width: 100%;
