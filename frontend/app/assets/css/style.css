@@ -5420,7 +5420,7 @@ p {
   font-size: 14px;
   font-style: italic;
 }
-.reconocimientos img {
+.reconocimientos .img-reconocimiento {
   margin: 0 auto;
   width: 450px;
   height: 340px;
