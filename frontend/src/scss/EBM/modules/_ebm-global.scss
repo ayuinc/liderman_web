@@ -138,6 +138,11 @@ $liderman-red: #B92A30;
 	color: 505050;
 }
 
+.text-intro-slider{
+	padding: 0 15%;
+	color: 505050;
+}
+
 .text-frase {
 	font-size: $font-size-h3;
 	color: $gray-dark;
@@ -447,6 +452,10 @@ $liderman-red: #B92A30;
 	height: 900px;
 	.flickity-page-dots {
 	  bottom: -170px; //positioning page-dots accordingly
+	}
+	p{
+		font-size: 14px;
+		font-style: italic;
 	}
 	img{
 		margin: 0 auto;
