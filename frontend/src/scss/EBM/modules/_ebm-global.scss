@@ -289,7 +289,7 @@ $liderman-red: #B92A30;
 	height: 100%;
 	top: 0;
 	left: 0;
-	background-image: url(assets/img/reconocimientos-textura.png);
+	background-image: url(../assets/img/tayas-menu.png);
 	z-index:100;
 }
 
@@ -333,7 +333,8 @@ $liderman-red: #B92A30;
 
 .overlay ul li a:hover,
 .overlay ul li a:focus {
-	color: $liderman-orange;
+	color: $gray-light;
+	border-bottom: 1px solid $gray-light;
 }
 
 /* Effects */

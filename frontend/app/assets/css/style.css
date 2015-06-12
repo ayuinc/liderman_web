@@ -5273,7 +5273,7 @@ p {
   height: 100%;
   top: 0;
   left: 0;
-  background-image: url(assets/img/reconocimientos-textura.png);
+  background-image: url(../assets/img/tayas-menu.png);
   z-index: 100;
 }
 
@@ -5316,7 +5316,8 @@ p {
 
 .overlay ul li a:hover,
 .overlay ul li a:focus {
-  color: #F7941D;
+  color: #b5b6b7;
+  border-bottom: 1px solid #b5b6b7;
 }
 
 /* Effects */
