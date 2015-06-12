@@ -5168,7 +5168,7 @@ p {
 .header,
 .header-scroll,
 .header-scroll-fixed {
-  z-index: 1000;
+  z-index: 100;
 }
 .header .header-left img,
 .header-scroll .header-left img,
@@ -5214,6 +5214,16 @@ p {
   height: 30px;
   width: 40px;
   bottom: 3px;
+  border-radius: 2.85714px;
+  transition: 9s;
+  position: relative;
+}
+
+.icon-cerrar {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  bottom: 0px;
   border-radius: 2.85714px;
   transition: 9s;
   position: relative;
@@ -5272,7 +5282,7 @@ p {
 .overlay nav {
   text-align: center;
   position: relative;
-  top: 50%;
+  top: 42%;
   height: 60%;
   font-size: 25px;
   -webkit-transform: translateY(-50%);
