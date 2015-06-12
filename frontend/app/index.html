@@ -33,10 +33,16 @@
               <div class="row">
                 <div class="col-md-4"></div>
                 <div class="col-md-5"></div>
-                <div class="col-md-3">
+                <!-- <div class="col-md-3">
                   <a type="button" class="tcon tcon-menu--xcross" id="tcon-menu--xcross" aria-label="toggle menu">
                     <span class="text-white pr-14">MEN&#xDA;</span>
                     <span class="tcon-menu__lines" aria-hidden="true"></span>
+                  </a>
+                </div> -->
+                <div class="col-md-3" >
+                  <a href="" id="trigger-overlay" aria-label="toggle menu">
+                    <span class="text-gray-light pr-14">MEN&#xDA;</span>
+                    <img class="icon-menu" src="assets/icons/menu-icono.png">
                   </a>
                 </div>
               </div>
@@ -53,19 +59,19 @@
             </div>
             <div class="header-right col-md-6">
               <div class="row">
-                <div class="col-md-9" style="padding-top: 7px;">
+                <div class="col-md-9" style="padding-top: 3px;">
                     <div class="col-md-6">
                       <div class="col-md-3">
-                        <a href=""><img src="assets/icons/facebook-icono.png"></a>
+                        <a href=""><img class="img-redes" src="assets/icons/facebook-icono.png"></a>
                       </div>
                       <div class="col-md-3">
-                        <a href=""><img src="assets/icons/twitter-icono.png"></a>
+                        <a href=""><img class="img-redes" src="assets/icons/twitter-icono.png"></a>
                       </div>
                       <div class="col-md-3">
-                        <a href=""><img src="assets/icons/youtube-icono.png"></a>
+                        <a href=""><img class="img-redes" src="assets/icons/youtube-icono.png"></a>
                       </div>
                       <div class="col-md-3">
-                        <a href=""><img src="assets/icons/mundo-redes-icono.png"></a>
+                        <a href=""><img class="img-redes" src="assets/icons/mundo-redes-icono.png"></a>
                       </div>
                     </div>
                     <div class="col-md-6 text-center">
@@ -74,10 +80,16 @@
                       </a>
                     </div>
                 </div>
-                <div class="col-md-3 col-xs-12">
+                <!-- <div class="col-md-3 col-xs-12">
                   <a type="button" class="tcon tcon-menu--xcross" id="tcon-menu--xcross" aria-label="toggle menu">
                     <span class="text-white pr-14">MEN&#xDA;</span>
                     <span class="tcon-menu__lines" aria-hidden="true"></span>
+                  </a>
+                </div> -->
+                <div class="col-md-3 col-xs-12" >
+                  <a href="">
+                    <span class="text-gray-light pr-14">MEN&#xDA;</span>
+                    <img class="icon-menu" src="assets/icons/menu-icono.png">
                   </a>
                 </div>
               </div>
@@ -85,7 +97,12 @@
           </div>
         </div>
     </header>
+
     <div class="overlay overlay-hugeinc" style="background-image: url(assets/img/reconocimientos-textura.png);">
+      <a href="">
+        <span class="text-gray-light pr-14">CERRAR</span>
+        <img class="icon-menu" src="assets/icons/cerrar-icono.png">
+      </a>
       <nav>
         <ul class="uppercase">
           <li><a class="overlay-close" href="#quienes-somos">Quienes somos</a></li>
@@ -144,7 +161,6 @@
       </div>
     </section>
 
-
     <a href="#quienes-somos"><img class="img-responsive arrow" src="assets/img/down-arrow.png"></a>
 
     <section class="pb-70 quienes-somos" id="quienes-somos"> <!-- Quienes Somos --> 
@@ -152,13 +168,14 @@
         <div class="text-center pb-35">
           <h2 class="section-title pb-21 text-black">Quiénes Somos</h2>
           <p class="text-intro pb-28">Te domingo nostro quodsi his. In labitur fabellas repudiandae eos. Simul vitae ptant ad mei, vix congue praesent ei.</p>     
-          <a href="#" class="btn-liderman btn-liderman-gray">
+          <a href="quienes-somos.html" class="btn-liderman btn-liderman-gray">
             <span>Ver m&#xE1;s</span>
+            <img class="pl-7 pb-7" src="assets/icons/dropdown-btn-gray.png">
           </a>   
         </div>
         <ul class="grid-list grid-list-4 grid-list-1-xs text-center">
           <li class="grid-list-item">
-            <a href="#">
+            <a href="familia-liderman.html">
               <div class="quienes-somos-item">
                 <div class="quienes-somos-inner">
                   <div class="mt-7 icon-quienes-somos icon-familia-liderman"></div>
@@ -168,7 +185,7 @@
             </a>
           </li>
           <li class="grid-list-item">
-            <a href="#">
+            <a href="cultura-liderman.html">
               <div class="quienes-somos-item">
                 <div class="quienes-somos-inner">
                   <div class="mt-7 icon-quienes-somos icon-cultura-liderman"></div>
@@ -178,7 +195,7 @@
             </a>
           </li>
           <li class="grid-list-item">
-            <a href="#">
+            <a href="lidermania.html">
               <div class="quienes-somos-item">
                 <div class="quienes-somos-inner">
                   <div class="mt-7 icon-quienes-somos icon-lidermania"></div>
@@ -188,7 +205,7 @@
             </a>
           </li>
           <li class="grid-list-item">
-            <a href="#">
+            <a href="conectividad.html">
               <div class="quienes-somos-item">
                 <div class="quienes-somos-inner">
                   <div class="mt-7 icon-quienes-somos icon-conectividad"></div>
@@ -210,51 +227,56 @@
       <div class="gallery js-flickity" data-flickity-options='{ "prevNextButtons": false, "autoPlay": true }'>
         <div class="gallery-cell">
           <div class="container-sm pt-35 pb-70 mb-21 text-white lead-ch text-shadow text-center">
-            <img src="assets/img/img.png" alt="" class="img-responsive pt-7">
-            <h3 class="text-white pt-7">Premio de Responsabilidad</h3>
-            <p class="pt-7 pb-21">Te doming nostro quodsi his. In labitur fabellas repudiandae eos. Simul vitae putant ad mei, vix congue praesent ei. Cu justo homero recusabo mel, exerci bonorum ut pri.</p>
+            <img src="assets/img/img.png" alt="" class="img-reconocimiento img-responsive pt-7">
+            <h4 class="text-white pv-21">Premio de Responsabilidad</h4>
+            <p class="text-intro pb-35">Te doming nostro quodsi his. In labitur fabellas repudiandae eos. Simul vitae putant ad mei, vix congue praesent ei. Cu justo homero recusabo mel, exerci bonorum ut pri.</p>
             <a href="#" class="btn-liderman btn-liderman-white">
               <span>Leer m&#xE1;s</span>
+              <img class="pl-7 pb-7" src="assets/icons/dropdown-btn-white.png">
             </a>
           </div>
         </div>
         <div class="gallery-cell">
           <div class="container-sm pt-35 pb-70 mb-21 text-white lead-ch text-shadow text-center">
-            <img src="assets/img/img.png" alt="" class="img-responsive pt-7">
-            <h3 class="text-white pt-7">Premio de Responsabilidad</h3>
-            <p class="pt-7 pb-21">Te doming nostro quodsi his. In labitur fabellas repudiandae eos. Simul vitae putant ad mei, vix congue praesent ei. Cu justo homero recusabo mel, exerci bonorum ut pri.</p>
+            <img src="assets/img/img.png" alt="" class="img-reconocimiento img-responsive pt-7">
+            <h4 class="text-white pv-21">Premio de Responsabilidad</h4>
+            <p class="text-intro pb-35">Te doming nostro quodsi his. In labitur fabellas repudiandae eos. Simul vitae putant ad mei, vix congue praesent ei. Cu justo homero recusabo mel, exerci bonorum ut pri.</p>
             <a href="#" class="btn-liderman btn-liderman-white">
               <span>Leer m&#xE1;s</span>
+              <img class="pl-7 pb-7" src="assets/icons/dropdown-btn-white.png">
             </a>
           </div>
         </div>
         <div class="gallery-cell">
           <div class="container-sm pt-35 pb-70 mb-21 text-white lead-ch text-shadow text-center">
-            <img src="assets/img/img.png" alt="" class="img-responsive pt-7">
-            <h3 class="text-white pt-7">Premio de Responsabilidad</h3>
-            <p class="pt-7 pb-21">Te doming nostro quodsi his. In labitur fabellas repudiandae eos. Simul vitae putant ad mei, vix congue praesent ei. Cu justo homero recusabo mel, exerci bonorum ut pri.</p>
+            <img src="assets/img/img.png" alt="" class="img-reconocimiento img-responsive pt-7">
+            <h4 class="text-white pv-21">Premio de Responsabilidad</h4>
+            <p class="text-intro pb-35">Te doming nostro quodsi his. In labitur fabellas repudiandae eos. Simul vitae putant ad mei, vix congue praesent ei. Cu justo homero recusabo mel, exerci bonorum ut pri.</p>
             <a href="#" class="btn-liderman btn-liderman-white">
               <span>Leer m&#xE1;s</span>
+              <img class="pl-7 pb-7" src="assets/icons/dropdown-btn-white.png">
             </a>
           </div>
         </div>
         <div class="gallery-cell">
           <div class="container-sm pt-35 pb-70 mb-21 text-white lead-ch text-shadow text-center">
-            <img src="assets/img/img.png" alt="" class="img-responsive pt-7">
-            <h3 class="text-white pt-7">Premio de Responsabilidad</h3>
-            <p class="pt-7 pb-21">Te doming nostro quodsi his. In labitur fabellas repudiandae eos. Simul vitae putant ad mei, vix congue praesent ei. Cu justo homero recusabo mel, exerci bonorum ut pri.</p>
+            <img src="assets/img/img.png" alt="" class="img-reconocimiento img-responsive pt-7">
+            <h4 class="text-white pv-21">Premio de Responsabilidad</h4>
+            <p class="text-intro pb-35">Te doming nostro quodsi his. In labitur fabellas repudiandae eos. Simul vitae putant ad mei, vix congue praesent ei. Cu justo homero recusabo mel, exerci bonorum ut pri.</p>
             <a href="#" class="btn-liderman btn-liderman-white">
               <span>Leer m&#xE1;s</span>
+              <img class="pl-7 pb-7" src="assets/icons/dropdown-btn-white.png">
             </a>
           </div>
         </div>
         <div class="gallery-cell">
           <div class="container-sm pt-35 pb-70 mb-21 text-white lead-ch text-shadow text-center">
-            <img src="assets/img/img.png" alt="" class="img-responsive pt-7">
-            <h3 class="text-white pt-7">Premio de Responsabilidad</h3>
-            <p class="pt-7 pb-21">Te doming nostro quodsi his. In labitur fabellas repudiandae eos. Simul vitae putant ad mei, vix congue praesent ei. Cu justo homero recusabo mel, exerci bonorum ut pri.</p>
+            <img src="assets/img/img.png" alt="" class="img-reconocimiento img-responsive pt-7">
+            <h4 class="text-white pv-21">Premio de Responsabilidad</h4>
+            <p class="text-intro pb-35">Te doming nostro quodsi his. In labitur fabellas repudiandae eos. Simul vitae putant ad mei, vix congue praesent ei. Cu justo homero recusabo mel, exerci bonorum ut pri.</p>
             <a href="#" class="btn-liderman btn-liderman-white">
               <span>Leer m&#xE1;s</span>
+              <img class="pl-7 pb-7" src="assets/icons/dropdown-btn-white.png">
             </a>
           </div>
         </div>
@@ -281,25 +303,27 @@
           </div>
         </div>
         <div class="text-center pt-21">
-          <a href="#" class="btn-liderman btn-liderman-gray">
+          <a href="clientes.html" class="btn-liderman btn-liderman-gray">
             <span>Ver m&#xE1;s</span>
+            <img class="pl-7 pb-7" src="assets/icons/dropdown-btn-gray.png">
           </a>
         </div>
       </div>
     </section>
 
-    <section class="section-padding-horizontal bg-img-block" style="background-image: url(assets/img/img.png);"> <!-- forma parte de liderman -->
-      <div class="container-fluid">
-        <div class="container">
-          <div class="text-center">
-            <h2 class="section-title text-white pb-28">Forma parte de Liderman</h2>
-            <p class="text-intro text-white pb-21">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia odit eum molestiae dolore sed illum, aliquam minus recusandae itaque obcaecati sit sunt nostrum repudiandae culpa voluptas at eos. Officia, aut.</p>
-            <a href="#" class="btn-liderman btn-liderman-white">
-              <span>Postula</span>
-            </a>
+    <section class="bg-img-block " style="background-image: url(assets/img/forma-parte-liderman.png);"> <!-- forma parte de liderman -->
+      <div class="container-fluid minh-700 bg-gray-dark-op">
+          <div class="container pt-70 mb-70 ">
+            <div class="text-center section-padding-horizontal">
+              <h2 class="section-title text-white pt-42 pb-28">Forma parte de Liderman</h2>
+              <p class="text-intro text-white pb-21">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia odit eum molestiae dolore sed illum, aliquam minus recusandae itaque obcaecati sit sunt nostrum repudiandae culpa voluptas at eos. Officia, aut.</p>
+              <a href="quiero-ser-liderman.html" class="btn-liderman btn-liderman-white">
+                <span>Postula</span>
+                <img class="pl-7 pb-7" src="assets/icons/dropdown-btn-white.png">
+              </a>
+            </div>
           </div>
         </div>
-      </div>
     </section>
 
     <section class="section-padding-horizontal noticias" id="noticias"> <!-- noticias --> 
@@ -308,7 +332,7 @@
         <ul class="grid-list grid-list-3 text-left grid-list-1-xs grid-noticias pb-21">
           <li class="grid-list-item">
             <div class="list-item-noticias minh-280">
-              <img class="img-responsive" src="assets/img/img.png" alt="Cultura Liderman">
+              <img class="img-responsive" src="assets/img/noticia-home1.png" alt="Cultura Liderman">
               <h3 class="pt-14">Titulo de la noticia</h3>
               <small>18 de abril del 2015</small>
               <p class="pv-14">Te doming nostro quodsi his. In labitur fabellas repudia eos simul praesent ei.</p>
@@ -316,7 +340,7 @@
           </li>
           <li class="grid-list-item">
             <div class="list-item-noticias minh-280">
-              <img class="img-responsive" src="assets/img/img.png" alt="Cultura Liderman">
+              <img class="img-responsive" src="assets/img/noticia-home2.png" alt="Cultura Liderman">
               <h3 class="pt-14">Titulo de la noticia</h3>
               <small>18 de abril del 2015</small>
               <p class="pv-14">Te doming nostro quodsi his. In labitur fabellas repudia eos simul praesent ei.</p>
@@ -324,35 +348,44 @@
           </li>
           <li class="grid-list-item">
             <div class="list-item-noticias minh-280">
-              <img class="img-responsive" src="assets/img/img.png" alt="Cultura Liderman">
+              <img class="img-responsive" src="assets/img/noticia-home3.png" alt="Cultura Liderman">
               <h3 class="pt-14">Titulo de la noticia</h3>
               <small>18 de abril del 2015</small>
               <p class="pv-14">Te doming nostro quodsi his. In labitur fabellas repudia eos simul praesent ei.</p>
             </div>
           </li>
         </ul>
-        <a href="#" class="btn-liderman btn-liderman-gray">Leer m&#xE1;s</a>    
+        <a href="noticias.html" class="btn-liderman btn-liderman-gray">
+          <span>Leer m&#xE1;s</span>
+          <img class="pl-7 pb-7" src="assets/icons/dropdown-btn-gray.png">
+        </a>    
       </div>
     </section>
 
-    <section class="section-padding-horizontal bg-img-block contactanos" style="background-image: url(assets/img/img.png);" id="contactanos"> <!-- Contactanos -->
+    <section class="section-padding-horizontal bg-img-block contactanos" style="background-image: url(assets/img/contacto.png);" id="contactanos"> <!-- Contactanos -->
       <div class="container-xs text-center">
         <h2 class="section-title text-center pb-28 text-white">Contáctanos</h2>   
         <p class="text-white text-intro">A través de las redes sociales:</p>
         <ul class="grid-list grid-list-3 grid-list-1 grid-contactanos pv-35 ph-70">
           <li class="grid-list-item">
             <div class="list-item-contactanos">
-              <img class="img-responsive img-circle" src="assets/img/img-sq.png">
+              <a href="">
+                <img class="img-responsive img-circle" src="assets/icons/icon-footer-facebook.png">
+              </a>
             </div>
           </li>
           <li class="grid-list-item">
             <div class="list-item-contactanos">
-              <img class="img-responsive img-circle" src="assets/img/img-sq.png">
+              <a href="">
+                <img class="img-responsive img-circle" src="assets/icons/icon-footer-twitter.png">
+              </a>
             </div>
           </li>
           <li class="grid-list-item">
             <div class="list-item-contactanos">
-              <img class="img-responsive img-circle" src="assets/img/img-sq.png">
+              <a href="">
+                <img class="img-responsive img-circle" src="assets/icons/icon-footer-youtube.png">
+              </a>
             </div>
           </li>
         </ul>
@@ -362,7 +395,7 @@
           <input type="email" class="form-control text-center pv-21 uppercase light input-center mt-21" width="210" height="auto" placeholder="correo" required="">
           <input type="email" class="form-control text-center pv-21 uppercase light input-center mt-21" width="210" height="auto" placeholder="correo electrónico" required="">
           <select name="decision" style="width: 100%; text-indent: 40%;"class=" text-center pv-7 uppercase light input-center mt-21" value="0">
-            <option class="text-center" value="0" selected="0">Tipo de Usuario</option>               
+            <option value="0" selected="0">Tipo de Usuario</option>               
             <option value="1">Un cliente</option>
             <option value="2">Un postulante</option>
             <option value="3">Un liderman</option>
@@ -387,7 +420,6 @@
       </div>
     </section>
 
-
     <section class="pv-42 footer"> <!-- footer -->
       <div class="container-sm text-center">
         <h3 class="uppercase text-white">Ingresa a info liderman</h3>
@@ -404,16 +436,17 @@
                 <span class="text-white">Entrar</span>
               </a>
             </div>
-          </div>
-          
+          </div> 
         </div>
-        <div class="direction mv-14 pv-14">
+        <div class="direction mv-14 pt-14">
           <p>Av. Guillermo Prescott 308 San Isidro - Lima 27 Perú l Central Telefónica : (511) 441-8380 l Fax : (511) 422-2455</p>
           <p>Av. Juan del Mar y Bernedo 1040 - Cercado de Lima - Lima 01 Perú | Central Telefónica: (511) 337 6610</p>
           <p>Av. Las Casuarinas Mz. D Lt. 7, Huertos de Santa Genoveva (Paradero Centro de Salud, km 40 Antigua Panamericana Sur)<br>- Lurín - 16 Perú</p>
         </div>
+        <img src="assets/icons/Logo-LidermanWhite-footer.png">
       </div>
     </section>
+
     <div class="site-content"></div>
   </div>
   <script src="assets/js/jquery.min.js"></script> <!-- App scripts -->

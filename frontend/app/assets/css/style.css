@@ -5086,14 +5086,14 @@ p {
   padding: 8px 21px;
 }
 .btn-liderman.btn-liderman-white {
-  border: 3px solid white;
+  border: 2px solid white;
   color: white;
 }
 .btn-liderman.btn-liderman-white:hover {
   color: white;
 }
 .btn-liderman.btn-liderman-gray {
-  border: 3px solid gray;
+  border: 2px solid gray;
   color: gray;
 }
 .btn-liderman.btn-liderman-gray:hover {
@@ -5121,6 +5121,11 @@ p {
 .text-intro {
   padding: 0 15%;
   font-size: 18px;
+  color: 505050;
+}
+
+.text-intro-slider {
+  padding: 0 15%;
   color: 505050;
 }
 
@@ -5194,14 +5199,24 @@ p {
   font-size: 18px;
   padding: 4px 18px;
 }
-.header-scroll .header-right img,
-.header-scroll-fixed .header-right img {
+.header-scroll .header-right .img-redes,
+.header-scroll-fixed .header-right .img-redes {
   height: 24px;
 }
 .header-scroll .header-right .btn-liderman,
 .header-scroll-fixed .header-right .btn-liderman {
   font-size: 18px;
   padding: 4px 18px;
+}
+
+.icon-menu {
+  display: inline-block;
+  height: 30px;
+  width: 40px;
+  bottom: 3px;
+  border-radius: 2.85714px;
+  transition: 9s;
+  position: relative;
 }
 
 .icon-redes {
@@ -5411,7 +5426,11 @@ p {
 .reconocimientos .flickity-page-dots {
   bottom: -170px;
 }
-.reconocimientos img {
+.reconocimientos p {
+  font-size: 14px;
+  font-style: italic;
+}
+.reconocimientos .img-reconocimiento {
   margin: 0 auto;
   width: 450px;
   height: 340px;
@@ -5479,20 +5498,13 @@ p {
 .contactanos .grid-contactanos .grid-list-item .list-item-contactanos img {
   width: 55px;
   margin: 0 auto;
-  border: 1px solid white;
-}
-.contactanos .grid-redes img {
-  width: 40px;
-  height: 40px;
-  border: 1px solid white;
-  padding: 7px;
-  float: left;
 }
 .contactanos select {
   width: 100%;
-  text-indent: 40%;
   color: #7D7E7F;
   cursor: pointer;
+  text-align: center;
+  verticle-align: middle;
   background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 4px;

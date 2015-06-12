@@ -37,10 +37,44 @@ p{
 
 $liderman-orange: #F7941D;
 $liderman-black: #4A4A4A;
+$liderman-red: #B92A30;
 
 /*
 	utility classes
 */
+
+/* BORDER */
+
+.border-gray-lighter{
+	border: 2px solid $gray-lighter;
+}
+
+.border-gray-light{
+	border: 2px solid $gray-light;
+}
+
+.border-gray{
+	border: 2px solid $gray;
+}
+
+.border-gray-dark{
+	border: 2px solid $gray-dark;
+}
+
+.border-gray-darker{
+	border: 2px solid $gray-darker;
+}
+
+
+/* END: BORDER */
+
+.bg-black-liderman{
+	background-color: $liderman-black;
+}
+
+.bg-orange-liderman{
+	background-color: $liderman-orange;
+}
 
 .text-black{
 	color: $liderman-black;
@@ -48,6 +82,10 @@ $liderman-black: #4A4A4A;
 
 .text-orange{
 	color: $liderman-orange;
+}
+
+.text-red{
+	color: $liderman-red;
 }
 
 .btn-liderman{ //custom liderman button
@@ -98,6 +136,11 @@ $liderman-black: #4A4A4A;
 	padding: 0 15%; //padding horizontal
 	font-size: $font-size-h4;
 	color: 505050;
+}
+
+.text-frase {
+	font-size: $font-size-h3;
+	color: $gray-dark;
 }
 
 /*
@@ -166,11 +209,23 @@ $liderman-black: #4A4A4A;
 	}
 
 	.header-right{
+		img{
+			height: 24px;
+		}
 		.btn-liderman{
 			font-size: 18px;
 			padding: 4px 18px;
 		}
 	}
+}
+
+.icon-redes{
+	height: 30px;
+}
+
+.icon-btn{
+	height: 26px;
+	padding-bottom: 3px;
 }
 
 /* 
@@ -323,19 +378,63 @@ $liderman-black: #4A4A4A;
 			padding: 12px 0;
 		}
 
+		.quienes-somos-inner{
+			border: 3px solid white;
+		}
+
 		&:hover{ //hover effect
 			background-color: $liderman-orange;
 			color: white;
-			.quienes-somos-inner{
-				border: 3px solid white;
+
+			.icon-familia-liderman{
+				background-image: url(../icons/familia-liderman-blanco-home.png);
 			}
+
+			.icon-cultura-liderman{
+				background-image: url(../icons/cultura-liderman-blanco-home.png);
+			}
+
+			.icon-lidermania{
+				background-image: url(../icons/lidermania-blanco-home.png);
+			}
+
+			.icon-conectividad{
+				background-image: url(../icons/conectividad-blanco-home.png);
+			}
+
 		}
 
 		.quienes-somos-inner{
-			padding: 10px;
+			padding: 25px 10px;
 			text-align: center;
-			height: 200px;
+			height: 165px;
 		}
+
+		.icon-quienes-somos{
+			height: 50px;
+			margin: 0 auto;
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+
+		.icon-familia-liderman{
+			background-image: url(../icons/familia-liderman-gris-home.png);
+		}
+
+		.icon-cultura-liderman{
+			background-image: url(../icons/cultura-liderman-gris-home.png);
+		}
+
+		.icon-lidermania{
+			background-image: url(../icons/lidermania-gris-home.png);
+		}
+
+		.icon-conectividad{
+			background-image: url(../icons/conectividad-gris-home.png);
+		}
+
+
 	}	
 }
 
@@ -345,13 +444,14 @@ $liderman-black: #4A4A4A;
 
 .reconocimientos{ 
 	position: relative;
-	height: 600px;
+	height: 900px;
 	.flickity-page-dots {
-	  bottom: 42px; //positioning page-dots accordingly
+	  bottom: -170px; //positioning page-dots accordingly
 	}
 	img{
 		margin: 0 auto;
-		width: 182px;
+		width: 450px;
+		height: 340px;
 	}
 }
 
@@ -404,6 +504,9 @@ $liderman-black: #4A4A4A;
 			small{ //date
 				color: #B92A30;
 			}
+			p{
+				font-size: 18px;
+			}
 		}
 	}
 }
@@ -437,13 +540,20 @@ $liderman-black: #4A4A4A;
 		}
 	}
 	select{
+		width: 100%;
+  		text-indent: 40%;
 		color: #7D7E7F;
-  	background-color: #fff;
-  	background-image: none;
-  	border: 1px solid #ccc;
-  	border-radius: 4px;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+		cursor: pointer;
+	  	background-color: #fff;
+	  	border: 1px solid #ccc;
+	  	border-radius: 4px;
+	    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	  	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	  	background-image: url(../img/dropdown-formulario.png);
+	  	background-repeat: no-repeat;
+	  	background-position: right;
+	  	appearance: none;
+	  	-webkit-appearance: none;
 	}
 }
 
@@ -476,7 +586,7 @@ $liderman-black: #4A4A4A;
 	QUIENES SOMOS
 */
 
-.img-quienes-somos{
+.img-liderman{
 	width: 700px;
 	margin: 0 auto;
 }
@@ -486,4 +596,55 @@ $liderman-black: #4A4A4A;
 */
 
 
+/*
+	QUIERO SER LIDERMAN
+*/
 
+.list-liderman{
+	font-family: $font-family-sans-serif;
+	font-size: 21px;
+	padding-left: 24px;
+	li{
+		padding-top: 7px;
+		padding-bottom: 7px;
+		p{
+			font-family: $font-family-serif;
+			font-size: 18px;
+		}
+	}
+}
+
+.text-description{
+	font-size: $font-size-h4;
+	padding-top: 14px;
+	padding-bottom: 14px;
+}
+
+select{
+	background-image: url(../img/dropdown-formulario.png);
+  	background-repeat: no-repeat;
+  	background-position: right;
+  	appearance: none;
+  	-webkit-appearance: none;
+}
+
+/*
+	CONECTIVIDAD
+*/
+
+.icon-title{
+	width: 50px;
+	height: 50px;
+}
+
+/* 
+	FAMILIA LIDERMAN 
+*/
+
+.grid-equipo {
+	li{
+		img{
+			width: 130px;
+		}
+	}
+}
