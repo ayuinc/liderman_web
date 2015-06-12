@@ -5124,6 +5124,11 @@ p {
   color: 505050;
 }
 
+.text-intro-slider {
+  padding: 0 15%;
+  color: 505050;
+}
+
 .text-frase {
   font-size: 24px;
   color: #707274;
@@ -5411,7 +5416,11 @@ p {
 .reconocimientos .flickity-page-dots {
   bottom: -170px;
 }
-.reconocimientos img {
+.reconocimientos p {
+  font-size: 14px;
+  font-style: italic;
+}
+.reconocimientos .img-reconocimiento {
   margin: 0 auto;
   width: 450px;
   height: 340px;
