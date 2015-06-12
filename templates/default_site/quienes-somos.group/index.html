@@ -1,12 +1,13 @@
 {embed="includes/head"}
-{embed="includes/header"}
+{embed="includes/header-interno"}
+ {exp:channel:entries channel="quienes_somos"}
 <section class="pt-42 quienes-somos" id="quienes-somos"> <!-- Quienes Somos --> 
       <div class="container pt-70 pb-70 text-center">
         <div class="text-center pb-14">
           <h2 class="section-title pb-21 text-black">Quiénes Somos</h2>
-          <p class="text-intro pb-7">Te domingo nostro quodsi his. In labitur fabellas repudiandae eos. Simul vitae ptant ad mei, vix congue praesent ei. Te domingo nostro quodsi his. In labitur fabellas repudiandae eos. Simul vitae ptant ad mei, vix congue praesent ei.</p>
+          <p class="text-intro pb-7">{contenido_quienes_somos}</p>
         </div>
-        <div class="img-liderman bg-img-block img-responsive text-center minh-420 mb-21" style="background-image: url(assets/img/img-quiero-ser-liderman.png);"></div>
+        <div class="img-liderman bg-img-block img-responsive text-center minh-420 mb-21" style="background-image: url({imagen_quienes_somos});"></div>
         <ul class="grid-list grid-list-4 grid-list-1-xs text-center">
           <li class="grid-list-item">
             <a href="#">
@@ -50,10 +51,11 @@
           </li>
         </ul> 
         <div class="text-center pt-21">
-          <p class="text-intro pb-7">Te domingo nostro quodsi his. In labitur fabellas repudiandae eos. Simul vitae ptant ad mei, vix congue praesent ei.</p>     
+          <p class="text-intro pb-7">{segunda_introduccion}</p>     
           <a href=""><h3 class="text-orange uppercase underline">Ver nuestros servicios</h3></a>
         </div>   
       </div>
     </section>
+    {/exp:channel:entries}
 
 {embed="includes/footer"}
