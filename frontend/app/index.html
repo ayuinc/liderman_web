@@ -33,10 +33,16 @@
               <div class="row">
                 <div class="col-md-4"></div>
                 <div class="col-md-5"></div>
-                <div class="col-md-3">
+                <!-- <div class="col-md-3">
                   <a type="button" class="tcon tcon-menu--xcross" id="tcon-menu--xcross" aria-label="toggle menu">
                     <span class="text-white pr-14">MEN&#xDA;</span>
                     <span class="tcon-menu__lines" aria-hidden="true"></span>
+                  </a>
+                </div> -->
+                <div class="col-md-3" >
+                  <a href="" id="trigger-overlay" aria-label="toggle menu">
+                    <span class="text-gray-light pr-14">MEN&#xDA;</span>
+                    <img class="icon-menu" src="assets/icons/menu-icono.png">
                   </a>
                 </div>
               </div>
@@ -53,19 +59,19 @@
             </div>
             <div class="header-right col-md-6">
               <div class="row">
-                <div class="col-md-9" style="padding-top: 7px;">
+                <div class="col-md-9" style="padding-top: 3px;">
                     <div class="col-md-6">
                       <div class="col-md-3">
-                        <a href=""><img src="assets/icons/facebook-icono.png"></a>
+                        <a href=""><img class="img-redes" src="assets/icons/facebook-icono.png"></a>
                       </div>
                       <div class="col-md-3">
-                        <a href=""><img src="assets/icons/twitter-icono.png"></a>
+                        <a href=""><img class="img-redes" src="assets/icons/twitter-icono.png"></a>
                       </div>
                       <div class="col-md-3">
-                        <a href=""><img src="assets/icons/youtube-icono.png"></a>
+                        <a href=""><img class="img-redes" src="assets/icons/youtube-icono.png"></a>
                       </div>
                       <div class="col-md-3">
-                        <a href=""><img src="assets/icons/mundo-redes-icono.png"></a>
+                        <a href=""><img class="img-redes" src="assets/icons/mundo-redes-icono.png"></a>
                       </div>
                     </div>
                     <div class="col-md-6 text-center">
@@ -74,10 +80,16 @@
                       </a>
                     </div>
                 </div>
-                <div class="col-md-3 col-xs-12">
+                <!-- <div class="col-md-3 col-xs-12">
                   <a type="button" class="tcon tcon-menu--xcross" id="tcon-menu--xcross" aria-label="toggle menu">
                     <span class="text-white pr-14">MEN&#xDA;</span>
                     <span class="tcon-menu__lines" aria-hidden="true"></span>
+                  </a>
+                </div> -->
+                <div class="col-md-3 col-xs-12" >
+                  <a href="">
+                    <span class="text-gray-light pr-14">MEN&#xDA;</span>
+                    <img class="icon-menu" src="assets/icons/menu-icono.png">
                   </a>
                 </div>
               </div>
@@ -85,7 +97,12 @@
           </div>
         </div>
     </header>
+
     <div class="overlay overlay-hugeinc" style="background-image: url(assets/img/reconocimientos-textura.png);">
+      <a href="">
+        <span class="text-gray-light pr-14">CERRAR</span>
+        <img class="icon-menu" src="assets/icons/cerrar-icono.png">
+      </a>
       <nav>
         <ul class="uppercase">
           <li><a class="overlay-close" href="#quienes-somos">Quienes somos</a></li>
@@ -143,7 +160,6 @@
         </div>
       </div>
     </section>
-
 
     <a href="#quienes-somos"><img class="img-responsive arrow" src="assets/img/down-arrow.png"></a>
 
@@ -296,18 +312,18 @@
     </section>
 
     <section class="bg-img-block " style="background-image: url(assets/img/forma-parte-liderman.png);"> <!-- forma parte de liderman -->
-    <div class="container-fluid minh-700 bg-gray-dark-op">
-        <div class="container pt-70 mb-70 ">
-          <div class="text-center section-padding-horizontal">
-            <h2 class="section-title text-white pt-42 pb-28">Forma parte de Liderman</h2>
-            <p class="text-intro text-white pb-21">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia odit eum molestiae dolore sed illum, aliquam minus recusandae itaque obcaecati sit sunt nostrum repudiandae culpa voluptas at eos. Officia, aut.</p>
-            <a href="quiero-ser-liderman.html" class="btn-liderman btn-liderman-white">
-              <span>Postula</span>
-              <img class="pl-7 pb-7" src="assets/icons/dropdown-btn-white.png">
-            </a>
+      <div class="container-fluid minh-700 bg-gray-dark-op">
+          <div class="container pt-70 mb-70 ">
+            <div class="text-center section-padding-horizontal">
+              <h2 class="section-title text-white pt-42 pb-28">Forma parte de Liderman</h2>
+              <p class="text-intro text-white pb-21">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia odit eum molestiae dolore sed illum, aliquam minus recusandae itaque obcaecati sit sunt nostrum repudiandae culpa voluptas at eos. Officia, aut.</p>
+              <a href="quiero-ser-liderman.html" class="btn-liderman btn-liderman-white">
+                <span>Postula</span>
+                <img class="pl-7 pb-7" src="assets/icons/dropdown-btn-white.png">
+              </a>
+            </div>
           </div>
         </div>
-      </div>
     </section>
 
     <section class="section-padding-horizontal noticias" id="noticias"> <!-- noticias --> 
@@ -379,7 +395,7 @@
           <input type="email" class="form-control text-center pv-21 uppercase light input-center mt-21" width="210" height="auto" placeholder="correo" required="">
           <input type="email" class="form-control text-center pv-21 uppercase light input-center mt-21" width="210" height="auto" placeholder="correo electrónico" required="">
           <select name="decision" style="width: 100%; text-indent: 40%;"class=" text-center pv-7 uppercase light input-center mt-21" value="0">
-            <option class="text-center" value="0" selected="0">Tipo de Usuario</option>               
+            <option value="0" selected="0">Tipo de Usuario</option>               
             <option value="1">Un cliente</option>
             <option value="2">Un postulante</option>
             <option value="3">Un liderman</option>
@@ -430,7 +446,7 @@
         <img src="assets/icons/Logo-LidermanWhite-footer.png">
       </div>
     </section>
-    
+
     <div class="site-content"></div>
   </div>
   <script src="assets/js/jquery.min.js"></script> <!-- App scripts -->

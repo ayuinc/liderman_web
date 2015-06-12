@@ -95,7 +95,7 @@ $liderman-red: #B92A30;
 
 
 	&.btn-liderman-white{ //white button
-		border: 3px solid white;		
+		border: 2px solid white;		
 		color: white;
 		&:hover{
 			color: white;
@@ -103,7 +103,7 @@ $liderman-red: #B92A30;
 	}
 
 	&.btn-liderman-gray{ //white button
-		border: 3px solid gray;		
+		border: 2px solid gray;		
 		color: gray;
 		&:hover{
 			color: gray;
@@ -214,7 +214,7 @@ $liderman-red: #B92A30;
 	}
 
 	.header-right{
-		img{
+		.img-redes{
 			height: 24px;
 		}
 		.btn-liderman{
@@ -222,6 +222,16 @@ $liderman-red: #B92A30;
 			padding: 4px 18px;
 		}
 	}
+}
+
+.icon-menu{
+	display: inline-block;
+  height: 30px;
+  width: 40px;
+  bottom: 3px;
+  border-radius: 2.85714px;
+  transition: 9s;
+  position: relative;
 }
 
 .icon-redes{
@@ -541,19 +551,20 @@ $liderman-red: #B92A30;
 	
 	select{
 		width: 100%;
-  		text-indent: 40%;
 		color: #7D7E7F;
 		cursor: pointer;
-	  	background-color: #fff;
-	  	border: 1px solid #ccc;
-	  	border-radius: 4px;
-	    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-	  	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-	  	background-image: url(../img/dropdown-formulario.png);
-	  	background-repeat: no-repeat;
-	  	background-position: right;
-	  	appearance: none;
-	  	-webkit-appearance: none;
+		text-align: center;
+		verticle-align:middle;
+	  background-color: #fff;
+	  border: 1px solid #ccc;
+	  border-radius: 4px;
+	  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	  background-image: url(../img/dropdown-formulario.png);
+	  background-repeat: no-repeat;
+	  background-position: right;
+	  appearance: none;
+	  -webkit-appearance: none;
 	}
 }
 
