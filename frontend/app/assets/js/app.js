@@ -1,7 +1,7 @@
 (function() {
-	var triggerBttn = document.getElementById( 'trigger-overlay' ),
+	var triggerBttn = document.getElementById( 'tcon-menu--xcross' ),
 		overlay = document.querySelector( 'div.overlay' ),
-		closeBttn = overlay.querySelector( 'button.overlay-close' );
+		closeBttn = overlay.querySelector( '#overlay-close' );
 		transEndEventNames = {
 			'WebkitTransition': 'webkitTransitionEnd',
 			'MozTransition': 'transitionend',
