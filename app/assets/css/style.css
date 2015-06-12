@@ -5086,14 +5086,14 @@ p {
   padding: 8px 21px;
 }
 .btn-liderman.btn-liderman-white {
-  border: 3px solid white;
+  border: 2px solid white;
   color: white;
 }
 .btn-liderman.btn-liderman-white:hover {
   color: white;
 }
 .btn-liderman.btn-liderman-gray {
-  border: 3px solid gray;
+  border: 2px solid gray;
   color: gray;
 }
 .btn-liderman.btn-liderman-gray:hover {
@@ -5168,7 +5168,7 @@ p {
 .header,
 .header-scroll,
 .header-scroll-fixed {
-  z-index: 1000;
+  z-index: 100;
 }
 .header .header-left img,
 .header-scroll .header-left img,
@@ -5199,14 +5199,34 @@ p {
   font-size: 18px;
   padding: 4px 18px;
 }
-.header-scroll .header-right img,
-.header-scroll-fixed .header-right img {
+.header-scroll .header-right .img-redes,
+.header-scroll-fixed .header-right .img-redes {
   height: 24px;
 }
 .header-scroll .header-right .btn-liderman,
 .header-scroll-fixed .header-right .btn-liderman {
   font-size: 18px;
   padding: 4px 18px;
+}
+
+.icon-menu {
+  display: inline-block;
+  height: 30px;
+  width: 40px;
+  bottom: 3px;
+  border-radius: 2.85714px;
+  transition: 9s;
+  position: relative;
+}
+
+.icon-cerrar {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  bottom: 0px;
+  border-radius: 2.85714px;
+  transition: 9s;
+  position: relative;
 }
 
 .icon-redes {
@@ -5253,7 +5273,7 @@ p {
   height: 100%;
   top: 0;
   left: 0;
-  background-image: url(assets/img/reconocimientos-textura.png);
+  background-image: url(../assets/img/tayas-menu.png);
   z-index: 100;
 }
 
@@ -5262,7 +5282,7 @@ p {
 .overlay nav {
   text-align: center;
   position: relative;
-  top: 50%;
+  top: 42%;
   height: 60%;
   font-size: 25px;
   -webkit-transform: translateY(-50%);
@@ -5296,7 +5316,8 @@ p {
 
 .overlay ul li a:hover,
 .overlay ul li a:focus {
-  color: #F7941D;
+  color: #b5b6b7;
+  border-bottom: 1px solid #b5b6b7;
 }
 
 /* Effects */
@@ -5491,9 +5512,10 @@ p {
 }
 .contactanos select {
   width: 100%;
-  text-indent: 40%;
   color: #7D7E7F;
   cursor: pointer;
+  text-align: center;
+  verticle-align: middle;
   background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 4px;

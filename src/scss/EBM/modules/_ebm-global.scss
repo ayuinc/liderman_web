@@ -95,7 +95,7 @@ $liderman-red: #B92A30;
 
 
 	&.btn-liderman-white{ //white button
-		border: 3px solid white;		
+		border: 2px solid white;		
 		color: white;
 		&:hover{
 			color: white;
@@ -103,7 +103,7 @@ $liderman-red: #B92A30;
 	}
 
 	&.btn-liderman-gray{ //white button
-		border: 3px solid gray;		
+		border: 2px solid gray;		
 		color: gray;
 		&:hover{
 			color: gray;
@@ -184,7 +184,7 @@ $liderman-red: #B92A30;
 .header, 
 .header-scroll,
 .header-scroll-fixed{
-	z-index: 1000;
+	z-index: 100;
 	.header-left{
 		img{
 			width: 100px;
@@ -214,7 +214,7 @@ $liderman-red: #B92A30;
 	}
 
 	.header-right{
-		img{
+		.img-redes{
 			height: 24px;
 		}
 		.btn-liderman{
@@ -222,6 +222,26 @@ $liderman-red: #B92A30;
 			padding: 4px 18px;
 		}
 	}
+}
+
+.icon-menu{
+	display: inline-block;
+  height: 30px;
+  width: 40px;
+  bottom: 3px;
+  border-radius: 2.85714px;
+  transition: 9s;
+  position: relative;
+}
+
+.icon-cerrar{
+	display: inline-block;
+  height: 30px;
+  width: 30px;
+  bottom: 0px;
+  border-radius: 2.85714px;
+  transition: 9s;
+  position: relative;
 }
 
 .icon-redes{
@@ -269,7 +289,7 @@ $liderman-red: #B92A30;
 	height: 100%;
 	top: 0;
 	left: 0;
-	background-image: url(assets/img/reconocimientos-textura.png);
+	background-image: url(../assets/img/tayas-menu.png);
 	z-index:100;
 }
 
@@ -279,7 +299,7 @@ $liderman-red: #B92A30;
 .overlay nav {
 	text-align: center;
 	position: relative;
-	top: 50%;
+	top: 42%;
 	height: 60%;
 	font-size: 25px;
 	-webkit-transform: translateY(-50%);
@@ -313,7 +333,8 @@ $liderman-red: #B92A30;
 
 .overlay ul li a:hover,
 .overlay ul li a:focus {
-	color: $liderman-orange;
+	color: $gray-light;
+	border-bottom: 1px solid $gray-light;
 }
 
 /* Effects */
@@ -541,19 +562,20 @@ $liderman-red: #B92A30;
 	
 	select{
 		width: 100%;
-  		text-indent: 40%;
 		color: #7D7E7F;
 		cursor: pointer;
-	  	background-color: #fff;
-	  	border: 1px solid #ccc;
-	  	border-radius: 4px;
-	    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-	  	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-	  	background-image: url(../img/dropdown-formulario.png);
-	  	background-repeat: no-repeat;
-	  	background-position: right;
-	  	appearance: none;
-	  	-webkit-appearance: none;
+		text-align: center;
+		verticle-align:middle;
+	  background-color: #fff;
+	  border: 1px solid #ccc;
+	  border-radius: 4px;
+	  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	  background-image: url(../img/dropdown-formulario.png);
+	  background-repeat: no-repeat;
+	  background-position: right;
+	  appearance: none;
+	  -webkit-appearance: none;
 	}
 }
 
