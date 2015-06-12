@@ -184,7 +184,7 @@ $liderman-red: #B92A30;
 .header, 
 .header-scroll,
 .header-scroll-fixed{
-	z-index: 1000;
+	z-index: 100;
 	.header-left{
 		img{
 			width: 100px;
@@ -229,6 +229,16 @@ $liderman-red: #B92A30;
   height: 30px;
   width: 40px;
   bottom: 3px;
+  border-radius: 2.85714px;
+  transition: 9s;
+  position: relative;
+}
+
+.icon-cerrar{
+	display: inline-block;
+  height: 30px;
+  width: 30px;
+  bottom: 0px;
   border-radius: 2.85714px;
   transition: 9s;
   position: relative;
@@ -279,7 +289,7 @@ $liderman-red: #B92A30;
 	height: 100%;
 	top: 0;
 	left: 0;
-	background-image: url(assets/img/reconocimientos-textura.png);
+	background-image: url(../assets/img/tayas-menu.png);
 	z-index:100;
 }
 
@@ -289,7 +299,7 @@ $liderman-red: #B92A30;
 .overlay nav {
 	text-align: center;
 	position: relative;
-	top: 50%;
+	top: 42%;
 	height: 60%;
 	font-size: 25px;
 	-webkit-transform: translateY(-50%);
@@ -323,7 +333,8 @@ $liderman-red: #B92A30;
 
 .overlay ul li a:hover,
 .overlay ul li a:focus {
-	color: $liderman-orange;
+	color: $gray-light;
+	border-bottom: 1px solid $gray-light;
 }
 
 /* Effects */
