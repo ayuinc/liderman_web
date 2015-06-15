@@ -423,7 +423,7 @@ module.exports = function (grunt) {
    */
   grunt.registerTask('default', [
     'coffee:dev',
-    // 'sass:ebm',
+    'sass:ebm',
     'sass:dev',
     // 'bower:dev',
     // 'autoprefixer:dev',

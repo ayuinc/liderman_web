@@ -446,12 +446,11 @@ $liderman-red: #B92A30;
 	position: relative;
 	height: 900px;
 	.flickity-page-dots {
-	  bottom: -170px; //positioning page-dots accordingly
+	  bottom: -40%; //positioning page-dots accordingly
 	}
 	img{
 		margin: 0 auto;
 		width: 450px;
-		height: 340px;
 	}
 }
 
