@@ -5560,6 +5560,8 @@ p {
 .img-lidermania {
   width: 600px;
   margin: 0 auto;
+  background-position-y: 0;
+  background-position: center;
 }
 
 /* 
