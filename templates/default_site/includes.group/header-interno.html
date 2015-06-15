@@ -1,24 +1,26 @@
 <header class="header-scroll-fixed">
        <div class="container-fluid">
           <div class="row">
-            <div class="header-left col-md-6 col-xs-6">
-              <img src="{site_url}app/assets/img/logo-liderman-white.png">
+            <div class="header-left col-md-6">
+              <a href="{site_url}home">
+                <img src="{site_url}app/assets/img/logo-liderman-white.png">
+              </a>
             </div>
-            <div class="header-right col-md-6 col-xs-6">
+            <div class="header-right col-md-6">
               <div class="row">
-                <div class="col-md-9 hidden-xs" style="padding-top: 7px;">  
+                <div class="col-md-9 pt-7">
                     <div class="col-md-6">
                       <div class="col-md-3">
-                        <a href=""><img src="{site_url}app/assets/icons/facebook-icono.png"></a>
+                        <a href=""><img class="img-redes" src="{site_url}app/assets/icons/facebook-icono.png"></a>
                       </div>
                       <div class="col-md-3">
-                        <a href=""><img src="{site_url}app/assets/icons/twitter-icono.png"></a>
+                        <a href=""><img class="img-redes" src="{site_url}app/assets/icons/twitter-icono.png"></a>
                       </div>
                       <div class="col-md-3">
-                        <a href=""><img src="{site_url}app/assets/icons/youtube-icono.png"></a>
+                        <a href=""><img class="img-redes" src="{site_url}app/assets/icons/youtube-icono.png"></a>
                       </div>
                       <div class="col-md-3">
-                        <a href=""><img src="{site_url}app/assets/icons/mundo-redes-icono.png"></a>
+                        <a href=""><img class="img-redes" src="{site_url}app/assets/icons/mundo-redes-icono.png"></a>
                       </div>
                     </div>
                     <div class="col-md-6 text-center">
@@ -27,12 +29,16 @@
                       </a>
                     </div>
                 </div>
-                <div class="col-md-5 hidden-lg"></div>
-                <div class="col-md-4 hidden-lg"></div>
-                <div class="col-md-3 col-xs-12">
+                <!-- <div class="col-md-3 col-xs-12">
                   <a type="button" class="tcon tcon-menu--xcross" id="tcon-menu--xcross" aria-label="toggle menu">
                     <span class="text-white pr-14">MEN&#xDA;</span>
                     <span class="tcon-menu__lines" aria-hidden="true"></span>
+                  </a>
+                </div> -->
+                <div class="col-md-3 col-xs-12" >
+                  <a type="button" class="tcon tcon-menu--xcross" id="tcon-menu--xcross" aria-label="toggle menu">
+                    <span class="text-gray-light pr-14">MEN&#xDA;</span>
+                    <img class="icon-menu" src="{site_url}app/assets/icons/menu-icono.png">
                   </a>
                 </div>
               </div>
@@ -40,3 +46,65 @@
           </div>
         </div>
     </header>
+    <div class="overlay overlay-hugeinc" style="background-image: url({site_url}app/assets/img/rayas-menu.png);">
+      <div class="container-fluid" style="padding-top: 10px">
+        <div class="row">
+          <div class="header-left col-md-6 col-xs-6">
+            <img class="hidden-lg" src="{site_url}app/assets/img/logo-liderman-white.png">          
+          </div>
+          <div class="header-right col-md-6 col-xs-6">
+            <div class="row">
+              <div class="col-md-4"></div>
+              <div class="col-md-5"></div>
+              <!-- <div class="col-md-3">
+                <a type="button" class="tcon tcon-menu--xcross" id="tcon-menu--xcross" aria-label="toggle menu">
+                  <span class="text-white pr-14">MEN&#xDA;</span>
+                  <span class="tcon-menu__lines" aria-hidden="true"></span>
+                </a>
+              </div> -->
+              <div class="col-md-3" >
+                <a type="button" class="tcon tcon-menu--xcross" id="overlay-close" aria-label="toggle menu">
+                  <span class="text-gray-light pr-14">CERRAR</span>
+                  <img class="icon-cerrar img-responsive" src="{site_url}app/assets/icons/cerrar-icono.png">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <ul class="uppercase">
+          <li><a id="overlay-close" class="item-close tcon tcon-menu--xcross" href="#quienes-somos">Quienes somos</a></li>
+          <li><a id="overlay-close" class="item-close tcon tcon-menu--xcross" href="#reconocimientos">Reconocimiento</a></li>
+          <li><a id="overlay-close" class="item-close tcon tcon-menu--xcross" href="#clientes">Clientes</a></li>
+          <li><a id="overlay-close" class="item-close tcon tcon-menu--xcross" href="#noticias">Noticias</a></li>
+          <li><a id="overlay-close" class="item-close tcon tcon-menu--xcross" href="#contactanos">Contáctanos</a></li>
+          <a href="#" class="btn-liderman btn-liderman-orange">
+            <span>únete a liderman</span>
+          </a>
+        </ul>
+      </nav>
+      <div class="hidden-xs separator separator-white separator-centered" style="width: 100%; position: relative; top: 120px;"></div>
+      <div class="row hidden-xs" style="position: relative; top: 150px;">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+          <div class="row text-center">
+            <div class="col-md-2"></div>
+            <div class="col-md-2">
+              <a href=""><img class="icon-redes" src="{site_url}app/assets/icons/facebook-icono.png"></a>
+            </div>
+            <div class="col-md-2">
+              <a href=""><img class="icon-redes" src="{site_url}app/assets/icons/twitter-icono.png"></a>
+            </div>
+            <div class="col-md-2">
+              <a href=""><img class="icon-redes" src="{site_url}app/assets/icons/youtube-icono.png"></a>
+            </div>
+            <div class="col-md-2">
+              <a href=""><img class="icon-redes" src="{site_url}app/assets/icons/mundo-redes-icono.png"></a>
+            </div>
+            <div class="col-md-2"></div>
+          </div>
+        </div>
+        <div class="col-md-4"></div>
+      </div>  
+    </div>

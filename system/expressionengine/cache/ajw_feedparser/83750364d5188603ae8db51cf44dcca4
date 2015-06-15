@@ -13,11 +13,26 @@
 	<atom:link href="http://www.liderman.com.pe/feed/" rel="self" type="application/rss+xml" />
 	<link>http://www.liderman.com.pe</link>
 	<description>Valemos tanto como lo que cuidamos</description>
-	<lastBuildDate>Thu, 11 Jun 2015 17:15:31 +0000</lastBuildDate>
+	<lastBuildDate>Sat, 13 Jun 2015 00:20:33 +0000</lastBuildDate>
 	<language>es-ES</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
 	<generator>http://wordpress.org/?v=3.6.1</generator>
+		<item>
+		<title>Concurso del Día del Padre</title>
+		<link>http://www.liderman.com.pe/noticias/concurso-del-dia-del-padre/</link>
+		<comments>http://www.liderman.com.pe/noticias/concurso-del-dia-del-padre/#comments</comments>
+		<pubDate>Sat, 13 Jun 2015 00:20:33 +0000</pubDate>
+		<dc:creator>admin_liderman</dc:creator>
+				<category><![CDATA[Noticias]]></category>
+
+		<guid isPermaLink="false">http://www.liderman.com.pe/?p=5311</guid>
+		<description><![CDATA[LiderPapá: El MAN de la Seguridad. Liderman premia a los papás que brindan las mejores soluciones para mejorar el servicio [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p><a href="http://www.liderman.com.pe/wp-content/uploads/2015/06/NOTICIA-junio-banner-12.06.2015.png"><img class="alignleft size-full wp-image-5312" alt="NOTICIA-junio-banner-12.06.2015" src="http://www.liderman.com.pe/wp-content/uploads/2015/06/NOTICIA-junio-banner-12.06.2015.png" width="591" height="281" /></a>LiderPapá: El MAN de la Seguridad. Liderman premia a los papás que brindan las mejores soluciones para mejorar el servicio en sus Unidades. Entérate de más aquí: <a href="http://goo.gl/forms/0za4RTA1GN" target="_blank" rel="nofollow">http://goo.gl/forms/0za4RTA1GN</a></p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.liderman.com.pe/noticias/concurso-del-dia-del-padre/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
 		<item>
 		<title>2015 &#8211; Mayo</title>
 		<link>http://www.liderman.com.pe/situacion-nacional/2015-mayo/</link>
@@ -1125,21 +1140,6 @@
 				<content:encoded><![CDATA[<p><a href="http://www.liderman.com.pe/wp-content/uploads/2015/05/Situacion-de-Carreteras-a-Nivel-Nacional-27-Mayo-del-2015.docx" target="_blank">Situación de Carreteras a Nivel Nacional 27 de Mayo 2015</a></p>
 ]]></content:encoded>
 			<wfw:commentRss>http://www.liderman.com.pe/informecarreteras/situacion-de-carreteras-a-nivel-nacional-27-de-mayo-2015/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-		</item>
-		<item>
-		<title>Situación de Carreteras a Nivel Nacional 25 de Mayo 2015</title>
-		<link>http://www.liderman.com.pe/informecarreteras/situacion-de-carreteras-a-nivel-nacional-25-de-mayo-2015/</link>
-		<comments>http://www.liderman.com.pe/informecarreteras/situacion-de-carreteras-a-nivel-nacional-25-de-mayo-2015/#comments</comments>
-		<pubDate>Mon, 25 May 2015 17:22:16 +0000</pubDate>
-		<dc:creator>admin_liderman</dc:creator>
-				<category><![CDATA[Informe de Carreteras]]></category>
-
-		<guid isPermaLink="false">http://www.liderman.com.pe/?p=5193</guid>
-		<description><![CDATA[Situación de Carreteras a Nivel Nacional 25 de Mayo 2015]]></description>
-				<content:encoded><![CDATA[<p><a href="http://www.liderman.com.pe/wp-content/uploads/2015/05/Situacion-de-Carreteras-a-Nivel-Nacional-25-Mayo-del-2015.docx" target="_blank">Situación de Carreteras a Nivel Nacional 25 de Mayo 2015</a></p>
-]]></content:encoded>
-			<wfw:commentRss>http://www.liderman.com.pe/informecarreteras/situacion-de-carreteras-a-nivel-nacional-25-de-mayo-2015/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 		</item>
 	</channel>
