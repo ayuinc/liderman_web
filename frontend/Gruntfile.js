@@ -400,9 +400,9 @@ module.exports = function (grunt) {
       ebm: {
         files: [
           '<%= project.src %>/scss/{,*/}*/{,*/}*.{scss,sass}', 
-          '!<%= project.src %>/scss/style.scss',
-          '!<%= project.src %>/scss/EBM/_ebm-global.scss',
-          '!<%= project.src %>/scss/EBM/_ebm-dist.scss'],
+          '<%= project.src %>/scss/style.scss',
+          '<%= project.src %>/scss/EBM/_ebm-global.scss',
+          '<%= project.src %>/scss/EBM/_ebm-dist.scss'],
         tasks: 'sass:ebm'
       },
 
