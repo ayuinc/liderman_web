@@ -5435,7 +5435,7 @@ p {
   height: 900px;
 }
 .reconocimientos .flickity-page-dots {
-  bottom: -170px;
+  bottom: -40%;
 }
 .reconocimientos p {
   font-size: 14px;
@@ -5444,7 +5444,6 @@ p {
 .reconocimientos .img-reconocimiento {
   margin: 0 auto;
   width: 450px;
-  height: 340px;
 }
 
 /*

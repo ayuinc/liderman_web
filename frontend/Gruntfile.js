@@ -387,6 +387,25 @@ module.exports = function (grunt) {
         files: '<%= project.src %>/js/lib/*.js',
         tasks: ['uglify']
       },
+
+      style: {
+        files: [
+          '<%= project.src %>/scss/style.scss',
+          '<%= project.src %>/scss/b3/_variables.scss',
+          '<%= project.src %>/scss/EBM/_ebm-global.scss',
+          '<%= project.src %>/scss/EBM/_ebm-dist.scss'],
+        tasks: 'sass:dev'
+      },
+
+      ebm: {
+        files: [
+          '<%= project.src %>/scss/{,*/}*/{,*/}*.{scss,sass}', 
+          '!<%= project.src %>/scss/style.scss',
+          '!<%= project.src %>/scss/EBM/_ebm-global.scss',
+          '!<%= project.src %>/scss/EBM/_ebm-dist.scss'],
+        tasks: 'sass:ebm'
+      },
+
       sass: {
         files: '<%= project.src %>/scss/{,*/}*/{,*/}*.{scss,sass}',
         tasks: ['sass:dev']
@@ -423,10 +442,10 @@ module.exports = function (grunt) {
    */
   grunt.registerTask('default', [
     'coffee:dev',
-    // 'sass:ebm',
+    'sass:ebm',
     'sass:dev',
     // 'bower:dev',
-    // 'autoprefixer:dev',
+    // 'autoprefixer:dev',7
     // 'cssmin:dev',
     // 'jshint',
     // 'concat:dev',
