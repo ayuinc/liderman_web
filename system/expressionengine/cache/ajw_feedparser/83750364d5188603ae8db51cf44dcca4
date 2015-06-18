@@ -13,11 +13,60 @@
 	<atom:link href="http://www.liderman.com.pe/feed/" rel="self" type="application/rss+xml" />
 	<link>http://www.liderman.com.pe</link>
 	<description>Valemos tanto como lo que cuidamos</description>
-	<lastBuildDate>Sat, 13 Jun 2015 00:20:33 +0000</lastBuildDate>
+	<lastBuildDate>Wed, 17 Jun 2015 21:28:54 +0000</lastBuildDate>
 	<language>es-ES</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
 	<generator>http://wordpress.org/?v=3.6.1</generator>
+		<item>
+		<title>Auditoría BASC: miércoles 17 de junio 2015</title>
+		<link>http://www.liderman.com.pe/general/auditoria-basc-junio/</link>
+		<comments>http://www.liderman.com.pe/general/auditoria-basc-junio/#comments</comments>
+		<pubDate>Tue, 16 Jun 2015 20:01:39 +0000</pubDate>
+		<dc:creator>admin_liderman</dc:creator>
+				<category><![CDATA[General]]></category>
+
+		<guid isPermaLink="false">http://www.liderman.com.pe/?p=3263</guid>
+		<description><![CDATA[El día miércoles 17 de junio nos visitará los Auditores Externos Kandy Escobar Carmona y Carlos Reyes Lazo, por lo cual [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>El día miércoles 17 de junio nos visitará los Auditores Externos Kandy Escobar Carmona y Carlos Reyes Lazo, por lo cual deben estar atentos todos los liderman en unidades certificadas con BASC en Lima, ya que los auditores puede visitar sus unidades.</p>
+<p><strong>Lee las siguientes cartillas y responde de forma correcta cualquier pregunta que elabore el auditor.</strong></p>
+<p><a href="http://www.liderman.com.pe/wp-content/uploads/2015/06/Cartilla-BASC-I-1.pdf" target="_blank">Cartilla BASC I</a></p>
+<p><a href="http://www.liderman.com.pe/wp-content/uploads/2015/06/Cartilla-BASC-II.pdf" target="_blank">Cartilla BASC II</a></p>
+<p>¡Al pasar con exíto esta auditoría, podremos obtener la Re-Certificación BASC! ¡Contamos contigo!</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.liderman.com.pe/general/auditoria-basc-junio/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Situación de Carreteras a Nivel Nacional 15 de Junio 2015</title>
+		<link>http://www.liderman.com.pe/informecarreteras/situacion-de-carreteras-a-nivel-nacional-15-de-junio-2015/</link>
+		<comments>http://www.liderman.com.pe/informecarreteras/situacion-de-carreteras-a-nivel-nacional-15-de-junio-2015/#comments</comments>
+		<pubDate>Mon, 15 Jun 2015 21:32:33 +0000</pubDate>
+		<dc:creator>admin_liderman</dc:creator>
+				<category><![CDATA[Informe de Carreteras]]></category>
+
+		<guid isPermaLink="false">http://www.liderman.com.pe/?p=5318</guid>
+		<description><![CDATA[Situación de Carreteras a Nivel Nacional 15 de Junio 2015]]></description>
+				<content:encoded><![CDATA[<p><a href="http://www.liderman.com.pe/wp-content/uploads/2015/06/Situacion-de-Carreteras-a-Nivel-Nacional-15-Junio-del-2015.docx" target="_blank">Situación de Carreteras a Nivel Nacional 15 de Junio 2015</a></p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.liderman.com.pe/informecarreteras/situacion-de-carreteras-a-nivel-nacional-15-de-junio-2015/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Eventos proyectados del 15 al 21 de Junio 2015</title>
+		<link>http://www.liderman.com.pe/proyecciones-semanales/eventos-proyectados-del-15-al-21-de-junio-2015/</link>
+		<comments>http://www.liderman.com.pe/proyecciones-semanales/eventos-proyectados-del-15-al-21-de-junio-2015/#comments</comments>
+		<pubDate>Mon, 15 Jun 2015 21:30:57 +0000</pubDate>
+		<dc:creator>admin_liderman</dc:creator>
+				<category><![CDATA[Proyecciones Semanales]]></category>
+
+		<guid isPermaLink="false">http://www.liderman.com.pe/?p=5314</guid>
+		<description><![CDATA[Eventos proyectados del 15 al 21 de Junio 2015]]></description>
+				<content:encoded><![CDATA[<p><a href="http://www.liderman.com.pe/wp-content/uploads/2015/06/024.JV15_21Jun.pdf" target="_blank">Eventos proyectados del 15 al 21 de Junio 2015</a></p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.liderman.com.pe/proyecciones-semanales/eventos-proyectados-del-15-al-21-de-junio-2015/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
 		<item>
 		<title>Concurso del Día del Padre</title>
 		<link>http://www.liderman.com.pe/noticias/concurso-del-dia-del-padre/</link>
@@ -1095,51 +1144,6 @@
 <p>Se entrego su Diploma por su Buena Acción.</p>
 ]]></content:encoded>
 			<wfw:commentRss>http://www.liderman.com.pe/clientes-liderman/reconocimientos/testimonios/liderman-devuelve-objeto-perdido/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-		</item>
-		<item>
-		<title>Situación de Carreteras a Nivel Nacional 01 de Junio 2015</title>
-		<link>http://www.liderman.com.pe/informecarreteras/situacion-de-carreteras-a-nivel-nacional-01-de-junio-2015/</link>
-		<comments>http://www.liderman.com.pe/informecarreteras/situacion-de-carreteras-a-nivel-nacional-01-de-junio-2015/#comments</comments>
-		<pubDate>Mon, 01 Jun 2015 17:40:25 +0000</pubDate>
-		<dc:creator>admin_liderman</dc:creator>
-				<category><![CDATA[Informe de Carreteras]]></category>
-
-		<guid isPermaLink="false">http://www.liderman.com.pe/?p=5205</guid>
-		<description><![CDATA[Situación de Carreteras a Nivel Nacional 01 de Junio 2015]]></description>
-				<content:encoded><![CDATA[<p><a href="http://www.liderman.com.pe/wp-content/uploads/2015/06/Situacion-de-Carreteras-a-Nivel-Nacional-01-Junio-del-2015.docx" target="_blank">Situación de Carreteras a Nivel Nacional 01 de Junio 2015</a></p>
-]]></content:encoded>
-			<wfw:commentRss>http://www.liderman.com.pe/informecarreteras/situacion-de-carreteras-a-nivel-nacional-01-de-junio-2015/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-		</item>
-		<item>
-		<title>Eventos proyectados del 01 al 07 de Junio 2015</title>
-		<link>http://www.liderman.com.pe/proyecciones-semanales/eventos-proyectados-del-01-al-07-de-junio-2015/</link>
-		<comments>http://www.liderman.com.pe/proyecciones-semanales/eventos-proyectados-del-01-al-07-de-junio-2015/#comments</comments>
-		<pubDate>Mon, 01 Jun 2015 17:39:30 +0000</pubDate>
-		<dc:creator>admin_liderman</dc:creator>
-				<category><![CDATA[Proyecciones Semanales]]></category>
-
-		<guid isPermaLink="false">http://www.liderman.com.pe/?p=5202</guid>
-		<description><![CDATA[Eventos proyectados del 01 al 07 de Junio 2015]]></description>
-				<content:encoded><![CDATA[<p><a href="http://www.liderman.com.pe/wp-content/uploads/2015/06/022.JV01_07Jun.pdf" target="_blank">Eventos proyectados del 01 al 07 de Junio 2015</a></p>
-]]></content:encoded>
-			<wfw:commentRss>http://www.liderman.com.pe/proyecciones-semanales/eventos-proyectados-del-01-al-07-de-junio-2015/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-		</item>
-		<item>
-		<title>Situación de Carreteras a Nivel Nacional 27 de Mayo 2015</title>
-		<link>http://www.liderman.com.pe/informecarreteras/situacion-de-carreteras-a-nivel-nacional-27-de-mayo-2015/</link>
-		<comments>http://www.liderman.com.pe/informecarreteras/situacion-de-carreteras-a-nivel-nacional-27-de-mayo-2015/#comments</comments>
-		<pubDate>Wed, 27 May 2015 16:52:02 +0000</pubDate>
-		<dc:creator>admin_liderman</dc:creator>
-				<category><![CDATA[Informe de Carreteras]]></category>
-
-		<guid isPermaLink="false">http://www.liderman.com.pe/?p=5196</guid>
-		<description><![CDATA[Situación de Carreteras a Nivel Nacional 27 de Mayo 2015]]></description>
-				<content:encoded><![CDATA[<p><a href="http://www.liderman.com.pe/wp-content/uploads/2015/05/Situacion-de-Carreteras-a-Nivel-Nacional-27-Mayo-del-2015.docx" target="_blank">Situación de Carreteras a Nivel Nacional 27 de Mayo 2015</a></p>
-]]></content:encoded>
-			<wfw:commentRss>http://www.liderman.com.pe/informecarreteras/situacion-de-carreteras-a-nivel-nacional-27-de-mayo-2015/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 		</item>
 	</channel>
