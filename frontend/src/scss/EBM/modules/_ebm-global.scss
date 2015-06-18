@@ -30,6 +30,9 @@ p{
 	font-family: $font-family-serif;
 }
 
+.font-p{
+	font-family: $font-family-serif;
+}
 
 /*
 	colors
@@ -616,6 +619,7 @@ $liderman-red: #B92A30;
 	width: 600px;
 	margin: 0 auto;
 	background-position-y: 0;
+	background-position: center;
 }
 
 
