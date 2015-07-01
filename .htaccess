@@ -26,7 +26,7 @@ ErrorDocument 404 /index.php/
  <IfModule mod_rewrite.c>
  RewriteEngine On
  RewriteBase /
- </IfModule>
+</IfModule>
 
 # Block access to "hidden" directories whose names begin with a period. This
 # includes directories used by version control systems such as Subversion or Git.
