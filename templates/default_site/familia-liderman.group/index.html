@@ -1,0 +1,88 @@
+{embed="includes/head"}
+{embed="includes/header-interno"}
+
+{exp:channel:entries channel="familia_liderman"}
+
+    <section class="pt-42" id="conectividad"> <!-- Familia Liderman -->
+      <div class="container pv-56 text-center">
+        <img src="{site_url}app/assets/icons/familia-liderman-gris-home.png">
+        <h2 class="section-title section-title text-black pb-21">Familia liderman</h2>
+        <p class="text-intro">{introduccion_familia_liderman}</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="pv-56 bg-black-liderman text-white"><!-- Historia-->
+      <div class="container text-center">
+        <h2 class="section-title section-title text-white">Historia</h2>
+        <p class="text-intro text-gray-light pv-35">{introduccion_historia}</p>
+        <div class="img-liderman bg-img-block img-responsive text-center minh-420 mb-21" style="background-image: url({historia_imagen});"></div>
+      </div>
+    </section>
+
+
+    <section class="bg-gray"><!-- Que es un liderman -->
+      <div class="container-lg">
+        <div class="row">
+          <div class="col-md-5">
+            <div class="bg-img-block minh-630 img-responsive" style="background-image: url({image_que_es});"></div>
+          </div>
+          <div class="col-md-7 pv-35 text-center text-white">
+            <h2 class="section-title section-title pv-21">Que es un liderman</h2>
+            <p class="text-intro pv-7 lh-lg">{introduccion_que_es}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    {embed="includes/equipo"}
+
+    <section class="pv-56 bg-black-liderman text-white"><!-- Política Integrada -->
+      <div class="container text-center">
+        <h2 class="section-title section-title text-white">Política Integrada</h2>
+        <p class="text-intro text-gray-light pv-35">{introduccion_politica}</p>
+        <div class="img-liderman bg-img-block img-responsive text-center minh-420 mb-21" style="background-image: url({imagen_politica});"></div>
+      </div>
+    </section>
+
+    <section class="pv-56"><!-- Conoce más -->
+      <div class="container-sm text-center quienes-somos">
+        <h2 class="section-title section-title text-black pv-21">Conoce más sobre quienes somos</h2>
+        <ul class="grid-list grid-list-3 grid-list-1-xs text-center">
+          <li class="grid-list-item">
+            <a href="{site_url}familia-liderman">
+              <div class="quienes-somos-item">
+                <div class="quienes-somos-inner">
+                  <div class="mt-7 icon-quienes-somos icon-familia-liderman"></div>
+                  <h3>Familia Liderman</h3>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="grid-list-item">
+            <a href="{site_url}lidermania">
+              <div class="quienes-somos-item">
+                <div class="quienes-somos-inner">
+                  <div class="mt-7 icon-quienes-somos icon-lidermania"></div>
+                  <h3>Lidermania</h3>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="grid-list-item">
+            <a href="{site_url}conectividad">
+              <div class="quienes-somos-item">
+                <div class="quienes-somos-inner">
+                  <div class="mt-7 icon-quienes-somos icon-conectividad"></div>
+                  <h3>Conectividad</h3>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+{/exp:channel:entries}
+{embed="includes/contactanos"}
+
+{embed="includes/footer"}

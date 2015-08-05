@@ -1,0 +1,58 @@
+{embed="includes/head"}
+{embed="includes/header-interno"}
+
+
+<section class="pt-42" id="quiero-ser-liderman"> <!-- Clientes -->
+      <div class="container pv-63">
+        <div class="text-center">
+          <h2 class="section-title section-title text-black pb-21">Nuestros servicios</h2>
+          <p class="text-intro">En ésta sección encontrarás mucha información acerca de cómo conviertirte el Liderman.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gray-lighter pv-56">
+      <div class="container-sm">
+        <img style="width: 100%;" class="img-responsive mb-28" src="{site_url}app/assets/img/foto-noticia-interna.png"> 
+        <ol class="list-liderman">
+        {exp:channel:entries channel="servicios"  limit="20"}
+          <li>
+            <p>{nuestros_servicios}</p>
+          </li>
+        {/exp:channel:entries}
+          <!-- <li>
+            <p>Agentes de Resguardo Persona</p>
+          </li>
+          <li>
+            <p>Centro de Control y Monitoreó de Alarmas a distancia</p>
+          </li>
+          <li>
+            <p>Centro de Entrenamiento y Capacitación</p>
+          </li>
+          <li>
+            <p>Asesorías en Seguridad, Análisis de Riesgo, Incidentes, Estudios y otros.</p>
+          </li>
+          <li>
+            <p>Custodia de Mercadería en Tránsito.</p>
+          </li>
+          <li>
+            <p>Custodia Canina.</p>
+          </li>
+          <li>
+            <p>Verificación de Perfiles de empleados, domicilios y otros.</p>
+          </li>
+          <li>
+            <p>Recepción y custodia de Ejecutivos en visitas al País.</p>
+          </li>
+          <li>
+            <p>Charlas y Seminarios de Seguridad Física, Industrial, Patrimonial y otros.</p>
+          </li>
+          <li>
+            <p>Seguridad en general, en todos los rubros, Minero, Agroindustrial, Comercial, Industrial, Laboratorios, Comercial, Almacenes, Cementeras, Puertos, Aviación Comercial, Químicos, Aeropuertos, Grandes Proyectos, Energía, Centrales Hidroeléctricas, Construcción, Gases, y otros.</p>
+          </li> -->
+        </ol>
+      </div>
+    </section>
+{embed="includes/contactanos"}
+    
+{embed="includes/footer"}
