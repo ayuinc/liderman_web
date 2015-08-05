@@ -597,7 +597,7 @@ class Ajw_feedparser {
 	 * @return void
 	 * @author Andrew Weaver
 	 */
-	function usage() {
+	static function usage() {
 		ob_start(); 
 		?>
 

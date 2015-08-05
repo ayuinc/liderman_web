@@ -56,56 +56,40 @@
         <div class="text-center section-padding-horizontal">
           <h2 class="section-title text-white pt-70 pb-28">Forma parte de Liderman</h2>
           <p class="text-intro text-white pb-21">En esta sección encontrarás mucha información acerca de cómo convertirte en Liderman.</p>
-          <a href="#" class="btn-liderman btn-liderman-white">
+          <a href="{site_url}quiero-ser-liderman" class="btn-liderman btn-liderman-white">
             <span>Postula</span>
           </a>
         </div>
       </div>
     </section>
-
     <section class="section-padding-horizontal noticias" id="noticias"> <!-- noticias --> 
       <div class="container text-center">
         <h2 class="section-title text-center pb-28 text-black">Noticias</h2>   
         <ul class="grid-list grid-list-3 text-left grid-list-1-xs grid-noticias pb-21">
-        {exp:ajw_feedparser 
-				  url="http://www.liderman.com.pe/feed/"
-				  cache_refresh="30"
-				  limit="3"
-				  parse="inward"
-				} 
-          <li class="grid-list-item">
-            <div class="list-item-noticias minh-280">
-              <img class="img-responsive" src="assets/img/img.png" alt="Cultura Liderman">
-              <h3 class="pt-14">
-              	{title}
-              </h3>
-              <small>{pubDate}</small>
-              <p class="pv-14">{description}</p>
-            </div>
-          </li>
-          {/exp:ajw_feedparser}
-<!--           <li class="grid-list-item">
-            <div class="list-item-noticias">
-              <img class="img-responsive" src="assets/img/img.png" alt="Cultura Liderman">
-              <h3 class="pt-14">Titulo de la noticia</h3>
-              <small>18 de abril del 2015</small>
-              <p class="pv-14">Te doming nostro quodsi his. In labitur fabellas repudia eos simul praesent ei.</p>
-            </div>
-          </li>
-          <li class="grid-list-item">
-            <div class="list-item-noticias">
-              <img class="img-responsive" src="assets/img/img.png" alt="Cultura Liderman">
-              <h3 class="pt-14">Titulo de la noticia</h3>
-              <small>18 de abril del 2015</small>
-              <p class="pv-14">Te doming nostro quodsi his. In labitur fabellas repudia eos simul praesent ei.</p>
-            </div>
-          </li> -->
+          {exp:channel:entries channel="noticias" limit="3"}
+            <li class="grid-list-item">
+              <a href="{site_url}noticias/noticia-interna/{entry_id}" class="text-gray">
+                <div class="list-item-noticias" style="height: 500px;">
+<!--                   <img class="img-responsive" src="{imagen_noticia}" alt="Cultura Liderman">
+ -->                  <h3 class="pt-14">
+                  	{titulo_noticias}
+                  </h3>
+                  <small>{fecha_noticias}</small>
+                  <p id="texto1" class="pv-14" >
+                    {intro_noticias}
+                  </p>
+                </div>
+              </a>
+            </li>
+          {/exp:channel:entries}
+
         </ul>
-        <a href="#" class="btn-liderman btn-liderman-gray">Leer m&#xE1;s</a>    
+        <a href="{site_url}noticias" class="btn-liderman btn-liderman-gray">Leer m&#xE1;s</a>    
       </div>
     </section>
 
+
 {embed="includes/contactanos"}
     
-
 {embed="includes/footer"}
+

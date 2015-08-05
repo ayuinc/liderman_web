@@ -1,5 +1,11 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+define(SITE_NAME, 'liderman_web');
 
+$base_url = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") ? "https" : "http");
+$base_url .= "://".$_SERVER['HTTP_HOST'].'/'.SITE_NAME.'/';
+$admin_url  = $base_url . '/admin.php';
+
+$config['index_page'] = "";
 /*
 |--------------------------------------------------------------------------
 | ExpressionEngine Config Items
@@ -10,23 +16,68 @@
 | observed by ExpressionEngine, e.g. 'permitted_uri_chars'
 |
 */
+$config['site_url'] = $base_url ;
 
 $config['app_version'] = '293';
 $config['license_contact'] = '';
 $config['license_number'] = '4630-2858-5276-6671';
 $config['debug'] = '1';
-$config['cp_url'] = 'http://localhost/liderman_web/admin.php';
+$config['cp_url'] = $config['site_url'].'/admin.php';
 $config['doc_url'] = 'http://ellislab.com/expressionengine/user-guide/';
 $config['is_system_on'] = 'y';
 $config['allow_extensions'] = 'y';
 $config['cache_driver'] = 'file';
-$config['cookie_prefix'] = '';
+$config['cookie_prefix'] = SITE_NAME.'_';
 $config['cookie_httponly'] = 'y';
 
-$config['index_page'] = 'index.php';
+$config['server_path'] = FCPATH;
+
+$config['site_index'] = '';
+$config['theme_folder_url'] = $config['site_url']."/themes/";
+$config['theme_folder_path'] = $config['server_path']."themes";
+$config['save_tmpl_files'] = "y";
+$config['tmpl_file_basepath'] = $config['server_path']."templates";
+$config['avatar_url'] = $config['site_url']."/images/avatars/";
+$config['avatar_path'] = $config['server_path']."images/avatars/";
+$config['photo_url'] = $config['site_url']."/images/member_photos/";
+$config['photo_path'] = $config['server_path']."images/member_photos/";
+$config['sig_img_url'] = $config['site_url']."/images/signature_attachments/";
+$config['sig_img_path'] = $config['server_path']."images/signature_attachments/";
+$config['prv_msg_upload_path'] = $config['server_path']."images/pm_attachments/";
+
+$config['captcha_path'] = $config['server_path']."images/captchas/";
+$config['captcha_url'] = $config['site_url']."/images/captchas/";
+
 
 // END EE config items
 
+$config['upload_preferences'] = array(
+    2 => array(                                                            // ID of upload destination
+        'name'        => 'Reconocimiento',                          // Display name in control panel
+        'server_path' => $config['server_path'].'images/uploads/reconocimientos/', // Server path to upload directory
+        'url'         => $config['site_url'].'images/uploads/reconocimientos/'      // URL of upload directory
+    ),
+    3 => array(                                                            // ID of upload destination
+        'name'        => 'Noticias',                          // Display name in control panel
+        'server_path' => $config['server_path'].'images/uploads/noticias/', // Server path to upload directory
+        'url'         => $config['site_url'].'images/uploads/noticias/'      // URL of upload directory
+    ),
+    1 => array(                                                            // ID of upload destination
+        'name'        => 'Liderman',                          // Display name in control panel
+        'server_path' => $config['server_path'].'images/uploads/liderman/', // Server path to upload directory
+        'url'         => $config['site_url'].'images/uploads/liderman/'      // URL of upload directory
+    ),
+    4 => array(                                                            // ID of upload destination
+        'name'        => 'Quienes Somos',                          // Display name in control panel
+        'server_path' => $config['server_path'].'images/uploads/quienes-somos/', // Server path to upload directory
+        'url'         => $config['site_url'].'images/uploads/quienes-somos/'      // URL of upload directory
+    ),
+    5 => array(                                                            // ID of upload destination
+        'name'        => 'Clientes',                          // Display name in control panel
+        'server_path' => $config['server_path'].'images/uploads/clientes/', // Server path to upload directory
+        'url'         => $config['site_url'].'images/uploads/clientes/'      // URL of upload directory
+    )
+);
 
 /*
 |--------------------------------------------------------------------------
