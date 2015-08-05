@@ -1,3 +1,9 @@
+# Untracked files:
+*.sass-cache/
+system/expressionengine/config
+.DS_Store
+.htaccess
+
 ## Windows
 Thumbs.db
 ehthumbs.db
@@ -13,49 +19,21 @@ Icon
 .Spotlight-V100
 .Trashes
 
-*/system/expressionengine/cache/*
+# Expression Engine
+# Images
+# images/avatars/
+ images/captchas/
+# images/smileys/
+# images/member_photos/
+# images/signature_attachments/
+# images/pm_attachments/
 
-## EBM
-style.min.css
-style.unprefixed.css
-style.prefixed.css
+# For security do not publish the following files
+system/expressionengine/config/database.php
+system/expressionengine/config/config.php
 
-## Node.js
-lib-cov
-*.seed
-*.log
-*.csv
-*.dat
-*.out
-*.pid
-*.gz
-pids
-logs
-results
-npm-debug.log
-node_modules
-
-## Bower
-src/components
-lib
-
-## Sass
-.sass-cache
-
-## OS X
-.DS_Store
-.AppleDouble
-.LSOverride
-Icon
-._*
-.Spotlight-V100
-.Trashes
-
-## Windows
-Thumbs.db
-ehthumbs.db
-Desktop.ini
-$RECYCLE.BIN/
-
-## WORDPRESS
-wp-content/uploads/**
+# Caches
+sized/
+thumbs/
+_thumbs/
+*/expressionengine/cache/*
