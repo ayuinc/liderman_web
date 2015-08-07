@@ -26,6 +26,6 @@ $(function() {
 
 $(function(){
   $('.item-close').click(function(){
-    $('.overlay-hugeinc.open').addCLass('close');
+    $('.overlay-hugeinc.open').addClass('close');
   });
 });

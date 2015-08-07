@@ -12,9 +12,6 @@ $user-card-width: 70px;
 html,
 body {
 	background-color: $body-bg;	
-	&::-webkit-scrollbar { 
-    display: none; 
-	}
 }
 
 .site-wrapper,
@@ -227,6 +224,10 @@ $liderman-red: #B92A30;
 	}
 }
 
+/*
+End: Header
+*/
+
 .icon-menu{
 	display: inline-block;
   height: 30px;
@@ -276,9 +277,10 @@ $liderman-red: #B92A30;
 */
 .arrow{
 	position: relative;
-	margin: 0 auto;
-	width: 67px;
-	bottom: 45px;
+    margin: 0 auto;
+    width: 67px;
+    bottom: 45px;
+    left: 650px;
 }
 
 /*

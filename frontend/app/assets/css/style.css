@@ -5015,10 +5015,6 @@ html,
 body {
   background-color: #fff;
 }
-html::-webkit-scrollbar,
-body::-webkit-scrollbar {
-  display: none;
-}
 
 .site-wrapper,
 .site-content {
@@ -5213,6 +5209,9 @@ p {
   padding: 4px 18px;
 }
 
+/*
+End: Header
+*/
 .icon-menu {
   display: inline-block;
   height: 30px;
@@ -5265,6 +5264,7 @@ p {
   margin: 0 auto;
   width: 67px;
   bottom: 45px;
+  left: 650px;
 }
 
 /*
