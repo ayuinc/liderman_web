@@ -4264,10 +4264,11 @@ p {
 	Arrow	
 */
 .arrow {
-  position: relative;
+  position: absolute;
   margin: 0 auto;
   width: 67px;
-  bottom: 45px; }
+  bottom: -25px;
+  left: 48%; }
 
 /*
 	Menu
@@ -4409,9 +4410,9 @@ p {
 */
 .reconocimientos {
   position: relative;
-  height: 900px; }
+  height: 800px; }
   .reconocimientos .flickity-page-dots {
-    bottom: -40%; }
+    bottom: -15%; }
   .reconocimientos p {
     font-size: 14px;
     font-style: italic; }

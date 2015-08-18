@@ -311,10 +311,11 @@ $liderman-red: #B92A30;
 	Arrow	
 */
 .arrow{
-	position: relative;
+	position: absolute;
 	margin: 0 auto;
 	width: 67px;
-	bottom: 45px;
+	bottom: -25px;
+	left: 48%;
 }
 
 /*
@@ -509,9 +510,9 @@ $liderman-red: #B92A30;
 
 .reconocimientos{ 
 	position: relative;
-	height: 900px;
+	height: 800px;
 	.flickity-page-dots {
-	  bottom: -40%; //positioning page-dots accordingly
+	  bottom: -15%; //positioning page-dots accordingly
 	}
 	p{
 		font-size: 14px;
