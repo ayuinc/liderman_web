@@ -36,11 +36,7 @@ app/assets/button-icons/*.eot
 app/assets/button-icons/*.ttf
 app/assets/button-icons/*.woff
 
-# For security do not publish the following files
-system/expressionengine/config/database.php
-system/expressionengine/config/config.php
-.htaccess
- 
+
 ## Sass
 .sass-cache
 
