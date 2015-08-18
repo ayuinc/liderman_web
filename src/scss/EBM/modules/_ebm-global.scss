@@ -12,9 +12,7 @@ $user-card-width: 70px;
 html,
 body {
 	background-color: $body-bg;	
-	&::-webkit-scrollbar { 
-    display: none; 
-	}
+
 }
 
 .site-wrapper,
@@ -203,6 +201,7 @@ $liderman-red: #B92A30;
 	display: none;
 }
 
+
 .header-scroll, 
 .header-scroll-fixed{
 	position: fixed;
@@ -220,6 +219,43 @@ $liderman-red: #B92A30;
 		.img-redes{
 			height: 24px;
 		}
+		
+		.hover-redes{
+			img{
+		    opacity: 0.8;
+		  }
+		}
+		
+		.hover-redes{
+			img{
+		    filter: url('#grayscale');
+		    -webkit-filter: grayscale(100%);
+		    -moz-filter: grayscale(100%);
+		    -ms-filter: grayscale(100%);
+		    -o-filter: grayscale(100%);
+		    filter: grayscale(100%);
+		    filter: Gray();
+		    -webkit-transition: all 0.5s ease;
+		    -moz-transition: all 0.5s ease;
+		    -ms-transition: all 0.5s ease;
+		    -o-transition: all 0.5s ease;
+		    transition: all 0.5s ease;
+		    &:hover{
+		      -webkit-filter: grayscale(0%);
+		      -moz-filter: grayscale(0%);
+		      -ms-filter: grayscale(0%);
+		      -o-filter: grayscale(0%);
+		      filter: none;
+		      -webkit-transition: all 0.5s ease;
+		      -moz-transition: all 0.5s ease;
+		      -ms-transition: all 0.5s ease;
+		      -o-transition: all 0.5s ease;
+		      transition: all 0.5s ease;
+		    }
+		  }
+		}
+
+
 		.btn-liderman{
 			font-size: 18px;
 			padding: 4px 18px;

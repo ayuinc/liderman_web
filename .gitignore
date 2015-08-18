@@ -1,39 +1,50 @@
-# Untracked files:
-*.sass-cache/
-system/expressionengine/config
-.DS_Store
-.htaccess
+# @author MadeByGus
+ 
+## EBM
+style.min.css
+style.unprefixed.css
+style.prefixed.css
 
-## Windows
-Thumbs.db
-ehthumbs.db
-Desktop.ini
-$RECYCLE.BIN/
+ 
+## Node.js
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+pids
+logs
+results
+npm-debug.log
+node_modules
 
+ 
+## Bower
+src/components
+lib
+
+ 
+## Images
+
+ 
+## Icons
+app/assets/button-icons/*.svg
+app/assets/button-icons/*.eot
+app/assets/button-icons/*.ttf
+app/assets/button-icons/*.woff
+
+ 
+## Sass
+.sass-cache
+
+ 
 ## OS X
 .DS_Store
-.AppleDouble
-.LSOverride
-Icon
-._*
-.Spotlight-V100
-.Trashes
+@@ -58,4 +36,4 @@ Desktop.ini
+$RECYCLE.BIN/
 
-# Expression Engine
-# Images
-# images/avatars/
- images/captchas/
-# images/smileys/
-# images/member_photos/
-# images/signature_attachments/
-# images/pm_attachments/
-
-# For security do not publish the following files
-system/expressionengine/config/database.php
-system/expressionengine/config/config.php
-
-# Caches
-sized/
-thumbs/
-_thumbs/
-*/expressionengine/cache/*
+## WORDPRESS
+wp-content/uploads/**
