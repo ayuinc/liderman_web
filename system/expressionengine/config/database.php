@@ -4,9 +4,9 @@ $active_group = 'expressionengine';
 $active_record = TRUE;
 
 $db['expressionengine']['hostname'] = 'localhost';
-$db['expressionengine']['username'] = 'root';
-$db['expressionengine']['password'] = '';
-$db['expressionengine']['database'] = 'liderman_web';
+$db['expressionengine']['username'] = 'liderman_web_r';
+$db['expressionengine']['password'] = 'l1d3rm4n_l4b0r4t0r1a';
+$db['expressionengine']['database'] = 'liderman_web_db';
 $db['expressionengine']['dbdriver'] = 'mysqli';
 $db['expressionengine']['pconnect'] = FALSE;
 $db['expressionengine']['dbprefix'] = 'exp_';
