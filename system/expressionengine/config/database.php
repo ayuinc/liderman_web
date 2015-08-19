@@ -4,8 +4,8 @@ $active_group = 'expressionengine';
 $active_record = TRUE;
 
 $db['expressionengine']['hostname'] = 'localhost';
-$db['expressionengine']['username'] = 'liderman_web_r';
-$db['expressionengine']['password'] = 'l1d3rm4n_l4b0r4t0r1a';
+$db['expressionengine']['username'] = 'root';
+$db['expressionengine']['password'] = '';
 $db['expressionengine']['database'] = 'liderman_web_db';
 $db['expressionengine']['dbdriver'] = 'mysqli';
 $db['expressionengine']['pconnect'] = FALSE;
@@ -17,11 +17,11 @@ $db['expressionengine']['autoinit'] = FALSE;
 $db['expressionengine']['char_set'] = 'utf8';
 $db['expressionengine']['dbcollat'] = 'utf8_general_ci';
 
-$db['expressionengine']['cachedir'] = '/home/liderman_web/public_html/system/expressionengine/cache/db_cache/';
+// $db['expressionengine']['cachedir'] = '/home/liderman_web/public_html/system/expressionengine/cache/db_cache/';
 
 
 
-// $db['expressionengine']['cachedir'] = 'C:\xampp\htdocs\Lidermanweb\system\expressionengine\cache\db_cache';
+$db['expressionengine']['cachedir'] = 'C:\xampp\htdocs\Lidermanweb\system\expressionengine\cache\db_cache';
 
 
 
