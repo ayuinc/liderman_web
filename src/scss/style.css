@@ -4267,7 +4267,7 @@ p {
   position: absolute;
   margin: 0 auto;
   width: 67px;
-  bottom: -25px;
+  bottom: 0;
   left: 48%; }
 
 /*
