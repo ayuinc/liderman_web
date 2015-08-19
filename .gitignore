@@ -39,10 +39,10 @@ app/assets/button-icons/*.ttf
 # For security do not publish the following files
 system/expressionengine/config/database.php
 system/expressionengine/config/config.php
-
 .htaccess
 
-
+system/expressionengine/cache/current_version
+system/expressionengine/cache/software_registration
 
 
 ## Sass
