@@ -21,5 +21,6 @@ $db['expressionengine']['cachedir'] = '/home/liderman_web/public_html/system/exp
 
 // $db['expressionengine']['cachedir'] = 'C:\xampp\htdocs\Lidermanweb\system\expressionengine\cache\db_cache';
 
+
 /* End of file database.php */
 /* Location: ./system/expressionengine/config/database.php */
