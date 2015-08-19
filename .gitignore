@@ -34,9 +34,8 @@ lib
 app/assets/button-icons/*.svg
 app/assets/button-icons/*.eot
 app/assets/button-icons/*.ttf
-app/assets/button-icons/*.woff
 
-##p
+
 
 ## Sass
 .sass-cache
