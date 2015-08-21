@@ -1,52 +1,32 @@
 {embed="includes/head"}
-{embed="includes/header-interno"}  
-
-    <section class="pt-42"> <!-- Noticias -->
-      <div class="container pv-56">
-        <div class="row">
-          <div class="col-md-8">
-          {exp:channel:entries channel="reconocimientos" limit="1" dynamic="on"}
-            <h2 class="text-black bold uppercase">{titulo_recono}</h2>
-            <small class="text-red pv-14">20 de abril del 2015</small>
-            <img src="{imagen_recono}" class="img-liderman  img-responsive text-center mv-42"  alt="">
-            <p class="text-intro p-0 pt-14 text-gray-light">{contenido_reconocimientos}</p>
-          {/exp:channel:entries}
-            <div class="text-right text-gray pb-35 pt-35">
-              <span class="medium h4">COMPARTE:</span>
-              <a href=""><span class="pl-7 light h4 uppercase text-hover-facebook">FACEBOOK</span></a>
-              <a href=""><span class="pl-7 light h4 uppercase text-hover-twitter">TWITTER</span></a> 
-              <textarea type="area" class="form-control text-gray pv-21 uppercase light input-center mt-42" width="210" height="auto" placeholder="escribe tu mensaje" required=""></textarea>
-            </div>
-
-            <div class="pv-14 text-intro p-0">
-              <p class="text-gray"><strong><i>Euismd tincidunt</i></strong></p>
-              <p class="text-red">16/06/15</p>
-              <p class="text-gray-light"><i>Te domingo nostro quodsi his. In labitur fabellas repudiandae eos. Simul vitae ptant ad mei, vix congue praesent ei. Te domingo nostro quodsi his. In labitur fabellas repudiandae eos.</i></p>
-            </div> 
-            <div class="pv-14 text-intro p-0">  
-              <p class="text-gray"><strong><i>Euismd tincidunt</i></strong></p>
-              <p class="text-red">16/06/15</p>
-              <p class="text-gray-light"><i>Te domingo nostro quodsi his. In labitur fabellas repudiandae eos. Simul vitae ptant ad mei, vix congue praesent ei. Te domingo nostro quodsi his. In labitur fabellas repudiandae eos.</i></p>
-            </div>            
-
-          </div>
-
-          <div class="col-md-4 ph-35">
-            <div class="row pv-28">
-              <h4 class="text-orange uppercase pv-21 mt-42">Noticias relacionadas</h4>
-              <a href=""><p class="text-gray-light text-hover-gray-light pv-7">Te doming nostro quodsi his. In labitur fabellas repudia eos simul...</p></a>
-              <a href=""><p class="text-gray-light text-hover-gray-light pv-7">Te doming nostro quodsi his. In labitur fabellas repudia eos simul...</p></a>
-              <a href=""><p class="text-gray-light text-hover-gray-light pv-7">Te doming nostro quodsi his. In labitur fabellas repudia eos simul...</p></a>
-              <a href=""><p class="text-gray-light text-hover-gray-light pv-7">Te doming nostro quodsi his. In labitur fabellas repudia eos simul...</p></a>
-            </div>
-          </div>
+{embed="includes/header-interno"}
 
 
-        </div>
+<section class="pt-42"> <!-- Noticias -->
+      <div class="container pv-56 text-center">
+        <h2 class="section-title section-title text-black pb-21">Reconocimientos</h2>
+        
+       
+        <ul class="grid-list grid-list-3 text-left grid-list-1-xs grid-noticias pv-35">
+        {exp:channel:entries channel="reconocimientos" limit="9"}
+          <li class="grid-list-item">
+              <a href="{site_url}reconocimientos/reconocimientos-interna/{entry_id}" class="text-gray">
+
+                <div class="list-item-noticias" style="height: 500px;"> 
+                    <!-- <img src="{imagen_recono}" class="img-liderman  img-responsive text-center mv-42"  alt="">     -->            
+                    <h3 class="pt-14" style="color: #B92A30;">
+                    {titulo_recono}
+                  </h3>
+                  <p id="texto1" class="pv-14" >
+                    {descripcion_recono}
+                  </p>
+                </div>
+              </a>
+            </li>
+        {/exp:channel:entries}
+        </ul>
       </div>
     </section>
-
-
 {embed="includes/contactanos"}
     
 {embed="includes/footer"}

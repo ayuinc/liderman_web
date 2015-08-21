@@ -1,10 +1,12 @@
 $(window).scroll(function(){
 	var position = $(this).scrollTop();
 	if (position > 520) {
-		$(".header-scroll").fadeIn();
+    $('.header').addClass('active');
+		// $(".header-scroll").fadeIn();
 	}
 	else if (position < 520 ) {
-		$(".header-scroll").fadeOut();
+		// $(".header-scroll").fadeOut();
+    $('.header').removeClass('active');
 	} 
 });
 

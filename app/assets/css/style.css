@@ -4205,6 +4205,51 @@ p {
 .header-scroll {
   display: none; }
 
+.header .btn-liderman {
+  display: none;
+  font-size: 18px;
+  padding: 4px 18px; }
+.header .header-left img {
+  display: none; }
+.header .img-redes {
+  height: 24px; }
+.header .hover-redes {
+  display: none; }
+.header .hover-redes img {
+  filter: url("#grayscale");
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: Gray();
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+  .header .hover-redes img:hover {
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    filter: none;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+
+.header.active {
+  position: fixed;
+  background-color: #4A4A4A; }
+  .header.active .btn-liderman {
+    display: block; }
+  .header.active .header-left img {
+    display: block; }
+  .header.active .hover-redes {
+    display: block; }
+
 .header-scroll,
 .header-scroll-fixed {
   position: fixed;

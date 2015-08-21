@@ -1,0 +1,60 @@
+{embed="includes/head"}
+{embed="includes/header-interno"}  
+
+    <section class="pt-42"> <!-- Noticias -->
+      <div class="container pv-56">
+        <div class="row">
+          <div class="col-md-8">
+          {exp:channel:entries channel="reconocimientos" limit="1" dynamic="on"}
+            <h2 class="text-black bold uppercase">{titulo_recono}</h2>
+            <small class="text-red pv-14">20 de abril del 2015</small>
+            <img src="{imagen_recono}" class="img-liderman  img-responsive text-center mv-42"  alt="">
+            <p class="text-intro p-0 pt-14 text-gray-light">{contenido-recono}</p>
+          {/exp:channel:entries}
+            <div class="text-right text-gray pv-35">
+              <span class="medium h4">COMPARTE:</span>
+              <a href="javascript:var dir=window.document.URL;var tit=window.document.title;var tit2=encodeURIComponent(tit);var dir2= encodeURIComponent(dir);window.location.href=('http://www.facebook.com/share.php?u='+dir2+'&amp;t='+tit2+'');" target="_blank"><span class="pl-7 light h4 uppercase text-hover-facebook">FACEBOOK</span></a>
+
+              <a href="javascript:var dir=window.document.URL;var tit=window.document.title;var tit2=encodeURIComponent(tit);window.location.href=('http://twitter.com/?status='+tit2+'%20'+dir+'');"><span class="pl-7 light h4 uppercase text-hover-twitter" target="_blank">TWITTER</span></a>
+
+
+
+            </div>
+
+            <div id="disqus_thread"></div>
+            <script type="text/javascript">
+                /* * * CONFIGURATION VARIABLES * * */
+                var disqus_shortname = 'mainlidermanperu';
+                
+                /* * * DON'T EDIT BELOW THIS LINE * * */
+                (function() {
+                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+                      
+
+          </div>
+
+          <div class="col-md-4 ph-35">
+            <div class="row pv-28">
+              <h4 class="text-orange uppercase pv-21 mt-42">Noticias relacionadas</h4>
+              <a href=""><p class="text-gray-light text-hover-gray-light pv-7">Te doming nostro quodsi his. In labitur fabellas repudia eos simul...</p></a>
+              <a href=""><p class="text-gray-light text-hover-gray-light pv-7">Te doming nostro quodsi his. In labitur fabellas repudia eos simul...</p></a>
+              <a href=""><p class="text-gray-light text-hover-gray-light pv-7">Te doming nostro quodsi his. In labitur fabellas repudia eos simul...</p></a>
+              <a href=""><p class="text-gray-light text-hover-gray-light pv-7">Te doming nostro quodsi his. In labitur fabellas repudia eos simul...</p></a>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+
+{embed="includes/contactanos"}
+    
+{embed="includes/footer"}
