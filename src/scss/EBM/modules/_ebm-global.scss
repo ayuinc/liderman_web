@@ -230,6 +230,75 @@ $liderman-red: #B92A30;
 }
 
 
+.header{
+	.btn-liderman{
+		display: none;
+		font-size: 18px;
+		padding: 4px 18px;
+	}
+	.header-left{
+		img{
+			display: none;
+		}
+	}
+
+	.img-redes{
+		height: 24px;
+	}
+
+	.hover-redes{
+		display: none;
+	}
+	
+	.hover-redes{
+		img{
+	    filter: url('#grayscale');
+	    -webkit-filter: grayscale(100%);
+	    -moz-filter: grayscale(100%);
+	    -ms-filter: grayscale(100%);
+	    -o-filter: grayscale(100%);
+	    filter: grayscale(100%);
+	    filter: Gray();
+	    -webkit-transition: all 0.5s ease;
+	    -moz-transition: all 0.5s ease;
+	    -ms-transition: all 0.5s ease;
+	    -o-transition: all 0.5s ease;
+	    transition: all 0.5s ease;
+	    &:hover{
+	      -webkit-filter: grayscale(0%);
+	      -moz-filter: grayscale(0%);
+	      -ms-filter: grayscale(0%);
+	      -o-filter: grayscale(0%);
+	      filter: none;
+	      -webkit-transition: all 0.5s ease;
+	      -moz-transition: all 0.5s ease;
+	      -ms-transition: all 0.5s ease;
+	      -o-transition: all 0.5s ease;
+	      transition: all 0.5s ease;
+	    }
+	  }
+	}
+
+}
+
+.header.active{
+	position: fixed;
+	background-color: $liderman-black;
+	.btn-liderman{
+		display: block;
+	}
+	.header-left{
+		img{
+			display: block;
+		}
+	}
+	.hover-redes{
+		display: block;
+	}
+}
+
+
+
 .header-scroll, 
 .header-scroll-fixed{
 	position: fixed;
@@ -282,8 +351,6 @@ $liderman-red: #B92A30;
 		    }
 		  }
 		}
-
-
 		.btn-liderman{
 			font-size: 18px;
 			padding: 4px 18px;
