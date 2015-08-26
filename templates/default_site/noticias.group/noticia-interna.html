@@ -1,30 +1,24 @@
 {embed="includes/head"}
 {embed="includes/header-interno"}
-{exp:channel:entries channel="noticias" limit="1" entry_id="{segment_3}"}
+
 
 <section class="pt-42"> <!-- Noticias -->
       <div class="container pv-56">
         <div class="row">
           <div class="col-md-8">
-            <h2 class="text-black bold uppercase">{titulo_noticias}</h2>
+            {exp:channel:entries channel="noticias" limit="1" entry_id="{segment_3}"}
+            <h2 class="text-black bold uppercase" style="line-height: 1.1;">{titulo_noticias}</h2>
             <small class="text-red pv-14">{fecha_noticias}</small>
-            <!-- <div class="img-liderman bg-img-block img-responsive text-center minh-420 mv-42" style="background-image: url({imagen_noticia});"></div> -->
+            <div class="img-liderman bg-img-block img-responsive text-center mv-42">
+              <img class="img-responsive" src="{imagen_noticia}" alt="">
+            </div>
             <p class="text-intro p-0 pt-14 text-gray-light">{contenido_noticias}</p>
-<!--             <p class="text-intro p-0 pt-14 pb-42 text-gray-light"></p>
- -->           <!--  <div class="separator-gray-light separator separator-full-width"></div>
-            <p class="text-frase pv-35">Te domingo nostro quodsi his. In labitur fabellas repudiandae eos. Simul vitae ptant ad mei, vix congue praesent ei. Te domingo nostro quodsi his. In labitur fabellas repudiandae eos. Simul vitae ptant ad mei, vix congue praesent ei.</p>
-            <div class="separator-gray-light separator separator-full-width"></div>
-            <p class="text-intro p-0 pt-35 text-gray">Te domingo nostro quodsi his. In labitur fabellas repudiandae eos. Simul vitae ptant ad mei, vix congue praesent ei. Te domingo nostro quodsi his. In labitur fabellas repudiandae eos. Simul vitae ptant ad mei, vix congue praesent ei.</p>
-            <p class="text-intro p-0 pt-14 pb-42 text-gray">Te domingo nostro quodsi his. In labitur fabellas repudiandae eos. Simul vitae ptant ad mei, vix congue praesent ei. Te domingo nostro quodsi his. In labitur fabellas repudiandae eos. Simul vitae ptant ad mei, vix congue praesent ei. Te domingo nostro quodsi his. In labitur fabellas repudiandae eos. Simul vitae ptant ad mei, vix congue praesent ei. Te domingo nostro quodsi his. In labitur fabellas repudiandae eos. Simul vitae ptant ad mei, vix congue praesent ei. Te domingo nostro quodsi his. In labitur fabellas repudiandae eos. Simul vitae ptant ad mei, vix congue praesent ei. Te domingo nostro quodsi his. In labitur fabellas repudiandae eos. Simul vitae ptant ad mei, vix congue praesent ei. Te domingo nostro quodsi his. In labitur fabellas repudiandae eos. Simul vitae ptant ad mei, vix congue praesent ei. Te domingo nostro quodsi his. In labitur fabellas repudiandae eos. Simul vitae ptant ad mei, vix congue praesent ei.</p> -->
-{/exp:channel:entries}
+            {/exp:channel:entries}
             <div class="text-right text-gray pv-35">
               <span class="medium h4">COMPARTE:</span>
               <a href="javascript:var dir=window.document.URL;var tit=window.document.title;var tit2=encodeURIComponent(tit);var dir2= encodeURIComponent(dir);window.location.href=('http://www.facebook.com/share.php?u='+dir2+'&amp;t='+tit2+'');" target="_blank"><span class="pl-7 light h4 uppercase text-hover-facebook">FACEBOOK</span></a>
 
               <a href="javascript:var dir=window.document.URL;var tit=window.document.title;var tit2=encodeURIComponent(tit);window.location.href=('http://twitter.com/?status='+tit2+'%20'+dir+'');"><span class="pl-7 light h4 uppercase text-hover-twitter" target="_blank">TWITTER</span></a>
-
-
-
             </div>
 
             <div id="disqus_thread"></div>

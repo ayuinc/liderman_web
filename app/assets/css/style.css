@@ -4119,7 +4119,8 @@ p {
   font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-size: 36px;
-  font-weight: 700; }
+  font-weight: 700;
+  line-height: 1.1; }
 
 .text-intro {
   padding: 0 15%;
@@ -4151,14 +4152,72 @@ p {
 .flickity-page-dots .dot.is-selected {
   background: #F7941D; }
 
+#red .btn-liderman {
+  margin-left: 7px;
+  margin-right: 7px; }
+
 /*
 	Header
 */
-@media only screen and (max-width: 480px) {
-  .header {
-    position: fixed;
-    background-color: #4A4A4A; } }
+.hero-unit {
+  height: 660px; }
 
+.list-item-noticias {
+  min-height: 500px; }
+
+@media only screen and (max-width: 480px) {
+  .hero-unit {
+    height: 100% !important; }
+    .hero-unit .container {
+      padding-right: 55px;
+      padding-left: 55px; }
+    .hero-unit .logo {
+      width: 150px; }
+
+  .container-sm {
+    padding-left: 28px !important;
+    padding-right: 28px !important; }
+
+  .list-item-noticias {
+    min-height: 250px; }
+
+  .reconocimientos {
+    height: 100% !important; }
+
+  .reconocimientos .flickity-page-dots {
+    bottom: 10% !important; }
+
+  .quienes-somos .quienes-somos-item .quienes-somos-inner {
+    padding: 0 !important;
+    height: 100% !important; }
+
+  #red .btn-liderman {
+    font-size: 15px;
+    padding: 5px 13px; }
+
+  .header,
+  .header-scroll-fixed {
+    position: fixed;
+    background-color: #4A4A4A; }
+    .header .btn-liderman,
+    .header-scroll-fixed .btn-liderman {
+      display: none; }
+    .header .hover-redes,
+    .header-scroll-fixed .hover-redes {
+      display: none; }
+    .header .header-left img,
+    .header-scroll-fixed .header-left img {
+      display: none; }
+
+  .header.active .btn-liderman {
+    display: none !important; }
+  .header.active .hover-redes {
+    display: none !important; }
+  .header.active .header-left img {
+    display: none !important; }
+
+  .overlay .container-fluid .header-left img {
+    display: none !important; } }
 .header,
 .header-scroll,
 .header-scroll-fixed {

@@ -2,12 +2,12 @@
 <section class="pv-56 text-white"><!-- Equipo -->
       <div class="container-sm text-center">
         <h2 class="section-title text-black pv-21">Equipo</h2>
-        <ul class="grid-equipo grid-list grid-list-3 grid-list-1-xs text-center text-black">
+        <ul class="grid-equipo grid-list grid-list-3 grid-list-2-xs text-center text-black">
           {exp:channel:entries channel="equipo" limit="20"}
-          <li class="grid-list-item">
+          <li class="grid-list-item" style="height: 270px;">
             <img src="{imagen_equipo}" alt="" class="img-circle">
             <h3 class="uppercase bold">{nombre_equipo}</h3>
-            <p>{cargo_equipo}</p>
+            <p class="mb-0">{cargo_equipo}</p>
           </li>
           {/exp:channel:entries}
         </ul> 

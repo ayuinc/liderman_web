@@ -1,5 +1,5 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-define(SITE_NAME, 'liderman_web');
+define(SITE_NAME, 'liderman_Web');
 
 $base_url = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") ? "https" : "http");
 $base_url .= "://".$_SERVER['HTTP_HOST'].'/'.SITE_NAME.'/';
