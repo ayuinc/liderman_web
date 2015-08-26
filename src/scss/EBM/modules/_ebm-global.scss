@@ -196,7 +196,7 @@ $liderman-red: #B92A30;
   display: -moz-box !important;         /* OLD - Firefox 19- (buggy but mostly works) */
   display: -ms-flexbox !important;      /* TWEENER - IE 10 */
   display: -webkit-flex !important;
-  
+  -webkit-align-items: center !important; /* Safari 7.0+ */
 }
 
 
