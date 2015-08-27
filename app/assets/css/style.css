@@ -4187,6 +4187,8 @@ p {
 @media only screen and (max-width: 1024px) {
   #consignas p {
     font-size: 14px; }
+  #consignas .list-liderman {
+    font-size: 18px; }
 
   .overlay .header-left img {
     display: none; }
