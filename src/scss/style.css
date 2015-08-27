@@ -4248,7 +4248,7 @@ p {
       display: none; }
     .header .header-left img,
     .header-scroll-fixed .header-left img {
-      display: block;
+      display: block !important;
       width: 80px !important; }
 
   .header.active .btn-liderman {
