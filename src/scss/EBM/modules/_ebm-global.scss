@@ -288,6 +288,7 @@ $liderman-red: #B92A30;
 		padding: 5px 13px;
 	}
 
+
 	.header,
 	.header-scroll-fixed {
   	position: fixed;
@@ -298,11 +299,11 @@ $liderman-red: #B92A30;
 		.hover-redes{
 			display: none;
 		}
-		.header-left{
-			img{
-				display: none;
-			}
+		.header-left img {
+	    display: block;
+	    width: 80px !important;
 		}
+
   }
 
 	// scroll
@@ -315,7 +316,8 @@ $liderman-red: #B92A30;
 		}
 		.header-left{
 			img{
-				display: none !important;
+				display: block;
+	    	width: 80px !important;
 			}
 		}
   }

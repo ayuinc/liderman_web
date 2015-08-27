@@ -4248,14 +4248,16 @@ p {
       display: none; }
     .header .header-left img,
     .header-scroll-fixed .header-left img {
-      display: none; }
+      display: block;
+      width: 80px !important; }
 
   .header.active .btn-liderman {
     display: none !important; }
   .header.active .hover-redes {
     display: none !important; }
   .header.active .header-left img {
-    display: none !important; }
+    display: block;
+    width: 80px !important; }
 
   .overlay .container-fluid .header-left img {
     display: none !important; } }
