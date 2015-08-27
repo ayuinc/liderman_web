@@ -4185,6 +4185,9 @@ p {
   /* Safari 7.0+ */ }
 
 @media only screen and (max-width: 1024px) {
+  .overla├¢ .header-left img {
+    display: none; }
+
   .header .img-redes {
     height: 16px !important; }
   .header .btn-liderman {
