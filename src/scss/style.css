@@ -4185,10 +4185,12 @@ p {
   /* Safari 7.0+ */ }
 
 @media only screen and (max-width: 1024px) {
-  .header .img-redes {
+  .header .img-redes,
+  .header-scroll-fixed .img-redes {
     height: 16px !important; }
 
-  .header .btn-liderman {
+  .header .btn-liderman,
+  .header-scroll-fixed .btn-liderman {
     display: none;
     font-size: 11px !important;
     margin-top: 5px !important;
