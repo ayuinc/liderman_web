@@ -4187,12 +4187,14 @@ p {
 @media only screen and (max-width: 1024px) {
   .header .img-redes {
     height: 16px !important; }
-
   .header .btn-liderman {
     display: none;
     font-size: 11px !important;
     margin-top: 5px !important;
-    padding: 5px 18px !important; } }
+    padding: 5px 18px !important; }
+
+  .header-scroll-fixed .header-right img {
+    height: 16px !important; } }
 @media only screen and (max-width: 480px) {
   .hero-unit {
     height: 100% !important; }

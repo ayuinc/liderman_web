@@ -205,8 +205,7 @@ $liderman-red: #B92A30;
 
 @media only screen and (max-width: 1024px){
 	
-  .header,
-  .header-scroll-fixed{
+  .header{
 		.img-redes{
 			height: 16px !important;
 		}
@@ -216,6 +215,14 @@ $liderman-red: #B92A30;
 	    margin-top: 5px !important;
 	    padding: 5px 18px !important;
 		}
+  }
+
+  .header-scroll-fixed{
+  	.header-right{
+  		img{
+  			height: 16px !important;
+  		}
+  	}
   }
 
 }
