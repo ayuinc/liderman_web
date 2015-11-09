@@ -70,9 +70,17 @@
                   	{titulo_noticias}
                   </h3>
                   <small>{fecha_noticias}</small>
+                   {if intro_noticias!=''}
                   <p id="texto1" class="pv-14" >
                     {intro_noticias}
                   </p>
+                  {if:else}
+                  <div class="main-content mv-28">
+                    {exp:char_limit total="150" exact="no"}
+                      {contenido_noticias}
+                    {/exp:char_limit}
+                  </div>
+                  {/if}
                 </div>
               </a>
             </li>
