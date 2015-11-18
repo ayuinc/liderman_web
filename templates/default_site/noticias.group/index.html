@@ -5,45 +5,7 @@
 <section class="pt-42"> <!-- Noticias -->
       <div class="container pv-56 text-center">
         <h2 class="section-title section-title text-black pb-21">Noticias</h2>
-        <div class="row uppercase pv-42 text-gray">
-          <div class="col-md-1"></div>
-          <div class="col-md-2">
-            <a href="">
-              <div class="border-gray-light">
-                <h4>Todos</h4>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-2">
-            <a href="">
-              <div class="border-gray-light">
-                <h4>Tag 1</h4>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-2">
-            <a href="">
-              <div class="border-gray-light">
-                <h4>Tag 2</h4>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-2">
-            <a href="">
-              <div class="border-gray-light">
-                <h4>Por fecha</h4>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-2">
-            <a href="">
-              <div class="border-gray-light">
-                <h4>Lidernet</h4>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-1"></div>
-        </div>
+        {embed="includes/nav-noticias"}
         <div class="row pv-28 bg-gray-lighter">
           <div class="col-md-2"></div>
           <form class="col-md-8">
@@ -79,21 +41,39 @@
           <div class="col-md-2"></div>
         </div>
         <ul class="grid-list grid-list-3 text-left grid-list-1-xs grid-noticias pv-35">
-        {exp:channel:entries channel="noticias" limit="9"}
+        {exp:channel:entries channel="noticias" dynamic="off" orderby="date" sort="desc"}
           <li class="grid-list-item">
               <a href="{site_url}noticias/noticia-interna/{entry_id}" class="text-gray">
-                <div class="list-item-noticias">
-<!--                   <img class="img-responsive" src="{imagen_noticia}" alt="Cultura Liderman">
- -->                  <h3 class="pt-14 m-0" style="line-height: 1.3;">
+                <div class="list-item-noticias minh-490">
+                  
+                  <h4 class="pt-14" style="font-size: 22px !important;">
                     {titulo_noticias}
-                  </h3>
+                  </h4>
                   <small>{fecha_noticias}</small>
-                  <p id="texto1" class="pv-14 m-0" >
-                    {intro_noticias}
-                  </p>
+                  {if imagen_noticia!=''}
+                    {imagen_noticia}
+                      <img class="img-responsive" src="{image:url:small}" alt="Liderman">
+                    {/imagen_noticia}
+                  {/if}
+
+                  {if intro_noticias!=''}
+                    <p  class="pv-14 content-intro">
+                      {intro_noticias}
+                    </p>
+                  {if:else}
+
+                  <div class="main-content mv-28">
+                    {exp:char_limit total="50" exact="no"}
+                      {contenido_noticias}
+                    {/exp:char_limit}
+                  </div>
+                  {/if}
                 </div>
               </a>
             </li>
+            {paginate}
+                <p class="pv-21 col-md-12 col-sm-12">Page {current_page} of {total_pages} pages {pagination_links}</p>
+            {/paginate}
         {/exp:channel:entries}
         </ul>
       </div>

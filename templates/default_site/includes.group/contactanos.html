@@ -1,8 +1,4 @@
-{exp:freeform:form
-    form_name="contactanos"
-    return="contactos/gracias"
-    required="contacto_correo"                
-}   
+  
 
     <section class="section-padding-horizontal bg-img-block contactanos" style="background-image: url({site_url}app/assets/img/contacto.png);" id="contactanos"> <!-- Contactanos -->
       <div class="container-xs text-center">
@@ -26,32 +22,21 @@
           </li>
         </ul>
         <p class="text-white text-intro">o llenando éste formulario:</p>
-        <form class="ph-21">
-          <input type="text" class="form-control text-center pv-21 uppercase light input-center mt-21" width="210" name="first_name" height="auto" placeholder="nombre" required="">
-          <input type="email" class="form-control text-center pv-21 uppercase light input-center mt-21" width="210" name="correo" height="auto" placeholder="correo" required="">
-          <select name="decision" style="width: 100%; text-indent: 40%;" name="tipo_de_usuario" class="text-center pv-7 uppercase light input-center mt-21" value="0" id="freeform_tipo_de_usuario">
-            <option class="text-center" value="0" selected="0">Tipo de Usuario</option>               
-            <option value="1">Un cliente</option>
-            <option value="2">Un postulante</option>
-            <option value="3">Un liderman</option>
-            <option value="4">Un ciudadano</option>
-            <option value="5">Otros</option>
-          </select>
-          <select name="decision" style="width: 100%; text-indent: 45%;"class=" text-center pv-7 uppercase light input-center mt-21" value="1">
-            <option>Quiero</option>               
-            <option value="1">Un cliente</option>
-            <option value="2">Un postulante</option>
-            <option value="3">Un liderman</option>
-            <option value="4">Un ciudadano</option>
-            <option value="5">Otros</option>
-          </select>
-          <textarea type="area" class="form-control text-center pv-21 uppercase light input-center mt-21" width="210" height="auto" placeholder="escribe tu mensaje" required="" name="FREEFORM_mensaje"></textarea>
-          <div class="text-right pt-35">
-            <a href="#" class="btn-liderman btn-liderman-white">
-              <span>Enviar</span>
-            </a>
-          </div>
-        </form>
+        
+
+        {exp:freeform:form
+            form_id="2"
+            form:class="ph-21"
+            required="first_name|correo|tipo_de_usuario"
+            return="gracias-contactanos/index"
+            
+        }
+            {freeform:field:first_name attr:class="form-control text-center pv-21 light input-center mt-21" attr:placeholder="NOMBRE"}
+            {freeform:field:correo attr:class="form-control text-center pv-21  light input-center mt-21" attr:placeholder="CORREO"}
+            {freeform:field:tipo_de_usuario attr:class="text-center pv-7 uppercase light input-center mt-21" attr:placeholder="TIPO DE USUARIO"}
+            {freeform:field:mensaje attr:class="form-control text-center pv-21 light input-center mt-21" attr:placeholder="ESCRIBE TU MENSAJE"}
+
+            {freeform:submit attr:class="btn-liderman btn-liderman-white pull-right mt-35" attr:value="ENVIAR"}
+        {/exp:freeform:form}
       </div>
     </section>
-{/exp:freeform:form}
