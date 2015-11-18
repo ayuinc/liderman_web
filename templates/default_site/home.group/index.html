@@ -65,18 +65,25 @@
             <li class="grid-list-item">
               <a href="{site_url}noticias/noticia-interna/{entry_id}" class="text-gray">
                 <div class="list-item-noticias minh-490">
-<!--                   <img class="img-responsive" src="{imagen_noticia}" alt="Cultura Liderman">
- -->                  <h3 class="pt-14" style="line-height: 1.2;">
+                  
+                  <h4 class="pt-14" style="font-size: 22px !important;">
                   	{titulo_noticias}
-                  </h3>
+                  </h4>
                   <small>{fecha_noticias}</small>
-                   {if intro_noticias!=''}
-                  <p id="texto1" class="pv-14" >
-                    {intro_noticias}
-                  </p>
+                  {if imagen_noticia!=''}
+                    {imagen_noticia}
+                      <img class="img-responsive" src="{image:url:small}" alt="Liderman">
+                    {/imagen_noticia}
+                  {/if}
+
+                  {if intro_noticias!=''}
+                    <p  class="pv-14 content-intro">
+                      {intro_noticias}
+                    </p>
                   {if:else}
+
                   <div class="main-content mv-28">
-                    {exp:char_limit total="150" exact="no"}
+                    {exp:char_limit total="50" exact="no"}
                       {contenido_noticias}
                     {/exp:char_limit}
                   </div>

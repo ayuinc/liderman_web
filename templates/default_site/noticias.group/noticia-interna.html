@@ -10,9 +10,11 @@
             <h2 class="text-black bold uppercase" style="line-height: 1.1;">{titulo_noticias}</h2>
             <small class="text-red pv-14">{fecha_noticias}</small>
             <div class="img-liderman bg-img-block img-responsive text-center mv-42">
-              <img class="img-responsive" src="{imagen_noticia}" alt="">
+              {imagen_noticia}
+                <img class="img-responsive" src="{image:url:small}" alt="Liderman">
+              {/imagen_noticia}
             </div>
-            <p class="text-intro p-0 pt-14 text-gray-light">{contenido_noticias}</p>
+            <div>{contenido_noticias}</div>
             {/exp:channel:entries}
             <div class="text-right text-gray pv-35">
               <span class="medium h4">COMPARTE:</span>
@@ -39,37 +41,44 @@
           <div class="col-md-4 ph-35">
             <div class="row uppercase text-center pv-42 text-gray">
               <div class="col-md-12 pv-7">
-                <a href="">
+                <a href="{site_url}noticias">
                   <div class="border-gray-light">
-                    <h4>Todos</h4>
+                    <h5>Todos</h5>
                   </div>
                 </a>
               </div>
               <div class="col-md-12 pv-7">
-                <a href="">
+                <a href="{site_url}noticias/category/noticias-liderman">
                   <div class="border-gray-light">
-                    <h4>Tag 1</h4>
+                    <h5>Noticias Liderman</h5>
                   </div>
                 </a>
               </div>
               <div class="col-md-12 pv-7">
-                <a href="">
+                <a href="{site_url}noticias/category/buenas-acciones">
                   <div class="border-gray-light">
-                    <h4>Tag 2</h4>
+                    <h5>Buenas acciones</h5>
                   </div>
                 </a>
               </div>
               <div class="col-md-12 pv-7">
-                <a href="">
+                <a href="{site_url}noticias/category/aptitus">
                   <div class="border-gray-light">
-                    <h4>Por fecha</h4>
+                    <h5>Aptitus</h5>
                   </div>
                 </a>
               </div>
               <div class="col-md-12 pv-7">
-                <a href="">
+                <a href="{site_url}noticias/category/lidernet">
                   <div class="border-gray-light">
-                    <h4>Lidernet</h4>
+                    <h5>Lidernet</h5>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-12 pv-7">
+                <a href="{site_url}noticias/category/aparicion-medios">
+                  <div class="border-gray-light">
+                    <h5>Aparición en medios</h5>
                   </div>
                 </a>
               </div>
@@ -112,10 +121,9 @@
 
             <div class="row pv-28">
               <h4 class="text-orange uppercase pv-21">Noticias relacionadas</h4>
-              <a href=""><p class="text-gray-light text-hover-gray-light pv-7">Te doming nostro quodsi his. In labitur fabellas repudia eos simul...</p></a>
-              <a href=""><p class="text-gray-light text-hover-gray-light pv-7">Te doming nostro quodsi his. In labitur fabellas repudia eos simul...</p></a>
-              <a href=""><p class="text-gray-light text-hover-gray-light pv-7">Te doming nostro quodsi his. In labitur fabellas repudia eos simul...</p></a>
-              <a href=""><p class="text-gray-light text-hover-gray-light pv-7">Te doming nostro quodsi his. In labitur fabellas repudia eos simul...</p></a>
+              {exp:channel:entries channel="noticias" category="{embed:categoria}" dynamic="off" limit="4" orderby="random"}
+              <a href="{site_url}noticias/noticia-interna/{entry_id}"><p class="text-gray-light text-hover-gray-light pv-7">{titulo_noticias}</p></a>
+              {/exp:channel:entries}
             </div>
 
           </div>
