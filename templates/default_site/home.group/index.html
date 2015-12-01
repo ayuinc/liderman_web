@@ -64,9 +64,12 @@
                   	{titulo_noticias}
                   </h4>
                   <small>{fecha_noticias}</small>
-                  {imagen_noticia}
-                    <img class="img-responsive" src="{image:url:small}" alt="Liderman">
-                  {/imagen_noticia}
+                  {if imagen_noticia!=''}
+                    {imagen_noticia}
+                      <img class="img-responsive" src="{image:url:small}" alt="Liderman">
+                    {/imagen_noticia}
+                  {/if}
+
                   {if intro_noticias!=''}
                     <p  class="pv-14 content-intro">
                       {intro_noticias}
