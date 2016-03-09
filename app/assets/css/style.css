@@ -4733,6 +4733,11 @@ select {
 .grid-equipo li img {
   width: 130px; }
 
+.content-intro img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 21px; }
+
 a.btn.form-control,
 button.btn.form-control,
 input[type="submit"].btn.form-control,
