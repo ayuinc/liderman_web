@@ -41,6 +41,7 @@ app/assets/button-icons/*.ttf
 system/expressionengine/config/database.php
 system/expressionengine/config/config.php
 .htaccess
+system/expressionengine/cache
 
 
 
