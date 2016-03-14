@@ -71,22 +71,15 @@ $(document).ready(function() {
     });
 
      $("#banner").owlCarousel({
-   
          navigation: true,
         navigationText: [
-       "<img src='http://s28.postimg.org/4hftwhrmx/atras.png' class='atras-banner'>",
+        "<img src='http://s28.postimg.org/4hftwhrmx/atras.png' class='atras-banner'>",
         "<img src='http://s28.postimg.org/5v7grsqw9/adelante.png' class='adelante-banner'>"
         ],
         slideSpeed : 300,
         paginationSpeed : 400,
-        singleItem:true,
-        pagination : false
-        // "singleItem:true" is a shortcut for:
-        // items : 1, 
-        // itemsDesktop : false,
-        // itemsDesktopSmall : false,
-        // itemsTablet: false,
-        // itemsMobile : false
+        pagination : false,
+        singleItem:true
    
     });
 });
