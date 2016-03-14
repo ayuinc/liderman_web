@@ -4738,6 +4738,12 @@ select {
   height: 100%;
   margin-bottom: 21px; }
 
+.galeria-animate {
+  width: 240px;
+  background-size: cover;
+  height: 240px;
+  margin: auto; }
+
 a.btn.form-control,
 button.btn.form-control,
 input[type="submit"].btn.form-control,

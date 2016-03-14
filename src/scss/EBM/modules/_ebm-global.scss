@@ -970,7 +970,25 @@ select{
 .content-intro {
 	img {
 		width: 100%;
-    	height: 100%;
-    	margin-bottom: 21px;
+    height: 100%;
+    margin-bottom: 21px;
+	}
+}
+
+.galeria-animate {
+	width: 100%;
+  height: 412px;
+  background-size: cover;
+}
+
+.galeria-reconocimiento {
+	width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.home {
+	.owl-controls {
+		display: none;
 	}
 }

@@ -1,17 +1,16 @@
 <section class="pv-42 bg-img-block reconocimientos" id="reconocimientos" style="background-image:url({site_url}app/assets/img/reconocimientos-textura.png);"> <!-- Reconocimientos -->
       <h2 class="section-title text-white text-center pt-28">Reconocimientos</h2>
-      <div class="gallery js-flickity" data-flickity-options='{ "prevNextButtons": false }'>
+      
+      <div id="reconocimientos-carrusel" class="owl-carousel owl-theme">
       {exp:channel:entries channel="reconocimientos" limit="5"}
-        <div class="gallery-cell">
-          <div class="container-sm pt-35 pb-70 mb-21 text-white lead-ch text-shadow text-center">
-            <img src="{imagen_recono}" alt="" class="img-reconocimiento img-responsive pt-7">
-            <h3 class="text-white pv-21 mb-35">{titulo_recono}</h3>
-            <!-- <p class="text-intro pb-35">{descripcion_recono}</p> -->
-            <a href="{site_url}reconocimientos/reconocimientos-interna/{entry_id}" class="btn-liderman btn-liderman-white">
-              <span>Leer m&#xE1;s</span>
-              <img class="pl-7 pb-7" src="{site_url}app/assets/icons/dropdown-btn-white.png">
-            </a>
-          </div>
+        <div class="item text-center container-xs p-21">
+          <!-- <div style="background-image:url({imagen_recono});" class="galeria-animate bg-img-block"></div> -->
+          <img src="{imagen_recono}" class="galeria-reconocimiento bg-img-block img-responsive" alt="Liderman">
+          <h3 class="text-white pv-21 mb-35">{titulo_recono}</h3>
+          <a href="{site_url}reconocimientos/reconocimientos-interna/{entry_id}" class="btn-liderman btn-liderman-white">
+            <span>Leer m&#xE1;s</span>
+            <img class="pl-7 pb-7" src="{site_url}app/assets/icons/dropdown-btn-white.png">
+          </a>
         </div>
       {/exp:channel:entries}
       </div>
