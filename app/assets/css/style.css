@@ -4099,6 +4099,9 @@ p {
 .text-red {
   color: #B92A30; }
 
+.btn-graydark {
+  background: #555555 !important; }
+
 .btn-liderman {
   text-transform: uppercase;
   font-size: 21px;

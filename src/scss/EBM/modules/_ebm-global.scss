@@ -93,6 +93,10 @@ $liderman-red: #B92A30;
 	color: $liderman-red;
 }
 
+.btn-graydark {
+  background: #555555 !important;
+}
+
 .btn-liderman{ //custom liderman button
 	text-transform: uppercase;
 	font-size: 21px;
@@ -104,6 +108,7 @@ $liderman-red: #B92A30;
 		color: white;
 		&:hover{
 			color: white;
+			background-color: #F7941D !important;
 		}
 	}
 
