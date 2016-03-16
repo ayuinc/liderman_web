@@ -4110,7 +4110,8 @@ p {
     border: 2px solid white;
     color: white; }
     .btn-liderman.btn-liderman-white:hover {
-      color: white; }
+      color: white;
+      background-color: #F7941D !important; }
   .btn-liderman.btn-liderman-gray {
     border: 2px solid gray;
     color: gray; }
@@ -4137,6 +4138,9 @@ p {
   padding: 0 15%;
   font-size: 18px;
   color: 505050; }
+
+.text-size-md {
+  font-size: 18px; }
 
 .text-intro-slider {
   padding: 0 15%;
