@@ -62,6 +62,14 @@ a {
   }
 }
 
+@for $i from 1 through length($breakpoints-sufix-list) {
+  .text-justify-#{nth($breakpoints-sufix-list, $i)} {
+    @media #{nth($media-only-list, $i)} {
+      text-align: justify #{$importantize};
+    }
+  }
+}
+
 
 // Text transforms
 .uppercase {

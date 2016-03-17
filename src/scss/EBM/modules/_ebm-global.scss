@@ -154,6 +154,12 @@ $liderman-red: #B92A30;
 	font-size: $font-size-h4;
 }
 
+.bg-img-block-xs {
+	 	background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: -56px;
+}
+
 .text-intro-slider{
 	padding: 0 15%;
 	color: 505050;
@@ -257,6 +263,10 @@ $liderman-red: #B92A30;
 
 }
 
+.full-width {
+	width: 100% !important;
+}
+
 
 @media only screen and (max-width: 480px) {
 	.hero-unit{
@@ -268,6 +278,20 @@ $liderman-red: #B92A30;
 		.logo{
 			width: 150px;
 		}
+	}
+
+	.atras-reco {
+		display: none;
+	}
+
+	.adelante-reco {
+		display: none;	
+	}	
+
+	.bg-img-block-xs {
+	 	background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: -56px !important;
 	}
 
 	.container-sm{
