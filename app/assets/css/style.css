@@ -4673,7 +4673,7 @@ p {
     .grid-noticias .grid-list-item .list-item-noticias small {
       color: #B92A30; }
     .grid-noticias .grid-list-item .list-item-noticias p {
-      font-size: 18px; }
+      font-size: 15px; }
 
 /*
 	Cont├íctanos
@@ -4792,6 +4792,21 @@ select {
 
 .banner .owl-controls {
   display: none; }
+
+figure img {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
+.img-noticia img {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
+.img-reco img {
+  display: block;
+  max-width: 100%;
+  height: auto; }
 
 a.btn.form-control,
 button.btn.form-control,

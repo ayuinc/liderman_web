@@ -4,13 +4,13 @@
     <section class="pt-42"> <!-- Noticias -->
       <div class="container pv-56">
         <div class="row">
-          <div class="col-md-8">
+          <div class="col-md-8 img-reco">
           {exp:channel:entries channel="reconocimientos"  limit="1" dynamic="on"}
             <h2 class="text-black bold uppercase" style="line-height: 1.4;">{titulo_recono}</h2>
             <small class="text-red pv-14">20 de abril del 2015</small>
             <img src="{imagen_recono}" class="img-liderman  img-responsive text-center mv-42"  alt="">
             <p class="text-intro p-0 pt-14 text-gray-light">{contenido_reconocimientos}</p>
-          
+          {/exp:channel:entries}
 
             <div id="disqus_thread"></div>
             <script type="text/javascript">
@@ -32,17 +32,15 @@
 
           <div class="col-md-4 ph-35">
             <div class="row pv-28">
-              <h4 class="text-orange uppercase pv-21 mt-42">Noticias relacionadas</h4>
-              {categories}
-                {embed="includes/reconocimiento-relacionadas" categoria="{category_id}"}
-              {/categories}
-
-              <!-- <a href=""><p class="text-gray-light text-hover-gray-light pv-7">Te doming nostro quodsi his. In labitur fabellas repudia eos simul...</p></a>
-              <a href=""><p class="text-gray-light text-hover-gray-light pv-7">Te doming nostro quodsi his. In labitur fabellas repudia eos simul...</p></a>
-              <a href=""><p class="text-gray-light text-hover-gray-light pv-7">Te doming nostro quodsi his. In labitur fabellas repudia eos simul...</p></a>
-              <a href=""><p class="text-gray-light text-hover-gray-light pv-7">Te doming nostro quodsi his. In labitur fabellas repudia eos simul...</p></a> -->
+              <h4 class="text-orange uppercase pv-21 mt-56">Otros Reconocimientos</h4>
+              {exp:channel:entries channel="reconocimientos" category="{embed:categoria}" dynamic="off" limit="4" orderby="random"}
+              <a href="{site_url}reconocimientos/reconocimientos-interna/{entry_id}">
+                <p class="text-gray-light text-hover-gray-light pv-7">{titulo_recono}</p>
+              </a>
+              {/exp:channel:entries}
             </div>
-            {/exp:channel:entries}
+            </div>
+            
           </div>
 
 

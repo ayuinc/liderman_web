@@ -856,7 +856,7 @@ $liderman-red: #B92A30;
 				color: #B92A30;
 			}
 			p{
-				font-size: 18px;
+				font-size: 15px;
 			}
 		}
 	}
@@ -1023,5 +1023,30 @@ select{
 .banner {
 	.owl-controls {
 		display: none;
+	}
+}
+
+
+figure {
+	img {
+		display: block;
+    max-width: 100%;
+    height: auto;
+	}
+}
+
+.img-noticia {
+	img {
+		display: block;
+    max-width: 100%;
+    height: auto;
+	}
+}
+
+.img-reco {
+	img {
+		display: block;
+    max-width: 100%;
+    height: auto;
 	}
 }
