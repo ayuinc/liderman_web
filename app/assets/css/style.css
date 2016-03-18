@@ -4801,12 +4801,14 @@ figure img {
 .img-noticia img {
   display: block;
   max-width: 100%;
-  height: auto; }
+  height: auto;
+  margin-bottom: 21px; }
 
 .img-reco img {
   display: block;
   max-width: 100%;
-  height: auto; }
+  height: auto;
+  margin-bottom: 21px; }
 
 a.btn.form-control,
 button.btn.form-control,
